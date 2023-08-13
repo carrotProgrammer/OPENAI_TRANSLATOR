@@ -1,4 +1,4 @@
-# OpenAI-Translator 进阶版本（v2.0）开发记录
+# OpenAI-Translator 进阶版本（v2.0）
 
 最近，我在[极客时间](https://time.geekbang.org/)的[《AI 大模型应用开发实战营》](https://u.geekbang.org/subject/llm/1005515)课程中受到了很大的启发。因此，我决定对OpenAI-Translator进行升级，推出v2.0版本。此版本在原有的基础上，新增了如下功能：
 
