@@ -89,7 +89,7 @@ GUI运行(推荐)：
 python ai_translator/main.py --model_type OpenAIModel --gui
 ```
 
-![sample_out](images/sample_image_1.png)
+![sample_out](images/gui.png)
 
 #### 使用命令行参数
 
