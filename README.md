@@ -34,10 +34,10 @@ The OpenAI Translator is still in its early stages of development, and I'm activ
 - [X] Timeouts and error handling for robust translation operations.
 - [X] Modular and object-oriented design for easy customization and extension.
 - [X] Implement a graphical user interface (GUI) for easier use.
-- [X] Add support for batch processing of multiple PDF files.
+- [ ] Add support for batch processing of multiple PDF files.
 - [ ] Create a web service or API to enable usage in web applications.
 - [X] Add support for other languages and translation directions.
-- [ ] Add support for preserving the original layout and formatting of the source PDF.
+- [X] Add support for preserving the original layout and formatting of the source PDF.
 - [ ] Improve translation quality by using custom-trained translation models.
 
 ## Limitations
