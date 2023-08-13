@@ -78,12 +78,12 @@ GLMModel:
   timeout: 300
 
 common:
-  book: "test/QMLB4.pdf"
+  book: "test/your_book.pdf"
   file_format: "markdown"
 ```
 #### 运行方式
 
-GUI运行：
+GUI运行(推荐)：
 
 ```bash
 python ai_translator/main.py --model_type OpenAIModel --gui
