@@ -6,6 +6,6 @@
 - 用户友好的GUI界面设计。
 - 对于pdf中的表格和文本，v2.0能够更好地保留其原始布局和格式。
 
-为了详细记录整个开发的过程、遇到的问题、关键的代码实现以及项目的运行效果，我已在[Jupyter Notebook](链接_to_your_notebook)中做了详细的分享，请感兴趣的同学点击查看。如果想要直接查看v2.0版本的源代码，可以前往[这里](https://github.com/carrotProgrammer/OPENAI_TRANSLATOR/tree/master)。
+为了详细记录整个开发的过程、遇到的问题、关键的代码实现以及项目的运行效果，我已在[Jupyter Notebook](https://github.com/carrotProgrammer/OPENAI_TRANSLATOR/blob/master/jupyter/%E4%BD%9C%E4%B8%9A%E6%8A%A5%E5%91%8A.ipynb)中做了详细的分享，请感兴趣的同学点击查看。如果想要直接查看v2.0版本的源代码，可以前往[这里](https://github.com/carrotProgrammer/OPENAI_TRANSLATOR/tree/master)。
 
 对于之前的v1.0版本，这是由谷歌贡献者之一的彭老师所开发。他的深入浅出的教学方式和对技术的热爱为我提供了巨大的启示。如果你还未了解或想再次回顾v1.0，可以点击此处查看：[OpenAI-Translator v1.0](https://github.com/DjangoPeng/openai-quickstart/blob/main/openai-translator/README-CN.md)。
