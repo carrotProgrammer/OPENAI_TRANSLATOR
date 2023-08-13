@@ -1,0 +1,2369 @@
+2023-08-13 13:31:03.402 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-13 13:31:03.416 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 13:31:03.609 | DEBUG    | translator.pdf_parser:parse_pdf:95 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 13:31:03.612 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Summary
+¶¶¶
+The table above provides a snapshot of the sample data, which includes names, ages, and professions of three individuals. The objective of this test is to ensure that both textual and tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Chinese):
+2023-08-13 13:31:15.729 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文档，旨在验证OpenAI驱动的翻译器的效率和准确性。它包含了文本和表格内容。
+¶¶¶
+表1: 样本数据
+¶¶¶
+总结
+¶¶¶
+上面的表格提供了样本数据的快照，包括三个人的姓名、年龄和职业。这个测试的目标是确保文本和表格的信息被准确翻译，并保留格式和结构。
+2023-08-13 13:31:15.736 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 13:31:20.194 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 13:31:20.197 | DEBUG    | book.content:set_translation:92 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 13:31:20.201 | DEBUG    | book.content:set_translation:102 - [['姓名', '年龄', '职业'], ['约翰', '25', '工程师'], ['安娜', '30', '医生'], ['布莱恩', '28', '教师']]
+2023-08-13 13:31:20.207 | DEBUG    | book.content:set_translation:106 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-13 13:31:20.221 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-13 13:31:20.224 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-13 13:31:20.372 | INFO     | translator.writer:_save_translated_book_pdf:101 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-13 13:55:26.358 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 13:55:26.363 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 13:55:26.592 | DEBUG    | translator.pdf_parser:parse_pdf:96 - [table]
+ Name Age Profession
+ John  25   Engineer
+ Anna  30     Doctor
+Brian  28    Teacher
+2023-08-13 13:55:26.598 | DEBUG    | translator.pdf_parser:parse_pdf:96 - [table]
+ Name Age Profession
+Test1  25   Engineer
+Test2  30     Doctor
+Test3  28    Teacher
+2023-08-13 13:55:26.602 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Summary
+¶¶¶
+The table above provides a snapshot of the sample data, which includes names, ages, and professions of three individuals. The objective of this test is to ensure that both textual and tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+¶¶¶
+Table2:Extratabletotest2table'
+Translation (to Chinese):
+2023-08-13 13:55:44.092 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文档，用于验证OpenAI驱动的翻译器的效率和准确性。它包含了文本和表格内容。
+¶¶¶
+表1：样本数据
+¶¶¶
+总结
+¶¶¶
+上面的表格提供了样本数据的快照，其中包括了三个人的姓名、年龄和职业。这个测试的目标是确保文本和表格信息都能准确翻译，并保持格式和结构。
+¶¶¶
+表2：用于测试两个表格的附加表格
+2023-08-13 13:55:44.097 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: ' Name Age Profession
+ John  25   Engineer
+ Anna  30     Doctor
+Brian  28    Teacher'
+Translation (to Chinese):
+
+2023-08-13 13:55:48.839 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名 年龄 职业]
+[约翰 25 工程师]
+[安娜 30 医生]
+[布莱恩 28 教师]
+2023-08-13 13:55:48.842 | DEBUG    | book.content:set_translation:92 - [姓名 年龄 职业]
+[约翰 25 工程师]
+[安娜 30 医生]
+[布莱恩 28 教师]
+2023-08-13 13:55:48.845 | DEBUG    | book.content:set_translation:102 - [['姓名 年龄 职业]\n[约翰 25 工程师]\n[安娜 30 医生]\n[布莱恩 28 教师']]
+2023-08-13 13:55:48.855 | DEBUG    | book.content:set_translation:106 - Empty DataFrame
+Columns: [姓名 年龄 职业]
+[约翰 25 工程师]
+[安娜 30 医生]
+[布莱恩 28 教师]
+Index: []
+2023-08-13 13:55:48.860 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: ' Name Age Profession
+Test1  25   Engineer
+Test2  30     Doctor
+Test3  28    Teacher'
+Translation (to Chinese):
+
+2023-08-13 13:55:52.726 | INFO     | translator.pdf_translator:translate_pdf:23 - 表格：'[姓名 年龄 职业 [Test1 25 工程师] [Test2 30 医生] [Test3 28 教师]'
+2023-08-13 13:55:52.729 | DEBUG    | book.content:set_translation:92 - 表格：[姓名 年龄 职业 [Test1 25 工程师] [Test2 30 医生] [Test3 28 教师]
+2023-08-13 13:55:52.733 | DEBUG    | book.content:set_translation:102 - [['表格：[姓名 年龄 职业 [Test1 25 工程师'], ['Test2 30 医生'], ['Test3 28 教师']]
+2023-08-13 13:55:52.736 | DEBUG    | book.content:set_translation:106 -   表格：[姓名 年龄 职业 [Test1 25 工程师
+0                Test2 30 医生
+1                Test3 28 教师
+2023-08-13 13:55:52.743 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 13:55:52.745 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 13:55:52.866 | INFO     | translator.writer:_save_translated_book_pdf:101 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 14:03:52.274 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 14:03:52.278 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 14:06:26.809 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 14:06:26.813 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 15:10:09.777 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 15:10:09.782 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 15:11:03.189 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 15:11:03.193 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 15:11:03.429 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+Table: [Name Age Profession][John 25 Engineer][Anna 30 Doctor][Brian 28 Teacher]
+2023-08-13 15:11:03.433 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+Table: [Name Age Profession][Test1 25 Engineer][Test2 30 Doctor][Test3 28 Teacher]
+2023-08-13 15:11:03.435 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Summary
+¶¶¶
+The table above provides a snapshot of the sample data, which includes names, ages, and professions of three individuals. The objective of this test is to ensure that both textual and tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+¶¶¶
+Table2:Extratabletotest2table'
+Translation (to Chinese):
+2023-08-13 15:11:21.676 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文件
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文件，用于验证OpenAI提供的翻译器的效率和准确性。它包含文本和表格内容。
+¶¶¶
+表1：样本数据
+¶¶¶
+总结
+¶¶¶
+上表提供了样本数据的快照，包括三个人的姓名，年龄和职业。这个测试的目标是确保文本和表格信息都能准确翻译，并保持格式和结构。
+¶¶¶
+表2：用于测试两个表格的额外表格
+2023-08-13 15:11:21.688 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: ' Name Age Profession
+ John  25   Engineer
+ Anna  30     Doctor
+Brian  28    Teacher'
+Translation (to Chinese):
+
+2023-08-13 15:11:28.181 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名 年龄 职业
+ 约翰 25 工程师
+ 安娜 30 医生
+ 布莱恩 28 教师]
+2023-08-13 15:11:28.184 | DEBUG    | book.content:set_translation:92 - [姓名 年龄 职业
+ 约翰 25 工程师
+ 安娜 30 医生
+ 布莱恩 28 教师]
+2023-08-13 15:11:28.187 | DEBUG    | book.content:set_translation:102 - [['姓名 年龄 职业\n 约翰 25 工程师\n 安娜 30 医生\n 布莱恩 28 教师']]
+2023-08-13 15:11:28.195 | DEBUG    | book.content:set_translation:106 - Empty DataFrame
+Columns: [姓名 年龄 职业
+ 约翰 25 工程师
+ 安娜 30 医生
+ 布莱恩 28 教师]
+Index: []
+2023-08-13 15:11:28.203 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: ' Name Age Profession
+Test1  25   Engineer
+Test2  30     Doctor
+Test3  28    Teacher'
+Translation (to Chinese):
+
+2023-08-13 15:11:32.084 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名 年龄 职业]
+[测试1 25 工程师]
+[测试2 30 医生]
+[测试3 28 教师]
+2023-08-13 15:11:32.088 | DEBUG    | book.content:set_translation:92 - [姓名 年龄 职业]
+[测试1 25 工程师]
+[测试2 30 医生]
+[测试3 28 教师]
+2023-08-13 15:11:32.091 | DEBUG    | book.content:set_translation:102 - [['姓名 年龄 职业]\n[测试1 25 工程师]\n[测试2 30 医生]\n[测试3 28 教师']]
+2023-08-13 15:11:32.096 | DEBUG    | book.content:set_translation:106 - Empty DataFrame
+Columns: [姓名 年龄 职业]
+[测试1 25 工程师]
+[测试2 30 医生]
+[测试3 28 教师]
+Index: []
+2023-08-13 15:11:32.101 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 15:11:32.102 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 15:11:32.249 | INFO     | translator.writer:_save_translated_book_pdf:101 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 15:13:44.530 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 15:13:44.535 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 15:13:44.754 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+Table: [Name Age Profession][John 25 Engineer][Anna 30 Doctor][Brian 28 Teacher]
+2023-08-13 15:13:44.757 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+Table: [Name Age Profession][Test1 25 Engineer][Test2 30 Doctor][Test3 28 Teacher]
+2023-08-13 15:13:44.760 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Summary
+¶¶¶
+The table above provides a snapshot of the sample data, which includes names, ages, and professions of three individuals. The objective of this test is to ensure that both textual and tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+¶¶¶
+Table2:Extratabletotest2table'
+Translation (to Chinese):
+2023-08-13 15:14:02.226 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文档，用于验证OpenAI动力翻译器的效率和准确性。它包含文本和表格内容。
+¶¶¶
+表1：样本数据
+¶¶¶
+总结
+¶¶¶
+上面的表格提供了样本数据的快照，其中包括三个人的姓名，年龄和职业。这个测试的目的是确保文本和表格信息都能准确翻译，并保留格式和结构。
+¶¶¶
+表2：用于测试两个表格的额外表格
+2023-08-13 15:14:02.234 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: ' Name Age Profession
+ John  25   Engineer
+ Anna  30     Doctor
+Brian  28    Teacher'
+Translation (to Chinese):
+
+2023-08-13 15:14:06.860 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名 年龄 职业]
+ [约翰 25 工程师]
+ [安娜 30 医生]
+ [布莱恩 28 教师]
+2023-08-13 15:14:06.864 | DEBUG    | book.content:set_translation:92 - [姓名 年龄 职业]
+ [约翰 25 工程师]
+ [安娜 30 医生]
+ [布莱恩 28 教师]
+2023-08-13 15:14:06.867 | DEBUG    | book.content:set_translation:102 - [['姓名 年龄 职业]\n [约翰 25 工程师]\n [安娜 30 医生]\n [布莱恩 28 教师']]
+2023-08-13 15:14:06.874 | DEBUG    | book.content:set_translation:106 - Empty DataFrame
+Columns: [姓名 年龄 职业]
+ [约翰 25 工程师]
+ [安娜 30 医生]
+ [布莱恩 28 教师]
+Index: []
+2023-08-13 15:14:06.881 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: ' Name Age Profession
+Test1  25   Engineer
+Test2  30     Doctor
+Test3  28    Teacher'
+Translation (to Chinese):
+
+2023-08-13 15:14:10.768 | INFO     | translator.pdf_translator:translate_pdf:23 - 表格：'姓名 年龄 职业
+测试1  25   工程师
+测试2  30     医生
+测试3  28    教师'
+2023-08-13 15:14:10.771 | DEBUG    | book.content:set_translation:92 - 表格：姓名 年龄 职业
+测试1  25   工程师
+测试2  30     医生
+测试3  28    教师
+2023-08-13 15:14:10.774 | DEBUG    | book.content:set_translation:102 - [['表格：姓名 年龄 职业\n测试1  25   工程师\n测试2  30     医生\n测试3  28    教师']]
+2023-08-13 15:14:10.778 | DEBUG    | book.content:set_translation:106 - Empty DataFrame
+Columns: [表格：姓名 年龄 职业
+测试1  25   工程师
+测试2  30     医生
+测试3  28    教师]
+Index: []
+2023-08-13 15:14:10.782 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 15:14:10.785 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 15:14:10.919 | INFO     | translator.writer:_save_translated_book_pdf:101 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 15:15:17.316 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 15:15:17.322 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 15:15:17.581 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name Age Profession][John 25 Engineer][Anna 30 Doctor][Brian 28 Teacher]
+2023-08-13 15:15:17.585 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name Age Profession][Test1 25 Engineer][Test2 30 Doctor][Test3 28 Teacher]
+2023-08-13 15:15:17.589 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Summary
+¶¶¶
+The table above provides a snapshot of the sample data, which includes names, ages, and professions of three individuals. The objective of this test is to ensure that both textual and tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+¶¶¶
+Table2:Extratabletotest2table'
+Translation (to Chinese):
+2023-08-13 15:15:30.001 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+¶¶¶
+简介
+¶¶¶
+这是一个测试文档，用于验证OpenAI动力翻译器的效率和准确性。它包含文本和表格内容。
+¶¶¶
+表1：样本数据
+¶¶¶
+总结
+¶¶¶
+上述表格提供了样本数据的快照，其中包括三个人的姓名、年龄和职业。这个测试的目标是确保文本和表格信息都能准确翻译，并保持原有的格式和结构。
+¶¶¶
+表2：用于测试两个表格的附加表格
+2023-08-13 15:15:30.011 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: ' Name Age Profession
+ John  25   Engineer
+ Anna  30     Doctor
+Brian  28    Teacher'
+Translation (to Chinese):
+
+2023-08-13 15:15:34.551 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业]
+ [约翰, 25, 工程师]
+ [安娜, 30, 医生]
+ [布赖恩, 28, 教师]
+2023-08-13 15:15:34.556 | DEBUG    | book.content:set_translation:92 - [姓名, 年龄, 职业]
+ [约翰, 25, 工程师]
+ [安娜, 30, 医生]
+ [布赖恩, 28, 教师]
+2023-08-13 15:15:34.559 | DEBUG    | book.content:set_translation:102 - [['姓名', '年龄', '职业]\n [约翰', '25', '工程师]\n [安娜', '30', '医生]\n [布赖恩', '28', '教师']]
+2023-08-13 15:15:34.566 | DEBUG    | book.content:set_translation:106 - Empty DataFrame
+Columns: [姓名, 年龄, 职业]
+ [约翰, 25, 工程师]
+ [安娜, 30, 医生]
+ [布赖恩, 28, 教师]
+Index: []
+2023-08-13 15:15:34.574 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: ' Name Age Profession
+Test1  25   Engineer
+Test2  30     Doctor
+Test3  28    Teacher'
+Translation (to Chinese):
+
+2023-08-13 15:15:39.184 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业]
+[测试1, 25, 工程师]
+[测试2, 30, 医生]
+[测试3, 28, 教师]
+2023-08-13 15:15:39.187 | DEBUG    | book.content:set_translation:92 - [姓名, 年龄, 职业]
+[测试1, 25, 工程师]
+[测试2, 30, 医生]
+[测试3, 28, 教师]
+2023-08-13 15:15:39.191 | DEBUG    | book.content:set_translation:102 - [['姓名', '年龄', '职业]\n[测试1', '25', '工程师]\n[测试2', '30', '医生]\n[测试3', '28', '教师']]
+2023-08-13 15:15:39.195 | DEBUG    | book.content:set_translation:106 - Empty DataFrame
+Columns: [姓名, 年龄, 职业]
+[测试1, 25, 工程师]
+[测试2, 30, 医生]
+[测试3, 28, 教师]
+Index: []
+2023-08-13 15:15:39.200 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 15:15:39.203 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 15:15:39.331 | INFO     | translator.writer:_save_translated_book_pdf:101 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 15:17:54.382 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 15:17:54.386 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 15:17:54.607 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name Age Profession][John 25 Engineer][Anna 30 Doctor][Brian 28 Teacher]
+2023-08-13 15:17:54.611 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name Age Profession][Test1 25 Engineer][Test2 30 Doctor][Test3 28 Teacher]
+2023-08-13 15:17:54.613 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Summary
+¶¶¶
+The table above provides a snapshot of the sample data, which includes names, ages, and professions of three individuals. The objective of this test is to ensure that both textual and tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+¶¶¶
+Table2:Extratabletotest2table'
+Translation (to Chinese):
+2023-08-13 15:18:10.737 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文档，用于验证OpenAI驱动的翻译器的效率和准确性。它包含了文本和表格内容。
+¶¶¶
+表1：样本数据
+¶¶¶
+摘要
+¶¶¶
+上表提供了样本数据的快照，其中包括三个人的姓名、年龄和职业。本次测试的目标是确保文本和表格信息都能准确翻译，并且保持原有的格式和结构。
+¶¶¶
+表2：用于测试的额外表格
+2023-08-13 15:18:10.752 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '       0    1           2
+0   Name  Age  Profession
+1   John   25    Engineer
+2   Anna   30      Doctor
+3  Brian   28     Teacher'
+Translation (to Chinese):
+
+2023-08-13 15:18:18.722 | INFO     | translator.pdf_translator:translate_pdf:23 - [       0    1           2
+0   姓名  年龄  职业
+1   约翰   25    工程师
+2   安娜   30      医生
+3  布莱恩   28     教师]
+2023-08-13 15:18:18.726 | DEBUG    | book.content:set_translation:92 - [       0    1           2
+0   姓名  年龄  职业
+1   约翰   25    工程师
+2   安娜   30      医生
+3  布莱恩   28     教师]
+2023-08-13 15:18:18.731 | DEBUG    | book.content:set_translation:102 - [['       0    1           2\n0   姓名  年龄  职业\n1   约翰   25    工程师\n2   安娜   30      医生\n3  布莱恩   28     教师']]
+2023-08-13 15:18:18.736 | DEBUG    | book.content:set_translation:106 - Empty DataFrame
+Columns: [       0    1           2
+0   姓名  年龄  职业
+1   约翰   25    工程师
+2   安娜   30      医生
+3  布莱恩   28     教师]
+Index: []
+2023-08-13 15:18:18.748 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '       0    1           2
+0   Name  Age  Profession
+1  Test1   25    Engineer
+2  Test2   30      Doctor
+3  Test3   28     Teacher'
+Translation (to Chinese):
+
+2023-08-13 15:18:23.877 | INFO     | translator.pdf_translator:translate_pdf:23 - Table: '       0         1          2
+0   姓名      年龄   职业
+1  测试1     25     工程师
+2  测试2     30     医生
+3  测试3     28     教师'
+2023-08-13 15:18:23.882 | DEBUG    | book.content:set_translation:92 - Table:        0         1          2
+0   姓名      年龄   职业
+1  测试1     25     工程师
+2  测试2     30     医生
+3  测试3     28     教师
+2023-08-13 15:18:23.887 | DEBUG    | book.content:set_translation:102 - [['Table:        0         1          2\n0   姓名      年龄   职业\n1  测试1     25     工程师\n2  测试2     30     医生\n3  测试3     28     教师']]
+2023-08-13 15:18:23.893 | DEBUG    | book.content:set_translation:106 - Empty DataFrame
+Columns: [Table:        0         1          2
+0   姓名      年龄   职业
+1  测试1     25     工程师
+2  测试2     30     医生
+3  测试3     28     教师]
+Index: []
+2023-08-13 15:18:23.897 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 15:18:23.899 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 15:18:24.041 | INFO     | translator.writer:_save_translated_book_pdf:101 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 15:19:09.467 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 15:19:09.470 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 15:19:09.696 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name Age Profession][John 25 Engineer][Anna 30 Doctor][Brian 28 Teacher]
+2023-08-13 15:19:09.700 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name Age Profession][Test1 25 Engineer][Test2 30 Doctor][Test3 28 Teacher]
+2023-08-13 15:19:09.704 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Summary
+¶¶¶
+The table above provides a snapshot of the sample data, which includes names, ages, and professions of three individuals. The objective of this test is to ensure that both textual and tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+¶¶¶
+Table2:Extratabletotest2table'
+Translation (to Chinese):
+2023-08-13 15:19:28.101 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文档，用于验证OpenAI动力翻译器的效率和准确性。它包括文本和表格内容。
+¶¶¶
+表1：样本数据
+¶¶¶
+摘要
+¶¶¶
+上述表格提供了样本数据的快照，其中包括三个人的姓名，年龄和职业。这个测试的目标是确保文本和表格信息都被准确地翻译，保留其格式和结构。
+¶¶¶
+表2：用于测试两个表格的额外表格
+2023-08-13 15:19:28.107 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name Age Profession][John 25 Engineer][Anna 30 Doctor][Brian 28 Teacher]'
+Translation (to Chinese):
+
+2023-08-13 15:19:32.811 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名 年龄 职业][约翰 25 工程师][安娜 30 医生][布赖恩 28 老师]
+2023-08-13 15:19:32.814 | DEBUG    | book.content:set_translation:92 - [姓名 年龄 职业][约翰 25 工程师][安娜 30 医生][布赖恩 28 老师]
+2023-08-13 15:19:32.818 | DEBUG    | book.content:set_translation:102 - [['姓名 年龄 职业][约翰 25 工程师][安娜 30 医生][布赖恩 28 老师']]
+2023-08-13 15:19:32.823 | DEBUG    | book.content:set_translation:106 - Empty DataFrame
+Columns: [姓名 年龄 职业][约翰 25 工程师][安娜 30 医生][布赖恩 28 老师]
+Index: []
+2023-08-13 15:19:32.830 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name Age Profession][Test1 25 Engineer][Test2 30 Doctor][Test3 28 Teacher]'
+Translation (to Chinese):
+
+2023-08-13 15:19:35.990 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名 年龄 职业][测试1 25 工程师][测试2 30 医生][测试3 28 教师]
+2023-08-13 15:19:35.993 | DEBUG    | book.content:set_translation:92 - [姓名 年龄 职业][测试1 25 工程师][测试2 30 医生][测试3 28 教师]
+2023-08-13 15:19:35.996 | DEBUG    | book.content:set_translation:102 - [['姓名 年龄 职业][测试1 25 工程师][测试2 30 医生][测试3 28 教师']]
+2023-08-13 15:19:36.001 | DEBUG    | book.content:set_translation:106 - Empty DataFrame
+Columns: [姓名 年龄 职业][测试1 25 工程师][测试2 30 医生][测试3 28 教师]
+Index: []
+2023-08-13 15:19:36.006 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 15:19:36.009 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 15:19:36.149 | INFO     | translator.writer:_save_translated_book_pdf:101 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 15:24:16.496 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 15:24:16.501 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 15:24:16.705 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name Age Profession][John 25 Engineer][Anna 30 Doctor][Brian 28 Teacher]
+2023-08-13 15:24:16.709 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name Age Profession][Test1 25 Engineer][Test2 30 Doctor][Test3 28 Teacher]
+2023-08-13 15:24:16.712 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Summary
+¶¶¶
+The table above provides a snapshot of the sample data, which includes names, ages, and professions of three individuals. The objective of this test is to ensure that both textual and tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+¶¶¶
+Table2:Extratabletotest2table'
+Translation (to Chinese):
+2023-08-13 15:24:32.380 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文档，用于验证OpenAI驱动的翻译器的效率和准确性。它包含文本和表格内容。
+¶¶¶
+表1：样本数据
+¶¶¶
+总结
+¶¶¶
+上述表格提供了样本数据的快照，其中包括三个人的姓名、年龄和职业。这个测试的目标是确保文本和表格信息都能准确翻译，保留格式和结构。
+¶¶¶
+表2：用于测试的附加表格
+2023-08-13 15:24:32.388 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name Age Profession][John 25 Engineer][Anna 30 Doctor][Brian 28 Teacher]'
+Translation (to Chinese):
+
+2023-08-13 15:24:35.993 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名 年龄 职业][约翰 25 工程师][安娜 30 医生][布赖恩 28 教师]
+2023-08-13 15:24:35.996 | DEBUG    | book.content:set_translation:92 - [姓名 年龄 职业][约翰 25 工程师][安娜 30 医生][布赖恩 28 教师]
+2023-08-13 15:24:36.001 | DEBUG    | book.content:set_translation:106 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布赖恩  28   教师
+2023-08-13 15:24:36.017 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name Age Profession][Test1 25 Engineer][Test2 30 Doctor][Test3 28 Teacher]'
+Translation (to Chinese):
+
+2023-08-13 15:24:40.046 | INFO     | translator.pdf_translator:translate_pdf:23 - [名称 年龄 职业][测试1 25 工程师][测试2 30 医生][测试3 28 教师]
+2023-08-13 15:24:40.049 | DEBUG    | book.content:set_translation:92 - [名称 年龄 职业][测试1 25 工程师][测试2 30 医生][测试3 28 教师]
+2023-08-13 15:24:40.052 | DEBUG    | book.content:set_translation:106 -     名称  年龄   职业
+0  测试1  25  工程师
+1  测试2  30   医生
+2  测试3  28   教师
+2023-08-13 15:24:40.060 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 15:24:40.063 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 15:24:40.201 | INFO     | translator.writer:_save_translated_book_pdf:101 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 15:43:23.198 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 15:43:23.251 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 15:43:23.729 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name Age Profession][John 25 Engineer][Anna 30 Doctor][Brian 28 Teacher]
+2023-08-13 15:43:23.733 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name Age Profession][Test1 25 Engineer][Test2 30 Doctor][Test3 28 Teacher]
+2023-08-13 15:43:23.905 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Location Device Operating
+System][Beijing iPhone IOS15][Shanghai Samsung Android12][NewYouk MacBook macOS
+Monterey]
+2023-08-13 15:43:23.908 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.Forthesakeofthoroughness,wewillinclude additionaldataandanothertabletoseehowwellthesystemcanhandleincreasedcomplexity.
+¶¶¶
+Objective
+¶¶¶
+Our main aim in creating this document is to rigorously test the capabilities of AI-driven translationtools, especiallywhen handlingdifferentdataformats. Weareparticularlyinterested in seeing how the tool manages with textual descriptions, tabular data, and more intricate content.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Observations
+¶¶¶
+Based on Table 1, we see a diverse range of professions spanning from engineering to medicine to education. It gives an idea about the versatility of our sample data and represents a cross-sectionoftheprofessionallandscape.
+¶¶¶
+Table2:Extratabletotest2table
+¶¶¶
+Discussion
+¶¶¶
+The addition of Table2 allowsus to testthe system's capacity to differentiate between multiple tablesinasingledocument.Eachtable,whilesimilarinstructure,containsdistinctdata.Itwillbe interesting to note if the translation tool can maintain this distinction without any overlaps or misinterpretations.'
+Translation (to Chinese):
+2023-08-13 15:43:55.904 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文档，用于验证OpenAI驱动的翻译器的效率和准确性。它包含了文本和表格内容。为了全面测试，我们将包括额外的数据和另一个表格，以观察系统在处理复杂性增加时的表现。
+¶¶¶
+目标
+¶¶¶
+我们创建此文档的主要目的是对AI驱动的翻译工具的能力进行严格测试，特别是在处理不同的数据格式时。我们特别关注工具在处理文本描述、表格数据和更复杂内容时的表现。
+¶¶¶
+表1：样本数据
+¶¶¶
+观察结果
+¶¶¶
+根据表1，我们可以看到涵盖了工程、医学和教育等各种不同职业。它给人们提供了我们样本数据的多样性，并代表了职业领域的横向切面。
+¶¶¶
+表2：用于测试两个表格的附加表格
+¶¶¶
+讨论
+¶¶¶
+添加表2允许我们测试系统在一个文档中区分多个表格的能力。每个表格虽然结构相似，但包含不同的数据。有趣的是，观察翻译工具是否能够保持这种区别，避免任何重叠或误解。
+2023-08-13 15:43:55.911 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name Age Profession][John 25 Engineer][Anna 30 Doctor][Brian 28 Teacher]'
+Translation (to Chinese):
+
+2023-08-13 15:43:59.934 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名 年龄 职业][约翰 25 工程师][安娜 30 医生][布赖恩 28 老师]
+2023-08-13 15:43:59.936 | DEBUG    | book.content:set_translation:92 - [姓名 年龄 职业][约翰 25 工程师][安娜 30 医生][布赖恩 28 老师]
+2023-08-13 15:43:59.944 | DEBUG    | book.content:set_translation:106 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布赖恩  28   老师
+2023-08-13 15:43:59.966 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name Age Profession][Test1 25 Engineer][Test2 30 Doctor][Test3 28 Teacher]'
+Translation (to Chinese):
+
+2023-08-13 15:44:03.140 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名 年龄 职业][测试1 25 工程师][测试2 30 医生][测试3 28 老师]
+2023-08-13 15:44:03.143 | DEBUG    | book.content:set_translation:92 - [姓名 年龄 职业][测试1 25 工程师][测试2 30 医生][测试3 28 老师]
+2023-08-13 15:44:03.148 | DEBUG    | book.content:set_translation:106 -     姓名  年龄   职业
+0  测试1  25  工程师
+1  测试2  30   医生
+2  测试3  28   老师
+2023-08-13 15:44:03.158 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Summary
+¶¶¶
+The tables provided offer a snapshot of the sample data, which includes names, ages, and professions of multiple individuals. The overarching objective of this test is to ensure that both textualandtabularinformationistranslatedaccurately,preservingtheformat,structure,andthe integrityofthedata.
+¶¶¶
+Table3:Asmalltabletotesttablesize
+¶¶¶
+Operating System
+¶¶¶
+macOS Monterey
+¶¶¶
+FutureRecommendations
+¶¶¶
+For subsequent tests, it might be useful to incorporate different kinds of data formats, such as graphs, images with embedded text, and more complex tables. This would provide a comprehensiveassessmentofthetranslationtool'sversatilityandrobustness.'
+Translation (to Chinese):
+2023-08-13 15:44:17.935 | INFO     | translator.pdf_translator:translate_pdf:23 - 摘要
+¶¶¶
+提供的表格提供了示例数据的快照，其中包括多个个体的姓名、年龄和职业。这个测试的总体目标是确保文本和表格数据的准确翻译，保持格式、结构和数据的完整性。
+¶¶¶
+表3：一个小表格用于测试表格大小
+¶¶¶
+操作系统
+¶¶¶
+macOS Monterey
+¶¶¶
+未来建议
+¶¶¶
+对于后续的测试，将不同类型的数据格式（如图表、带有嵌入文本的图像和更复杂的表格）纳入其中可能非常有用。这将提供对翻译工具的多功能性和健壮性的全面评估。
+2023-08-13 15:44:17.941 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Location Device Operating
+System][Beijing iPhone IOS15][Shanghai Samsung Android12][NewYouk MacBook macOS
+Monterey]'
+Translation (to Chinese):
+
+2023-08-13 15:44:21.073 | INFO     | translator.pdf_translator:translate_pdf:23 - [位置 设备 操作系统][北京 iPhone IOS15][上海 三星 Android12][纽约 MacBook macOS Monterey]
+2023-08-13 15:44:21.076 | DEBUG    | book.content:set_translation:92 - [位置 设备 操作系统][北京 iPhone IOS15][上海 三星 Android12][纽约 MacBook macOS Monterey]
+2023-08-13 15:44:21.078 | ERROR    | book.content:set_translation:110 - An error occurred during table translation: 3 columns passed, passed data had 4 columns
+2023-08-13 15:44:21.080 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 15:44:21.083 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 15:44:21.256 | INFO     | translator.writer:_save_translated_book_pdf:101 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 15:54:37.689 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 15:54:37.697 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 15:54:38.173 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 15:54:38.177 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]
+2023-08-13 15:54:38.354 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]
+2023-08-13 15:54:38.358 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.Forthesakeofthoroughness,wewillinclude additionaldataandanothertabletoseehowwellthesystemcanhandleincreasedcomplexity.
+¶¶¶
+Objective
+¶¶¶
+Our main aim in creating this document is to rigorously test the capabilities of AI-driven translationtools, especiallywhen handlingdifferentdataformats. Weareparticularlyinterested in seeing how the tool manages with textual descriptions, tabular data, and more intricate content.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Observations
+¶¶¶
+Based on Table 1, we see a diverse range of professions spanning from engineering to medicine to education. It gives an idea about the versatility of our sample data and represents a cross-sectionoftheprofessionallandscape.
+¶¶¶
+Table2:Extratabletotest2table
+¶¶¶
+Discussion
+¶¶¶
+The addition of Table2 allowsus to testthe system's capacity to differentiate between multiple tablesinasingledocument.Eachtable,whilesimilarinstructure,containsdistinctdata.Itwillbe interesting to note if the translation tool can maintain this distinction without any overlaps or misinterpretations.'
+Translation (to Chinese):
+2023-08-13 15:55:13.542 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文件
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文件，用于验证OpenAI动力翻译器的效率和准确性。它包含了文本和表格内容。为了严谨起见，我们将包括额外的数据和另一个表格，以查看系统如何处理增加的复杂性。
+¶¶¶
+目标
+¶¶¶
+我们创建此文档的主要目标是对AI驱动的翻译工具的能力进行严格测试，尤其是在处理不同的数据格式时。我们特别关注工具在处理文本描述、表格数据和更复杂内容时的表现。
+¶¶¶
+表1:样本数据
+¶¶¶
+观察
+¶¶¶
+根据表1，我们可以看到涵盖了从工程到医学到教育等各种职业。它给我们提供了对样本数据多样性的了解，并代表了职业领域的一个横截面。
+¶¶¶
+表2:用于测试两个表格的额外表格
+¶¶¶
+讨论
+¶¶¶
+表2的添加使我们能够测试系统在单个文档中区分多个表格的能力。虽然每个表格的结构类似，但包含着不同的数据。有趣的是，翻译工具是否能够保持这种区别，避免任何重叠或误解。
+2023-08-13 15:55:13.549 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 15:55:18.862 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 15:55:18.866 | DEBUG    | book.content:set_translation:92 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 15:55:18.870 | ERROR    | book.content:set_translation:110 - An error occurred during table translation: Translation doesn't contain enough rows for a table.
+2023-08-13 15:55:18.874 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 15:55:23.336 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [Test1, 25, 工程师] [Test2, 30, 医生] [Test3, 28, 教师]
+2023-08-13 15:55:23.340 | DEBUG    | book.content:set_translation:92 - [姓名, 年龄, 职业] [Test1, 25, 工程师] [Test2, 30, 医生] [Test3, 28, 教师]
+2023-08-13 15:55:23.343 | ERROR    | book.content:set_translation:110 - An error occurred during table translation: Translation doesn't contain enough rows for a table.
+2023-08-13 15:55:23.346 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Summary
+¶¶¶
+The tables provided offer a snapshot of the sample data, which includes names, ages, and professions of multiple individuals. The overarching objective of this test is to ensure that both textualandtabularinformationistranslatedaccurately,preservingtheformat,structure,andthe integrityofthedata.
+¶¶¶
+Table3:Asmalltabletotesttablesize
+¶¶¶
+Operating System
+¶¶¶
+macOS Monterey
+¶¶¶
+FutureRecommendations
+¶¶¶
+For subsequent tests, it might be useful to incorporate different kinds of data formats, such as graphs, images with embedded text, and more complex tables. This would provide a comprehensiveassessmentofthetranslationtool'sversatilityandrobustness.'
+Translation (to Chinese):
+2023-08-13 15:55:37.637 | INFO     | translator.pdf_translator:translate_pdf:23 - 摘要
+¶¶¶
+提供的表格提供了样本数据的快照，其中包括多个个体的姓名、年龄和职业。这个测试的总体目标是确保文本和表格信息都能准确翻译，并保留格式、结构和数据的完整性。
+¶¶¶
+表格3：用于测试表格大小的小表格
+¶¶¶
+操作系统
+¶¶¶
+macOS Monterey
+¶¶¶
+未来建议
+¶¶¶
+对于后续的测试，可能有用的是结合不同类型的数据格式，例如含有嵌入文本的图形、图像和更复杂的表格。这将提供对翻译工具的全面评估和稳健性。
+2023-08-13 15:55:37.642 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]'
+Translation (to Chinese):
+
+2023-08-13 15:55:41.338 | INFO     | translator.pdf_translator:translate_pdf:23 - [位置, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS Monterey]
+2023-08-13 15:55:41.342 | DEBUG    | book.content:set_translation:92 - [位置, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS Monterey]
+2023-08-13 15:55:41.345 | ERROR    | book.content:set_translation:110 - An error occurred during table translation: Translation doesn't contain enough rows for a table.
+2023-08-13 15:55:41.348 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 15:55:41.352 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 15:55:41.508 | INFO     | translator.writer:_save_translated_book_pdf:101 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 15:58:57.755 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 15:58:57.760 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 15:58:57.959 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 15:58:57.964 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]
+2023-08-13 15:58:57.970 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Summary
+¶¶¶
+The table above provides a snapshot of the sample data, which includes names, ages, and professions of three individuals. The objective of this test is to ensure that both textual and tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+¶¶¶
+Table2:Extratabletotest2table'
+Translation (to Chinese):
+2023-08-13 15:59:13.180 | INFO     | translator.pdf_translator:translate_pdf:23 - 文档测试
+¶¶¶
+简介
+¶¶¶
+这是一个测试文档，旨在验证OpenAI动力翻译器的效率和准确性。它包含了文本和表格内容。
+¶¶¶
+Table1：示例数据
+¶¶¶
+总结
+¶¶¶
+上表提供了示例数据的快照，其中包括三个个人的姓名、年龄和职业。这个测试的目标是确保文本和表格信息都能准确翻译，同时保留其格式和结构。
+¶¶¶
+Table2：用于测试两个表格的附加表格
+2023-08-13 15:59:13.186 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 15:59:17.300 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布赖恩, 28, 教师]
+2023-08-13 15:59:17.304 | DEBUG    | book.content:set_translation:92 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布赖恩, 28, 教师]
+2023-08-13 15:59:17.308 | ERROR    | book.content:set_translation:110 - An error occurred during table translation: Translation doesn't contain enough rows for a table.
+2023-08-13 15:59:17.312 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 15:59:22.061 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [测试1, 25, 工程师] [测试2, 30, 医生] [测试3, 28, 教师]
+2023-08-13 15:59:22.064 | DEBUG    | book.content:set_translation:92 - [姓名, 年龄, 职业] [测试1, 25, 工程师] [测试2, 30, 医生] [测试3, 28, 教师]
+2023-08-13 15:59:22.068 | ERROR    | book.content:set_translation:110 - An error occurred during table translation: Translation doesn't contain enough rows for a table.
+2023-08-13 15:59:22.072 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 15:59:22.075 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 15:59:22.218 | INFO     | translator.writer:_save_translated_book_pdf:101 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 16:04:18.050 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 16:04:18.055 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 16:04:18.548 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 16:04:18.553 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]
+2023-08-13 16:04:18.719 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]
+2023-08-13 16:04:18.723 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.Forthesakeofthoroughness,wewillinclude additionaldataandanothertabletoseehowwellthesystemcanhandleincreasedcomplexity.
+¶¶¶
+Objective
+¶¶¶
+Our main aim in creating this document is to rigorously test the capabilities of AI-driven translationtools, especiallywhen handlingdifferentdataformats. Weareparticularlyinterested in seeing how the tool manages with textual descriptions, tabular data, and more intricate content.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Observations
+¶¶¶
+Based on Table 1, we see a diverse range of professions spanning from engineering to medicine to education. It gives an idea about the versatility of our sample data and represents a cross-sectionoftheprofessionallandscape.
+¶¶¶
+Table2:Extratabletotest2table
+¶¶¶
+Discussion
+¶¶¶
+The addition of Table2 allowsus to testthe system's capacity to differentiate between multiple tablesinasingledocument.Eachtable,whilesimilarinstructure,containsdistinctdata.Itwillbe interesting to note if the translation tool can maintain this distinction without any overlaps or misinterpretations.'
+Translation (to Chinese):
+2023-08-13 16:04:48.695 | INFO     | translator.pdf_translator:translate_pdf:23 - 文档测试
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文档，用于验证OpenAI动力翻译器的效率和准确性。它包含文本和表格内容。为了全面性，我们将包括额外的数据和另一个表格来观察系统处理增加复杂性的能力。
+¶¶¶
+目标
+¶¶¶
+我们创建这个文档的主要目的是对AI驱动的翻译工具的能力进行严格测试，尤其是在处理不同的数据格式时。我们特别关注工具在处理文本描述、表格数据和更复杂内容时的表现。
+¶¶¶
+表1：样本数据
+¶¶¶
+观察
+¶¶¶
+根据表1，我们看到各种不同的职业领域，从工程到医学到教育都有涉及。这给我们一个关于样本数据的多样性和职业景观的概念。
+¶¶¶
+表2：用于测试两个表格的额外表格
+¶¶¶
+讨论
+¶¶¶
+添加表2使我们能够测试系统在一个文档中区分多个表格的能力。每个表格在结构上相似，但包含不同的数据。有趣的是看看翻译工具是否能在不重叠或错误解读的情况下保持这种区别。
+2023-08-13 16:04:48.707 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 16:04:54.518 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 16:04:54.522 | DEBUG    | book.content:set_translation:92 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 16:04:54.524 | ERROR    | book.content:set_translation:110 - An error occurred during table translation: Translation doesn't contain enough rows for a table.
+2023-08-13 16:04:54.527 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 16:04:59.029 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [测试1, 25, 工程师] [测试2, 30, 医生] [测试3, 28, 老师]
+2023-08-13 16:04:59.034 | DEBUG    | book.content:set_translation:92 - [姓名, 年龄, 职业] [测试1, 25, 工程师] [测试2, 30, 医生] [测试3, 28, 老师]
+2023-08-13 16:04:59.038 | ERROR    | book.content:set_translation:110 - An error occurred during table translation: Translation doesn't contain enough rows for a table.
+2023-08-13 16:04:59.041 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Summary
+¶¶¶
+The tables provided offer a snapshot of the sample data, which includes names, ages, and professions of multiple individuals. The overarching objective of this test is to ensure that both textualandtabularinformationistranslatedaccurately,preservingtheformat,structure,andthe integrityofthedata.
+¶¶¶
+Table3:Asmalltabletotesttablesize
+¶¶¶
+Operating System
+¶¶¶
+macOS Monterey
+¶¶¶
+FutureRecommendations
+¶¶¶
+For subsequent tests, it might be useful to incorporate different kinds of data formats, such as graphs, images with embedded text, and more complex tables. This would provide a comprehensiveassessmentofthetranslationtool'sversatilityandrobustness.'
+Translation (to Chinese):
+2023-08-13 16:05:13.780 | INFO     | translator.pdf_translator:translate_pdf:23 - 摘要
+¶¶¶
+提供的表格展示了样本数据的快照，包括多个个体的姓名、年龄和职业。这个测试的总体目标是确保准确翻译文本和表格信息，保留格式、结构和数据的完整性。
+¶¶¶
+表格3：用于测试表格大小的小表格
+¶¶¶
+操作系统
+¶¶¶
+macOS Monterey
+¶¶¶
+未来建议
+¶¶¶
+对于后续的测试，可以考虑将不同类型的数据格式纳入，例如具有嵌入文字的图形、图像和更复杂的表格。这将全面评估翻译工具的多功能性和稳健性。
+2023-08-13 16:05:13.787 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]'
+Translation (to Chinese):
+
+2023-08-13 16:05:17.666 | INFO     | translator.pdf_translator:translate_pdf:23 - [位置, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS Monterey]
+2023-08-13 16:05:17.670 | DEBUG    | book.content:set_translation:92 - [位置, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS Monterey]
+2023-08-13 16:05:17.673 | ERROR    | book.content:set_translation:110 - An error occurred during table translation: Translation doesn't contain enough rows for a table.
+2023-08-13 16:05:17.677 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 16:05:17.680 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 16:05:17.827 | INFO     | translator.writer:_save_translated_book_pdf:101 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 16:09:11.607 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 16:09:11.612 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 16:09:12.080 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 16:09:12.085 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]
+2023-08-13 16:09:12.278 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]
+2023-08-13 16:09:12.282 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.Forthesakeofthoroughness,wewillinclude additionaldataandanothertabletoseehowwellthesystemcanhandleincreasedcomplexity.
+¶¶¶
+Objective
+¶¶¶
+Our main aim in creating this document is to rigorously test the capabilities of AI-driven translationtools, especiallywhen handlingdifferentdataformats. Weareparticularlyinterested in seeing how the tool manages with textual descriptions, tabular data, and more intricate content.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Observations
+¶¶¶
+Based on Table 1, we see a diverse range of professions spanning from engineering to medicine to education. It gives an idea about the versatility of our sample data and represents a cross-sectionoftheprofessionallandscape.
+¶¶¶
+Table2:Extratabletotest2table
+¶¶¶
+Discussion
+¶¶¶
+The addition of Table2 allowsus to testthe system's capacity to differentiate between multiple tablesinasingledocument.Eachtable,whilesimilarinstructure,containsdistinctdata.Itwillbe interesting to note if the translation tool can maintain this distinction without any overlaps or misinterpretations.'
+Translation (to Chinese):
+2023-08-13 16:09:41.514 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文档，用于验证OpenAI动力翻译器的效率和准确性。它包含了文本和表格内容。为了全面性，我们将包括额外的数据和另一个表格，以查看系统如何处理更复杂的内容。
+¶¶¶
+目标
+¶¶¶
+我们创建这个文档的主要目的是严格测试AI驱动的翻译工具的能力，特别是在处理不同的数据格式时。我们特别关注工具在处理文本描述、表格数据和更复杂内容时的表现。
+¶¶¶
+表1：样本数据
+¶¶¶
+观察
+¶¶¶
+根据表1，我们可以看到涵盖了从工程到医学再到教育等各种不同职业。它展示了我们样本数据的多样性，代表了职业领域的横截面。
+¶¶¶
+表2：用于测试两个表格的额外表格
+¶¶¶
+讨论
+¶¶¶
+增加表2使我们能够测试系统在单个文档中区分多个表格的能力。每个表格在结构上相似，但包含不同的数据。我们将注意是否翻译工具能够保持这种区分，避免任何重叠或误解。
+2023-08-13 16:09:41.523 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 16:09:45.886 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 16:09:45.889 | DEBUG    | book.content:set_translation:93 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 16:09:45.892 | DEBUG    | book.content:set_translation:107 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-13 16:09:45.906 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 16:09:50.089 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [测试1, 25, 工程师] [测试2, 30, 医生] [测试3, 28, 教师]
+2023-08-13 16:09:50.092 | DEBUG    | book.content:set_translation:93 - [姓名, 年龄, 职业] [测试1, 25, 工程师] [测试2, 30, 医生] [测试3, 28, 教师]
+2023-08-13 16:09:50.097 | DEBUG    | book.content:set_translation:107 -     姓名  年龄   职业
+0  测试1  25  工程师
+1  测试2  30   医生
+2  测试3  28   教师
+2023-08-13 16:09:50.106 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Summary
+¶¶¶
+The tables provided offer a snapshot of the sample data, which includes names, ages, and professions of multiple individuals. The overarching objective of this test is to ensure that both textualandtabularinformationistranslatedaccurately,preservingtheformat,structure,andthe integrityofthedata.
+¶¶¶
+Table3:Asmalltabletotesttablesize
+¶¶¶
+Operating System
+¶¶¶
+macOS Monterey
+¶¶¶
+FutureRecommendations
+¶¶¶
+For subsequent tests, it might be useful to incorporate different kinds of data formats, such as graphs, images with embedded text, and more complex tables. This would provide a comprehensiveassessmentofthetranslationtool'sversatilityandrobustness.'
+Translation (to Chinese):
+2023-08-13 16:10:03.280 | INFO     | translator.pdf_translator:translate_pdf:23 - 摘要
+¶¶¶
+提供的表格展示了样本数据的快照，其中包括多个人的姓名、年龄和职业。本次测试的首要目标是确保对文本和表格信息进行准确翻译，保留格式、结构和数据的完整性。
+¶¶¶
+表3：一个用于测试表格大小的小表格
+¶¶¶
+操作系统
+¶¶¶
+macOS Monterey
+¶¶¶
+未来的建议
+¶¶¶
+对于后续的测试，可以考虑结合不同类型的数据格式，如图表、带有嵌入文本的图像和更复杂的表格。这将全面评估翻译工具的多样性和健壮性。
+2023-08-13 16:10:03.285 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]'
+Translation (to Chinese):
+
+2023-08-13 16:10:07.932 | INFO     | translator.pdf_translator:translate_pdf:23 - [地点, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS
+Monterey]
+2023-08-13 16:10:07.935 | DEBUG    | book.content:set_translation:93 - [地点, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS
+Monterey]
+2023-08-13 16:10:07.938 | DEBUG    | book.content:set_translation:107 -    地点       设备             操作系统
+0  北京   iPhone            IOS15
+1  上海       三星        Android12
+2  纽约  MacBook  macOS\nMonterey
+2023-08-13 16:10:07.948 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 16:10:07.952 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 16:10:08.116 | INFO     | translator.writer:_save_translated_book_pdf:101 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 16:20:03.047 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 16:20:03.052 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 16:20:03.642 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 16:20:03.647 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]
+2023-08-13 16:20:03.839 | DEBUG    | translator.pdf_parser:parse_pdf:94 - [table]
+[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]
+2023-08-13 16:20:03.842 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.Forthesakeofthoroughness,wewillinclude additionaldataandanothertabletoseehowwellthesystemcanhandleincreasedcomplexity.
+¶¶¶
+Objective
+¶¶¶
+Our main aim in creating this document is to rigorously test the capabilities of AI-driven translationtools, especiallywhen handlingdifferentdataformats. Weareparticularlyinterested in seeing how the tool manages with textual descriptions, tabular data, and more intricate content.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Observations
+¶¶¶
+Based on Table 1, we see a diverse range of professions spanning from engineering to medicine to education. It gives an idea about the versatility of our sample data and represents a cross-sectionoftheprofessionallandscape.
+¶¶¶
+Table2:Extratabletotest2table
+¶¶¶
+Discussion
+¶¶¶
+The addition of Table2 allowsus to testthe system's capacity to differentiate between multiple tablesinasingledocument.Eachtable,whilesimilarinstructure,containsdistinctdata.Itwillbe interesting to note if the translation tool can maintain this distinction without any overlaps or misinterpretations.'
+Translation (to Chinese):
+2023-08-13 16:20:36.179 | INFO     | translator.pdf_translator:translate_pdf:23 - 文档测试
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文档，用于验证OpenAI动力翻译器的效率和准确性。它包含文本和表格内容。出于彻底性的考虑，我们将包括更多的数据和另一个表格，以测试系统处理增加复杂性的能力。
+¶¶¶
+目标
+¶¶¶
+我们创建这个文档的主要目的是对基于AI的翻译工具的能力进行严格测试，特别是处理不同数据格式时的能力。我们特别关注翻译工具在处理文本描述、表格数据和更复杂内容时的表现。
+¶¶¶
+表格1：样本数据
+¶¶¶
+观察
+¶¶¶
+根据表格1，我们可以看到涵盖了从工程师到医学到教育等各种不同职业。它给出了我们样本数据的多样性，并代表了职业领域的一个横截面。
+¶¶¶
+表格2：用于测试两个表格的额外表格
+¶¶¶
+讨论
+¶¶¶
+添加表格2使我们能够测试系统区分单个文档中的多个表格的能力。每个表格在结构上相似，但包含不同的数据。有趣的是看看翻译工具是否能够在没有任何重叠或误解的情况下保持这种区别。
+2023-08-13 16:20:36.186 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 16:20:40.313 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 16:20:40.315 | DEBUG    | book.content:set_translation:93 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 16:20:40.320 | DEBUG    | book.content:set_translation:107 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-13 16:20:40.342 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 16:20:46.064 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [测试1, 25, 工程师] [测试2, 30, 医生] [测试3, 28, 教师]
+2023-08-13 16:20:46.068 | DEBUG    | book.content:set_translation:93 - [姓名, 年龄, 职业] [测试1, 25, 工程师] [测试2, 30, 医生] [测试3, 28, 教师]
+2023-08-13 16:20:46.073 | DEBUG    | book.content:set_translation:107 -     姓名  年龄   职业
+0  测试1  25  工程师
+1  测试2  30   医生
+2  测试3  28   教师
+2023-08-13 16:20:46.082 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Summary
+¶¶¶
+The tables provided offer a snapshot of the sample data, which includes names, ages, and professions of multiple individuals. The overarching objective of this test is to ensure that both textualandtabularinformationistranslatedaccurately,preservingtheformat,structure,andthe integrityofthedata.
+¶¶¶
+Table3:Asmalltabletotesttablesize
+¶¶¶
+FutureRecommendations
+¶¶¶
+For subsequent tests, it might be useful to incorporate different kinds of data formats, such as graphs, images with embedded text, and more complex tables. This would provide a comprehensiveassessmentofthetranslationtool'sversatilityandrobustness.'
+Translation (to Chinese):
+2023-08-13 16:21:03.007 | INFO     | translator.pdf_translator:translate_pdf:23 - 摘要
+¶¶¶
+提供的表格提供了示例数据的快照，其中包括多个个体的姓名、年龄和职业。本次测试的总体目标是确保准确翻译文字和表格信息，保留格式、结构和数据的完整性。
+¶¶¶
+表3：用于测试表格大小的小表格
+¶¶¶
+未来建议
+¶¶¶
+对于后续的测试，将不同类型的数据格式纳入其中可能会很有用，比如带有嵌入文本的图像和更复杂的表格。这将提供对翻译工具的全面评估，以便测试其多功能性和稳健性。
+2023-08-13 16:21:03.012 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]'
+Translation (to Chinese):
+
+2023-08-13 16:21:06.273 | INFO     | translator.pdf_translator:translate_pdf:23 - [地点, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS Monterey]
+2023-08-13 16:21:06.276 | DEBUG    | book.content:set_translation:93 - [地点, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS Monterey]
+2023-08-13 16:21:06.280 | DEBUG    | book.content:set_translation:107 -    地点       设备            操作系统
+0  北京   iPhone           IOS15
+1  上海       三星       Android12
+2  纽约  MacBook  macOS Monterey
+2023-08-13 16:21:06.291 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 16:21:06.294 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 16:21:06.477 | INFO     | translator.writer:_save_translated_book_pdf:101 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 16:39:29.485 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 16:39:29.490 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 16:39:30.095 | DEBUG    | translator.pdf_parser:parse_pdf:98 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 16:39:30.100 | DEBUG    | translator.pdf_parser:parse_pdf:98 - [table]
+[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]
+2023-08-13 16:39:30.103 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Summary
+¶¶¶
+The table above provides a snapshot of the sample data, which includes names, ages, and professions of three individuals. The objective of this test is to ensure that both textual and tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+¶¶¶
+Table2:Extratabletotest2table'
+Translation (to Chinese):
+2023-08-13 16:39:44.588 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文件
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文件，用于验证OpenAI动力翻译器的效率和准确性。它包括文本和表格内容。
+¶¶¶
+表1：示例数据
+¶¶¶
+摘要
+¶¶¶
+上述表格提供了示例数据的快照，其中包括三个人的姓名、年龄和职业。本测试的目的是确保文本和表格信息都能准确翻译，并保留其格式和结构。
+¶¶¶
+表2：测试第2个表的额外表格
+2023-08-13 16:39:44.594 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 16:41:36.328 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 16:41:36.332 | DEBUG    | book.content:set_translation:95 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 16:41:36.336 | DEBUG    | book.content:set_translation:109 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-13 16:41:36.352 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 16:41:39.766 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [Test1, 25, 工程师] [Test2, 30, 医生] [Test3, 28, 教师]
+2023-08-13 16:41:39.770 | DEBUG    | book.content:set_translation:95 - [姓名, 年龄, 职业] [Test1, 25, 工程师] [Test2, 30, 医生] [Test3, 28, 教师]
+2023-08-13 16:41:39.774 | DEBUG    | book.content:set_translation:109 -       姓名  年龄   职业
+0  Test1  25  工程师
+1  Test2  30   医生
+2  Test3  28   教师
+2023-08-13 16:41:39.784 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable.pdf
+2023-08-13 16:41:39.786 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 16:41:39.940 | INFO     | translator.writer:_save_translated_book_pdf:112 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\1a9e0f883181a4b57f0ab1e837f6cc900b0bc71c\twotable_translated.pdf
+2023-08-13 16:45:27.089 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Test Data... | Size: None
+2023-08-13 16:45:27.093 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: This dataset contains two test samples provided by... | Size: None
+2023-08-13 16:45:27.096 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Text testing... | Size: None
+2023-08-13 16:45:27.098 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: The quick brown fox jumps over the lazy dog. This ... | Size: None
+2023-08-13 16:45:27.100 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table Testing... | Size: None
+2023-08-13 16:45:27.109 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-13 16:45:27.173 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+¶¶¶
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI. These samples include a markdown table and an English text passage, which can be used to test an English-to-Chinese translation software supporting both text and table formats.
+¶¶¶
+Text testing
+¶¶¶
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related tools. In addition to English, there are pangrams in many other languages. Some pangrams are more difficult to construct due to the unique characteristics of the language.
+¶¶¶
+Table Testing'
+Translation (to Chinese):
+2023-08-13 17:07:42.152 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Test Data... | Size: None
+2023-08-13 17:07:42.156 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: This dataset contains two test samples provided by... | Size: None
+2023-08-13 17:07:42.158 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Text testing... | Size: None
+2023-08-13 17:07:42.160 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: The quick brown fox jumps over the lazy dog. This ... | Size: None
+2023-08-13 17:07:42.164 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table Testing... | Size: None
+2023-08-13 17:07:42.180 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-13 17:07:42.276 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+¶¶¶
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI. These samples include a markdown table and an English text passage, which can be used to test an English-to-Chinese translation software supporting both text and table formats.
+¶¶¶
+Text testing
+¶¶¶
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related tools. In addition to English, there are pangrams in many other languages. Some pangrams are more difficult to construct due to the unique characteristics of the language.
+¶¶¶
+Table Testing'
+Translation (to Chinese):
+2023-08-13 17:07:58.013 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+¶¶¶
+这个数据集包含了两个测试样本，由ChatGPT提供，它是一个由OpenAI开发的AI语言模型。这些样本包括一个Markdown表格和一个英文文本段落，用于测试支持文本和表格格式的英汉翻译软件。
+¶¶¶
+文本测试
+¶¶¶
+敏捷的棕色狐狸跳过了懒狗。这个句子包含了英文字母表中的每个字母。句子全集经常被用来测试字体、键盘和其他文本相关的工具。除了英语，很多其他语言也有句子全集。由于语言的独特特点，有些句子全集更难构建。
+¶¶¶
+表格测试
+2023-08-13 17:07:58.019 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Chinese):
+
+2023-08-13 17:08:08.669 | INFO     | translator.pdf_translator:translate_pdf:23 - [水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-13 17:08:08.673 | DEBUG    | book.content:set_translation:95 - [水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-13 17:08:08.678 | DEBUG    | book.content:set_translation:109 -     水果  颜色 价格 (美元)
+0   苹果  红色    1.20
+1   香蕉  黄色    0.50
+2   橙子  橙色    0.80
+3   草莓  红色    2.50
+4   蓝莓  蓝色    3.00
+5  猕猴桃  绿色    1.00
+6   芒果  橙色    1.50
+7   葡萄  紫色    2.00
+2023-08-13 17:08:08.691 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: ''
+Translation (to Chinese):
+2023-08-13 17:08:10.732 | INFO     | translator.pdf_translator:translate_pdf:23 - 文本：''
+翻译（到中文）：''
+2023-08-13 17:08:10.736 | INFO     | translator.writer:_save_translated_book_markdown:119 - pdf_file_path: tests/test.pdf
+2023-08-13 17:08:10.739 | INFO     | translator.writer:_save_translated_book_markdown:120 - 开始翻译: tests/test_translated.md
+2023-08-13 17:08:10.744 | INFO     | translator.writer:_save_translated_book_markdown:144 - 翻译完成: tests/test_translated.md
+2023-08-13 17:36:59.118 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Test Data... | Size: 26.427578100000005
+2023-08-13 17:36:59.139 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: This dataset contains two test samples provided by... | Size: 10.410864099999912
+2023-08-13 17:36:59.141 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Text testing... | Size: 16.817549699999972
+2023-08-13 17:36:59.144 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: The quick brown fox jumps over the lazy dog. This ... | Size: 10.410864099999912
+2023-08-13 17:36:59.148 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table Testing... | Size: 16.817549699999972
+2023-08-13 17:36:59.159 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-13 17:36:59.228 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+¶¶¶
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI. These samples include a markdown table and an English text passage, which can be used to test an English-to-Chinese translation software supporting both text and table formats.
+¶¶¶
+Text testing
+¶¶¶
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related tools. In addition to English, there are pangrams in many other languages. Some pangrams are more difficult to construct due to the unique characteristics of the language.
+¶¶¶
+Table Testing'
+Translation (to Chinese):
+2023-08-13 17:37:17.029 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+¶¶¶
+此数据集包含由OpenAI的ChatGPT提供的两个测试样本，ChatGPT是一个AI语言模型。这些样本包括一个Markdown表格和一个英文文本段落，可用于测试同时支持文本和表格格式的英译中翻译软件。
+¶¶¶
+文本测试
+¶¶¶
+快速的棕色狐狸跳过懒狗。这个句子中至少包含了英文字母表的每个字母。句子通常用于测试字体、键盘和其他与文本相关的工具。除了英文之外，还有很多其他语言的句子。由于语言的独特特点，有些句子的构造更加困难。
+¶¶¶
+表格测试
+2023-08-13 17:37:17.034 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Chinese):
+
+2023-08-13 17:37:28.072 | INFO     | translator.pdf_translator:translate_pdf:23 - [水果, 颜色, 价格 (USD)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [奇异果, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-13 17:37:28.075 | DEBUG    | book.content:set_translation:95 - [水果, 颜色, 价格 (USD)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [奇异果, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-13 17:37:28.078 | DEBUG    | book.content:set_translation:109 -     水果  颜色 价格 (USD)
+0   苹果  红色     1.20
+1   香蕉  黄色     0.50
+2   橙子  橙色     0.80
+3   草莓  红色     2.50
+4   蓝莓  蓝色     3.00
+5  奇异果  绿色     1.00
+6   芒果  橙色     1.50
+7   葡萄  紫色     2.00
+2023-08-13 17:37:28.099 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: ''
+Translation (to Chinese):
+2023-08-13 17:37:30.351 | INFO     | translator.pdf_translator:translate_pdf:23 - 文本：''
+翻译（到中文）：''
+2023-08-13 17:37:30.354 | INFO     | translator.writer:_save_translated_book_markdown:119 - pdf_file_path: tests/test.pdf
+2023-08-13 17:37:30.356 | INFO     | translator.writer:_save_translated_book_markdown:120 - 开始翻译: tests/test_translated.md
+2023-08-13 17:37:30.358 | INFO     | translator.writer:_save_translated_book_markdown:144 - 翻译完成: tests/test_translated.md
+2023-08-13 17:38:33.679 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-13 17:38:33.683 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 17:38:33.868 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Test Document... | Size: 15.950000000000045
+2023-08-13 17:38:33.871 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Introduction... | Size: 14.050000000000068
+2023-08-13 17:38:33.874 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: This is a test document created to validate the ef... | Size: 10.450000000000045
+2023-08-13 17:38:33.876 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table1:SampleData... | Size: 10.449999999999932
+2023-08-13 17:38:33.879 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Summary... | Size: 14.050000000000068
+2023-08-13 17:38:33.882 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: The table above provides a snapshot of the sample ... | Size: 10.449999999999989
+2023-08-13 17:38:33.887 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 17:38:33.890 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Summary
+¶¶¶
+The table above provides a snapshot of the sample data, which includes names, ages, and professions of three individuals. The objective of this test is to ensure that both textual and tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Chinese):
+2023-08-13 17:38:46.688 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文档，旨在验证OpenAI提供的翻译器的效率和准确性。它包含了文本和表格内容。
+¶¶¶
+表格1：样本数据
+¶¶¶
+总结
+¶¶¶
+上面的表格提供了样本数据的快照，其中包括了三个人的姓名、年龄和职业。这个测试的目的是确保文本和表格信息都能准确翻译，并保留格式和结构。
+2023-08-13 17:38:46.693 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 17:38:51.056 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 17:38:51.059 | DEBUG    | book.content:set_translation:95 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 17:38:51.064 | DEBUG    | book.content:set_translation:109 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-13 17:38:51.077 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-13 17:38:51.080 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-13 17:38:51.230 | INFO     | translator.writer:_save_translated_book_pdf:112 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-13 17:39:40.272 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 17:39:40.275 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 17:39:40.712 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Test Document... | Size: 15.950000000000045
+2023-08-13 17:39:40.714 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Introduction... | Size: 14.050000000000068
+2023-08-13 17:39:40.716 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: This is a test document created to validate the ef... | Size: 10.450000000000045
+2023-08-13 17:39:40.718 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Objective... | Size: 14.050000000000068
+2023-08-13 17:39:40.721 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Our main aim in creating this document is to rigor... | Size: 10.450000000000045
+2023-08-13 17:39:40.724 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table1:SampleData... | Size: 10.449999999999932
+2023-08-13 17:39:40.727 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Observations... | Size: 14.050000000000011
+2023-08-13 17:39:40.730 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Based on Table 1, we see a diverse range of profes... | Size: 10.449999999999989
+2023-08-13 17:39:40.732 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table2:Extratabletotest2table... | Size: 10.449999999999932
+2023-08-13 17:39:40.734 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Discussion... | Size: 14.050000000000068
+2023-08-13 17:39:40.735 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: The addition of Table2 allowsus to testthe system'... | Size: 10.450000000000045
+2023-08-13 17:39:40.742 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 17:39:40.745 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]
+2023-08-13 17:39:40.911 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Summary... | Size: 14.050000000000068
+2023-08-13 17:39:40.914 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: The tables provided offer a snapshot of the sample... | Size: 10.450000000000045
+2023-08-13 17:39:40.917 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table3:Asmalltabletotesttablesize... | Size: 10.449999999999932
+2023-08-13 17:39:40.920 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: FutureRecommendations... | Size: 14.050000000000011
+2023-08-13 17:39:40.924 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: For subsequent tests, it might be useful to incorp... | Size: 10.449999999999989
+2023-08-13 17:39:40.928 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]
+2023-08-13 17:39:40.931 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.Forthesakeofthoroughness,wewillinclude additionaldataandanothertabletoseehowwellthesystemcanhandleincreasedcomplexity.
+¶¶¶
+Objective
+¶¶¶
+Our main aim in creating this document is to rigorously test the capabilities of AI-driven translationtools, especiallywhen handlingdifferentdataformats. Weareparticularlyinterested in seeing how the tool manages with textual descriptions, tabular data, and more intricate content.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Observations
+¶¶¶
+Based on Table 1, we see a diverse range of professions spanning from engineering to medicine to education. It gives an idea about the versatility of our sample data and represents a cross-sectionoftheprofessionallandscape.
+¶¶¶
+Table2:Extratabletotest2table
+¶¶¶
+Discussion
+¶¶¶
+The addition of Table2 allowsus to testthe system's capacity to differentiate between multiple tablesinasingledocument.Eachtable,whilesimilarinstructure,containsdistinctdata.Itwillbe interesting to note if the translation tool can maintain this distinction without any overlaps or misinterpretations.'
+Translation (to Chinese):
+2023-08-13 17:40:10.395 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文档，旨在验证OpenAI驱动的翻译器的效率和准确性。它包含了文本和表格内容。为了全面测试，我们将包括额外的数据和另一个表格，以了解系统在处理增加复杂性时的表现。
+¶¶¶
+目标
+¶¶¶
+我们创建这个文档的主要目标是对AI驱动的翻译工具的能力进行严密测试，特别是在处理不同的数据格式时。我们特别关注工具在处理文本描述、表格数据和更复杂内容方面的表现。
+¶¶¶
+表1：样本数据
+¶¶¶
+观察
+¶¶¶
+根据表1，我们可以看到涵盖了从工程、医学到教育等各种职业。它给我们提供了关于样本数据的多样性，并代表了职业领域的一个横截面。
+¶¶¶
+表2：用于测试两个表格的额外表格
+¶¶¶
+讨论
+¶¶¶
+添加表2让我们可以测试系统区分单个文档中的多个表格的能力。每个表格在结构上虽然相似，但包含不同的数据。非常有趣的是看看翻译工具是否能够保持这种区分，避免任何重叠或错误解读。
+2023-08-13 17:40:10.402 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 17:40:15.644 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布赖恩, 28, 教师]
+2023-08-13 17:40:15.647 | DEBUG    | book.content:set_translation:95 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布赖恩, 28, 教师]
+2023-08-13 17:40:15.650 | DEBUG    | book.content:set_translation:109 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布赖恩  28   教师
+2023-08-13 17:40:15.659 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 17:40:19.052 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [测试1, 25, 工程师] [测试2, 30, 医生] [测试3, 28, 教师]
+2023-08-13 17:40:19.055 | DEBUG    | book.content:set_translation:95 - [姓名, 年龄, 职业] [测试1, 25, 工程师] [测试2, 30, 医生] [测试3, 28, 教师]
+2023-08-13 17:40:19.058 | DEBUG    | book.content:set_translation:109 -     姓名  年龄   职业
+0  测试1  25  工程师
+1  测试2  30   医生
+2  测试3  28   教师
+2023-08-13 17:40:19.073 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Summary
+¶¶¶
+The tables provided offer a snapshot of the sample data, which includes names, ages, and professions of multiple individuals. The overarching objective of this test is to ensure that both textualandtabularinformationistranslatedaccurately,preservingtheformat,structure,andthe integrityofthedata.
+¶¶¶
+Table3:Asmalltabletotesttablesize
+¶¶¶
+FutureRecommendations
+¶¶¶
+For subsequent tests, it might be useful to incorporate different kinds of data formats, such as graphs, images with embedded text, and more complex tables. This would provide a comprehensiveassessmentofthetranslationtool'sversatilityandrobustness.'
+Translation (to Chinese):
+2023-08-13 17:40:31.719 | INFO     | translator.pdf_translator:translate_pdf:23 - 摘要
+¶¶¶
+提供的表格提供了样本数据的快照，包括多个个体的姓名、年龄和职业信息。本次测试的总体目标是确保文本和表格信息都被准确地翻译，保留格式、结构和数据的完整性。
+¶¶¶
+表3：一个小表格用于测试表格大小
+¶¶¶
+未来的建议
+¶¶¶
+对于后续的测试，将不同类型的数据格式纳入考虑，如图表、包含文字的图像和更复杂的表格，可能会更有用。这将全面评估翻译工具的多功能性和鲁棒性。
+2023-08-13 17:40:31.725 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]'
+Translation (to Chinese):
+
+2023-08-13 17:40:35.007 | INFO     | translator.pdf_translator:translate_pdf:23 - [位置, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS Monterey]
+2023-08-13 17:40:35.010 | DEBUG    | book.content:set_translation:95 - [位置, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS Monterey]
+2023-08-13 17:40:35.013 | DEBUG    | book.content:set_translation:109 -    位置       设备            操作系统
+0  北京   iPhone           IOS15
+1  上海       三星       Android12
+2  纽约  MacBook  macOS Monterey
+2023-08-13 17:40:35.021 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 17:40:35.023 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 17:40:35.298 | INFO     | translator.writer:_save_translated_book_pdf:112 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 17:41:11.674 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 17:41:11.677 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Japanese
+2023-08-13 17:41:12.128 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Test Document... | Size: 15.950000000000045
+2023-08-13 17:41:12.130 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Introduction... | Size: 14.050000000000068
+2023-08-13 17:41:12.133 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: This is a test document created to validate the ef... | Size: 10.450000000000045
+2023-08-13 17:41:12.135 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Objective... | Size: 14.050000000000068
+2023-08-13 17:41:12.139 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Our main aim in creating this document is to rigor... | Size: 10.450000000000045
+2023-08-13 17:41:12.142 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table1:SampleData... | Size: 10.449999999999932
+2023-08-13 17:41:12.146 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Observations... | Size: 14.050000000000011
+2023-08-13 17:41:12.150 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Based on Table 1, we see a diverse range of profes... | Size: 10.449999999999989
+2023-08-13 17:41:12.152 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table2:Extratabletotest2table... | Size: 10.449999999999932
+2023-08-13 17:41:12.155 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Discussion... | Size: 14.050000000000068
+2023-08-13 17:41:12.157 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: The addition of Table2 allowsus to testthe system'... | Size: 10.450000000000045
+2023-08-13 17:41:12.163 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 17:41:12.166 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]
+2023-08-13 17:41:12.323 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Summary... | Size: 14.050000000000068
+2023-08-13 17:41:12.327 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: The tables provided offer a snapshot of the sample... | Size: 10.450000000000045
+2023-08-13 17:41:12.332 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table3:Asmalltabletotesttablesize... | Size: 10.449999999999932
+2023-08-13 17:41:12.336 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: FutureRecommendations... | Size: 14.050000000000011
+2023-08-13 17:41:12.341 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: For subsequent tests, it might be useful to incorp... | Size: 10.449999999999989
+2023-08-13 17:41:12.344 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]
+2023-08-13 17:41:12.348 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.Forthesakeofthoroughness,wewillinclude additionaldataandanothertabletoseehowwellthesystemcanhandleincreasedcomplexity.
+¶¶¶
+Objective
+¶¶¶
+Our main aim in creating this document is to rigorously test the capabilities of AI-driven translationtools, especiallywhen handlingdifferentdataformats. Weareparticularlyinterested in seeing how the tool manages with textual descriptions, tabular data, and more intricate content.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Observations
+¶¶¶
+Based on Table 1, we see a diverse range of professions spanning from engineering to medicine to education. It gives an idea about the versatility of our sample data and represents a cross-sectionoftheprofessionallandscape.
+¶¶¶
+Table2:Extratabletotest2table
+¶¶¶
+Discussion
+¶¶¶
+The addition of Table2 allowsus to testthe system's capacity to differentiate between multiple tablesinasingledocument.Eachtable,whilesimilarinstructure,containsdistinctdata.Itwillbe interesting to note if the translation tool can maintain this distinction without any overlaps or misinterpretations.'
+Translation (to Japanese):
+2023-08-13 17:41:57.683 | INFO     | translator.pdf_translator:translate_pdf:23 - テストドキュメント
+¶¶¶
+紹介
+¶¶¶
+これは、OpenAIパワードトランスレーターの効率と正確性を検証するために作成されたテストドキュメントです。テキストとテーブルのコンテンツの両方で構成されています。徹底性のため、追加のデータと別のテーブルも含めて、システムが複雑性の増加にどれくらい対応できるかを確認します。
+¶¶¶
+目的
+¶¶¶
+このドキュメントを作成する主な目的は、AI駆動の翻訳ツールの能力を厳密にテストすることです、特にさまざまなデータ形式を扱う場合に。テキストの説明、表形式データ、より複雑なコンテンツをどのように処理するかを特に興味深く見ています。
+¶¶¶
+テーブル1: サンプルデータ
+¶¶¶
+観察
+¶¶¶
+テーブル1に基づいて、エンジニアリングから医療、教育まで多岐にわたる職業の幅広さが見て取れます。これは、サンプルデータの多様性を示し、職業の横断面を表しています。
+¶¶¶
+テーブル2: 2つのテーブルをテストするための追加テーブル
+¶¶¶
+議論
+¶¶¶
+テーブル2の追加により、システムが単一のドキュメント内で複数のテーブルを区別する能力をテストすることができます。各テーブルは構造は似ていますが、異なるデータを含んでいます。翻訳ツールがこの区別を正確に保持できるかどうか、重なりや誤解釈なしに維持できるかを注目することが興味深いでしょう。
+2023-08-13 17:41:57.690 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Japanese):
+
+2023-08-13 17:42:02.870 | INFO     | translator.pdf_translator:translate_pdf:23 - [名前, 年齢, 職業] [ジョン, 25, エンジニア] [アンナ, 30, 医者] [ブライアン, 28, 教師]
+2023-08-13 17:42:02.874 | DEBUG    | book.content:set_translation:95 - [名前, 年齢, 職業] [ジョン, 25, エンジニア] [アンナ, 30, 医者] [ブライアン, 28, 教師]
+2023-08-13 17:42:02.877 | DEBUG    | book.content:set_translation:109 -       名前  年齢     職業
+0    ジョン  25  エンジニア
+1    アンナ  30     医者
+2  ブライアン  28     教師
+2023-08-13 17:42:02.887 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]'
+Translation (to Japanese):
+
+2023-08-13 17:42:07.025 | INFO     | translator.pdf_translator:translate_pdf:23 - [名前、年齢、職業] [テスト1、25、エンジニア] [テスト2、30、医者] [テスト3、28、教師]
+2023-08-13 17:42:07.028 | DEBUG    | book.content:set_translation:95 - [名前、年齢、職業] [テスト1、25、エンジニア] [テスト2、30、医者] [テスト3、28、教師]
+2023-08-13 17:42:07.033 | DEBUG    | book.content:set_translation:109 -         名前、年齢、職業
+0  テスト1、25、エンジニア
+1     テスト2、30、医者
+2     テスト3、28、教師
+2023-08-13 17:42:07.041 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Summary
+¶¶¶
+The tables provided offer a snapshot of the sample data, which includes names, ages, and professions of multiple individuals. The overarching objective of this test is to ensure that both textualandtabularinformationistranslatedaccurately,preservingtheformat,structure,andthe integrityofthedata.
+¶¶¶
+Table3:Asmalltabletotesttablesize
+¶¶¶
+FutureRecommendations
+¶¶¶
+For subsequent tests, it might be useful to incorporate different kinds of data formats, such as graphs, images with embedded text, and more complex tables. This would provide a comprehensiveassessmentofthetranslationtool'sversatilityandrobustness.'
+Translation (to Japanese):
+2023-08-13 17:42:26.500 | INFO     | translator.pdf_translator:translate_pdf:23 - サマリー
+¶¶¶
+提供されたテーブルは、複数の個人の名前、年齢、職業を含むサンプルデータのスナップショットを提供しています。このテストの主な目的は、テキストとテーブルの情報を正確に翻訳し、形式、構造、データの完全性を保持することです。
+¶¶¶
+テーブル3：テーブルサイズをテストするための小さなテーブル
+¶¶¶
+将来の推奨事項
+¶¶¶
+次のテストでは、グラフ、テキストが埋め込まれた画像、より複雑なテーブルなど、さまざまな種類のデータ形式を組み込むことが有用かもしれません。これにより、翻訳ツールの多用途性と強固さを包括的に評価できます。
+2023-08-13 17:42:26.505 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]'
+Translation (to Japanese):
+
+2023-08-13 17:42:31.539 | INFO     | translator.pdf_translator:translate_pdf:23 - [場所、デバイス、オペレーティングシステム] [北京、iPhone、IOS15] [上海、Samsung、Android12] [ニューヨーク、MacBook、macOS Monterey]
+2023-08-13 17:42:31.542 | DEBUG    | book.content:set_translation:95 - [場所、デバイス、オペレーティングシステム] [北京、iPhone、IOS15] [上海、Samsung、Android12] [ニューヨーク、MacBook、macOS Monterey]
+2023-08-13 17:42:31.547 | DEBUG    | book.content:set_translation:109 -             場所、デバイス、オペレーティングシステム
+0                北京、iPhone、IOS15
+1           上海、Samsung、Android12
+2  ニューヨーク、MacBook、macOS Monterey
+2023-08-13 17:42:31.553 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 17:42:31.558 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 17:42:31.700 | INFO     | translator.writer:_save_translated_book_pdf:112 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 17:46:51.768 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 17:46:51.773 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Japanese
+2023-08-13 17:46:52.216 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Test Document... | Size: 15.950000000000045
+2023-08-13 17:46:52.220 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Introduction... | Size: 14.050000000000068
+2023-08-13 17:46:52.222 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: This is a test document created to validate the ef... | Size: 10.450000000000045
+2023-08-13 17:46:52.224 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Objective... | Size: 14.050000000000068
+2023-08-13 17:46:52.228 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Our main aim in creating this document is to rigor... | Size: 10.450000000000045
+2023-08-13 17:46:52.231 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table1:SampleData... | Size: 10.449999999999932
+2023-08-13 17:46:52.236 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Observations... | Size: 14.050000000000011
+2023-08-13 17:46:52.240 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Based on Table 1, we see a diverse range of profes... | Size: 10.449999999999989
+2023-08-13 17:46:52.243 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table2:Extratabletotest2table... | Size: 10.449999999999932
+2023-08-13 17:46:52.246 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Discussion... | Size: 14.050000000000068
+2023-08-13 17:46:52.249 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: The addition of Table2 allowsus to testthe system'... | Size: 10.450000000000045
+2023-08-13 17:46:52.254 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 17:46:52.258 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]
+2023-08-13 17:46:52.425 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Summary... | Size: 14.050000000000068
+2023-08-13 17:46:52.429 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: The tables provided offer a snapshot of the sample... | Size: 10.450000000000045
+2023-08-13 17:46:52.432 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table3:Asmalltabletotesttablesize... | Size: 10.449999999999932
+2023-08-13 17:46:52.435 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: FutureRecommendations... | Size: 14.050000000000011
+2023-08-13 17:46:52.439 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: For subsequent tests, it might be useful to incorp... | Size: 10.449999999999989
+2023-08-13 17:46:52.445 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]
+2023-08-13 17:46:52.448 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.Forthesakeofthoroughness,wewillinclude additionaldataandanothertabletoseehowwellthesystemcanhandleincreasedcomplexity.
+¶¶¶
+Objective
+¶¶¶
+Our main aim in creating this document is to rigorously test the capabilities of AI-driven translationtools, especiallywhen handlingdifferentdataformats. Weareparticularlyinterested in seeing how the tool manages with textual descriptions, tabular data, and more intricate content.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Observations
+¶¶¶
+Based on Table 1, we see a diverse range of professions spanning from engineering to medicine to education. It gives an idea about the versatility of our sample data and represents a cross-sectionoftheprofessionallandscape.
+¶¶¶
+Table2:Extratabletotest2table
+¶¶¶
+Discussion
+¶¶¶
+The addition of Table2 allowsus to testthe system's capacity to differentiate between multiple tablesinasingledocument.Eachtable,whilesimilarinstructure,containsdistinctdata.Itwillbe interesting to note if the translation tool can maintain this distinction without any overlaps or misinterpretations.'
+Translation (to Japanese):
+2023-08-13 17:47:30.597 | INFO     | translator.pdf_translator:translate_pdf:23 - テストドキュメント
+¶¶¶
+イントロダクション
+¶¶¶
+このテストドキュメントは、OpenAIによるパワーテストの効率と正確性を検証するために作成されました。テキストと表のコンテンツの両方で構成されています。徹底性のため、追加のデータともう1つのテーブルを含めて、システムが増加した複雑さをどのように処理するかを確認します。
+¶¶¶
+目的
+¶¶¶
+このドキュメントを作成する主な目的は、AIによる翻訳ツールの能力を厳密にテストすることです。特に、テキストの説明、表形式のデータ、およびより複雑なコンテンツを処理する能力に興味があります。
+¶¶¶
+テーブル1：サンプルデータ
+¶¶¶
+観察結果
+¶¶¶
+テーブル1に基づいて、エンジニアリングから医学、教育まで多様な職業が表示されています。これはサンプルデータの多様性を示し、職業の横断面を表しています。
+¶¶¶
+テーブル2：2つのテーブルをテストするための追加テーブル
+¶¶¶
+議論
+¶¶¶
+テーブル2の追加により、システムが1つのドキュメント内の複数のテーブルを区別する能力をテストすることができます。各テーブルは似た構造ですが、異なるデータを持っています。翻訳ツールがこの区別を重複や誤解なく維持できるかどうかを注目することが興味深いでしょう。
+2023-08-13 17:47:30.605 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Japanese):
+
+2023-08-13 17:47:34.527 | INFO     | translator.pdf_translator:translate_pdf:23 - [名前, 年齢, 職業] [ジョン, 25, エンジニア] [アンナ, 30, 医師] [ブライアン, 28, 教師]
+2023-08-13 17:47:34.530 | DEBUG    | book.content:set_translation:95 - [名前, 年齢, 職業] [ジョン, 25, エンジニア] [アンナ, 30, 医師] [ブライアン, 28, 教師]
+2023-08-13 17:47:34.535 | DEBUG    | book.content:set_translation:109 -       名前  年齢     職業
+0    ジョン  25  エンジニア
+1    アンナ  30     医師
+2  ブライアン  28     教師
+2023-08-13 17:47:34.549 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]'
+Translation (to Japanese):
+
+2023-08-13 17:47:38.242 | INFO     | translator.pdf_translator:translate_pdf:23 - [名前, 年齢, 職業] [テスト1, 25, エンジニア] [テスト2, 30, 医者] [テスト3, 28, 教師]
+2023-08-13 17:47:38.244 | DEBUG    | book.content:set_translation:95 - [名前, 年齢, 職業] [テスト1, 25, エンジニア] [テスト2, 30, 医者] [テスト3, 28, 教師]
+2023-08-13 17:47:38.247 | DEBUG    | book.content:set_translation:109 -      名前  年齢     職業
+0  テスト1  25  エンジニア
+1  テスト2  30     医者
+2  テスト3  28     教師
+2023-08-13 17:47:38.254 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Summary
+¶¶¶
+The tables provided offer a snapshot of the sample data, which includes names, ages, and professions of multiple individuals. The overarching objective of this test is to ensure that both textualandtabularinformationistranslatedaccurately,preservingtheformat,structure,andthe integrityofthedata.
+¶¶¶
+Table3:Asmalltabletotesttablesize
+¶¶¶
+FutureRecommendations
+¶¶¶
+For subsequent tests, it might be useful to incorporate different kinds of data formats, such as graphs, images with embedded text, and more complex tables. This would provide a comprehensiveassessmentofthetranslationtool'sversatilityandrobustness.'
+Translation (to Japanese):
+2023-08-13 17:47:56.248 | INFO     | translator.pdf_translator:translate_pdf:23 - 要約
+¶¶¶
+提供された表は、複数の個人の名前、年齢、職業を含むサンプルデータのスナップショットを提供しています。このテストの全体的な目的は、テキストおよび表形式の情報が正確に翻訳され、フォーマット、構造、データの整合性が保持されることを確認することです。
+¶¶¶
+テーブル3：テーブルサイズをテストするための小さなテーブル
+¶¶¶
+将来の推奨事項
+¶¶¶
+次のテストでは、グラフ、テキストが埋め込まれた画像、より複雑なテーブルなど、さまざまな種類のデータ形式を組み込むことが有用です。これにより、翻訳ツールの汎用性と堅牢性を包括的に評価することができます。
+2023-08-13 17:47:56.252 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]'
+Translation (to Japanese):
+
+2023-08-13 17:48:00.631 | INFO     | translator.pdf_translator:translate_pdf:23 - [場所, デバイス, オペレーティングシステム] [北京, iPhone, IOS15] [上海, Samsung, Android12] [ニューヨーク, MacBook, macOS Monterey]
+2023-08-13 17:48:00.634 | DEBUG    | book.content:set_translation:95 - [場所, デバイス, オペレーティングシステム] [北京, iPhone, IOS15] [上海, Samsung, Android12] [ニューヨーク, MacBook, macOS Monterey]
+2023-08-13 17:48:00.638 | DEBUG    | book.content:set_translation:109 -        場所     デバイス    オペレーティングシステム
+0      北京   iPhone           IOS15
+1      上海  Samsung       Android12
+2  ニューヨーク  MacBook  macOS Monterey
+2023-08-13 17:48:00.647 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 17:48:00.649 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 17:48:00.813 | INFO     | translator.writer:_save_translated_book_pdf:112 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 17:48:55.853 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 17:48:55.855 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Spanish
+2023-08-13 17:48:56.247 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Test Document... | Size: 15.950000000000045
+2023-08-13 17:48:56.249 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Introduction... | Size: 14.050000000000068
+2023-08-13 17:48:56.251 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: This is a test document created to validate the ef... | Size: 10.450000000000045
+2023-08-13 17:48:56.254 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Objective... | Size: 14.050000000000068
+2023-08-13 17:48:56.256 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Our main aim in creating this document is to rigor... | Size: 10.450000000000045
+2023-08-13 17:48:56.258 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table1:SampleData... | Size: 10.449999999999932
+2023-08-13 17:48:56.261 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Observations... | Size: 14.050000000000011
+2023-08-13 17:48:56.263 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Based on Table 1, we see a diverse range of profes... | Size: 10.449999999999989
+2023-08-13 17:48:56.264 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table2:Extratabletotest2table... | Size: 10.449999999999932
+2023-08-13 17:48:56.266 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Discussion... | Size: 14.050000000000068
+2023-08-13 17:48:56.268 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: The addition of Table2 allowsus to testthe system'... | Size: 10.450000000000045
+2023-08-13 17:48:56.273 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 17:48:56.276 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]
+2023-08-13 17:48:56.540 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Summary... | Size: 14.050000000000068
+2023-08-13 17:48:56.544 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: The tables provided offer a snapshot of the sample... | Size: 10.450000000000045
+2023-08-13 17:48:56.546 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table3:Asmalltabletotesttablesize... | Size: 10.449999999999932
+2023-08-13 17:48:56.550 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: FutureRecommendations... | Size: 14.050000000000011
+2023-08-13 17:48:56.552 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: For subsequent tests, it might be useful to incorp... | Size: 10.449999999999989
+2023-08-13 17:48:56.557 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]
+2023-08-13 17:48:56.560 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.Forthesakeofthoroughness,wewillinclude additionaldataandanothertabletoseehowwellthesystemcanhandleincreasedcomplexity.
+¶¶¶
+Objective
+¶¶¶
+Our main aim in creating this document is to rigorously test the capabilities of AI-driven translationtools, especiallywhen handlingdifferentdataformats. Weareparticularlyinterested in seeing how the tool manages with textual descriptions, tabular data, and more intricate content.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Observations
+¶¶¶
+Based on Table 1, we see a diverse range of professions spanning from engineering to medicine to education. It gives an idea about the versatility of our sample data and represents a cross-sectionoftheprofessionallandscape.
+¶¶¶
+Table2:Extratabletotest2table
+¶¶¶
+Discussion
+¶¶¶
+The addition of Table2 allowsus to testthe system's capacity to differentiate between multiple tablesinasingledocument.Eachtable,whilesimilarinstructure,containsdistinctdata.Itwillbe interesting to note if the translation tool can maintain this distinction without any overlaps or misinterpretations.'
+Translation (to Spanish):
+2023-08-13 17:49:18.681 | INFO     | translator.pdf_translator:translate_pdf:23 - Documento de prueba
+¶¶¶
+Introducción
+¶¶¶
+Este es un documento de prueba creado para validar la eficiencia y precisión del traductor impulsado por OpenAI. Consiste en contenido tanto de texto como de tabla. Por el bien de la exhaustividad, incluiremos datos adicionales y otra tabla para ver cómo el sistema puede manejar la mayor complejidad.
+¶¶¶
+Objetivo
+¶¶¶
+Nuestro objetivo principal al crear este documento es probar rigurosamente las capacidades de las herramientas de traducción impulsadas por IA, especialmente cuando se trata de diferentes formatos de datos. Estamos particularmente interesados en ver cómo la herramienta se maneja con descripciones textuales, datos tabulares y contenido más intrincado.
+¶¶¶
+Tabla1: Datos de muestra
+¶¶¶
+Observaciones
+¶¶¶
+Según la Tabla 1, vemos una amplia gama de profesiones que abarcan desde ingeniería hasta medicina y educación. Da una idea sobre la versatilidad de nuestros datos de muestra y representa una muestra transversal del panorama profesional.
+¶¶¶
+Tabla2: Tabla adicional para probar 2 tablas
+¶¶¶
+Discusión
+¶¶¶
+La adición de la Tabla2 nos permite probar la capacidad del sistema para diferenciar entre múltiples tablas en un solo documento. Cada tabla, aunque similar en estructura, contiene datos distintos. Será interesante observar si la herramienta de traducción puede mantener esta distinción sin superposiciones o interpretaciones incorrectas.
+2023-08-13 17:49:18.688 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Spanish):
+
+2023-08-13 17:49:22.465 | INFO     | translator.pdf_translator:translate_pdf:23 - [Nombre, Edad, Profesión] [John, 25, Ingeniero] [Anna, 30, Médico] [Brian, 28, Profesor]
+2023-08-13 17:49:22.468 | DEBUG    | book.content:set_translation:95 - [Nombre, Edad, Profesión] [John, 25, Ingeniero] [Anna, 30, Médico] [Brian, 28, Profesor]
+2023-08-13 17:49:22.470 | DEBUG    | book.content:set_translation:109 -   Nombre Edad  Profesión
+0   John   25  Ingeniero
+1   Anna   30     Médico
+2  Brian   28   Profesor
+2023-08-13 17:49:22.480 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]'
+Translation (to Spanish):
+
+2023-08-13 17:49:26.552 | INFO     | translator.pdf_translator:translate_pdf:23 - [Nombre, Edad, Profesión] [Test1, 25, Ingeniero] [Test2, 30, Doctor] [Test3, 28, Profesor]
+2023-08-13 17:49:26.555 | DEBUG    | book.content:set_translation:95 - [Nombre, Edad, Profesión] [Test1, 25, Ingeniero] [Test2, 30, Doctor] [Test3, 28, Profesor]
+2023-08-13 17:49:26.557 | DEBUG    | book.content:set_translation:109 -   Nombre Edad  Profesión
+0  Test1   25  Ingeniero
+1  Test2   30     Doctor
+2  Test3   28   Profesor
+2023-08-13 17:49:26.565 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Summary
+¶¶¶
+The tables provided offer a snapshot of the sample data, which includes names, ages, and professions of multiple individuals. The overarching objective of this test is to ensure that both textualandtabularinformationistranslatedaccurately,preservingtheformat,structure,andthe integrityofthedata.
+¶¶¶
+Table3:Asmalltabletotesttablesize
+¶¶¶
+FutureRecommendations
+¶¶¶
+For subsequent tests, it might be useful to incorporate different kinds of data formats, such as graphs, images with embedded text, and more complex tables. This would provide a comprehensiveassessmentofthetranslationtool'sversatilityandrobustness.'
+Translation (to Spanish):
+2023-08-13 17:49:38.702 | INFO     | translator.pdf_translator:translate_pdf:23 - Resumen
+¶¶¶
+Las tablas proporcionadas ofrecen una instantánea de los datos de muestra, que incluye nombres, edades y profesiones de múltiples individuos. El objetivo principal de esta prueba es asegurar que tanto la información textual como la tabla se traduzcan de manera precisa, preservando el formato, la estructura y la integridad de los datos.
+¶¶¶
+Tabla3: Una pequeña tabla para probar el tamaño de la tabla
+¶¶¶
+Recomendaciones futuras
+¶¶¶
+Para pruebas posteriores, podría ser útil incorporar diferentes tipos de formatos de datos, como gráficos, imágenes con texto incrustado y tablas más complejas. Esto proporcionaría una evaluación integral de la versatilidad y robustez de la herramienta de traducción.
+2023-08-13 17:49:38.708 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]'
+Translation (to Spanish):
+
+2023-08-13 17:49:41.870 | INFO     | translator.pdf_translator:translate_pdf:23 - [Ubicación, Dispositivo, Sistema Operativo] [Pekín, iPhone, IOS15] [Shanghái, Samsung, Android12] [Nueva York, MacBook, macOS Monterey]
+2023-08-13 17:49:41.874 | DEBUG    | book.content:set_translation:95 - [Ubicación, Dispositivo, Sistema Operativo] [Pekín, iPhone, IOS15] [Shanghái, Samsung, Android12] [Nueva York, MacBook, macOS Monterey]
+2023-08-13 17:49:41.877 | DEBUG    | book.content:set_translation:109 -     Ubicación Dispositivo Sistema Operativo
+0       Pekín      iPhone             IOS15
+1    Shanghái     Samsung         Android12
+2  Nueva York     MacBook    macOS Monterey
+2023-08-13 17:49:41.884 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 17:49:41.887 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 17:49:42.026 | INFO     | translator.writer:_save_translated_book_pdf:112 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 17:50:47.789 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 17:50:47.792 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 17:50:48.162 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Test Document... | Size: 15.950000000000045
+2023-08-13 17:50:48.165 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Introduction... | Size: 14.050000000000068
+2023-08-13 17:50:48.167 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: This is a test document created to validate the ef... | Size: 10.450000000000045
+2023-08-13 17:50:48.169 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Objective... | Size: 14.050000000000068
+2023-08-13 17:50:48.171 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Our main aim in creating this document is to rigor... | Size: 10.450000000000045
+2023-08-13 17:50:48.174 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table1:SampleData... | Size: 10.449999999999932
+2023-08-13 17:50:48.177 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Observations... | Size: 14.050000000000011
+2023-08-13 17:50:48.179 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Based on Table 1, we see a diverse range of profes... | Size: 10.449999999999989
+2023-08-13 17:50:48.183 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table2:Extratabletotest2table... | Size: 10.449999999999932
+2023-08-13 17:50:48.186 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Discussion... | Size: 14.050000000000068
+2023-08-13 17:50:48.189 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: The addition of Table2 allowsus to testthe system'... | Size: 10.450000000000045
+2023-08-13 17:50:48.195 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 17:50:48.200 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]
+2023-08-13 17:50:48.354 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Summary... | Size: 14.050000000000068
+2023-08-13 17:50:48.357 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: The tables provided offer a snapshot of the sample... | Size: 10.450000000000045
+2023-08-13 17:50:48.360 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Table3:Asmalltabletotesttablesize... | Size: 10.449999999999932
+2023-08-13 17:50:48.362 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: FutureRecommendations... | Size: 14.050000000000011
+2023-08-13 17:50:48.364 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: For subsequent tests, it might be useful to incorp... | Size: 10.449999999999989
+2023-08-13 17:50:48.368 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]
+2023-08-13 17:50:48.371 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.Forthesakeofthoroughness,wewillinclude additionaldataandanothertabletoseehowwellthesystemcanhandleincreasedcomplexity.
+¶¶¶
+Objective
+¶¶¶
+Our main aim in creating this document is to rigorously test the capabilities of AI-driven translationtools, especiallywhen handlingdifferentdataformats. Weareparticularlyinterested in seeing how the tool manages with textual descriptions, tabular data, and more intricate content.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Observations
+¶¶¶
+Based on Table 1, we see a diverse range of professions spanning from engineering to medicine to education. It gives an idea about the versatility of our sample data and represents a cross-sectionoftheprofessionallandscape.
+¶¶¶
+Table2:Extratabletotest2table
+¶¶¶
+Discussion
+¶¶¶
+The addition of Table2 allowsus to testthe system's capacity to differentiate between multiple tablesinasingledocument.Eachtable,whilesimilarinstructure,containsdistinctdata.Itwillbe interesting to note if the translation tool can maintain this distinction without any overlaps or misinterpretations.'
+Translation (to Chinese):
+2023-08-13 17:51:19.544 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文档，用于验证基于OpenAI技术的翻译器的效率和准确性。它包含文本和表格内容。为了全面性，我们将包括额外的数据和另一个表格，以测试系统处理增加复杂性的能力。
+¶¶¶
+目标
+¶¶¶
+我们创建这个文档的主要目的是对AI驱动的翻译工具的能力进行严格测试，特别是在处理不同数据格式时。我们特别关注工具在处理文字描述、表格数据和更复杂内容时的表现。
+¶¶¶
+表1: 样本数据
+¶¶¶
+观察结果
+¶¶¶
+根据表1，我们可以看到涵盖了从工程到医学到教育的各种职业。它给出了样本数据的多样性，并代表了职业领域的一个横截面。
+¶¶¶
+表2: 用于测试2个表格的额外表格
+¶¶¶
+讨论
+¶¶¶
+添加表2使我们能够测试系统区分单个文档中的多个表格的能力。每个表格虽然在结构上相似，但包含不同的数据。了解翻译工具是否能够保持这种区分而没有重叠或误解将会很有趣。
+2023-08-13 17:51:19.552 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 17:51:24.360 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布赖恩, 28, 老师]
+2023-08-13 17:51:24.364 | DEBUG    | book.content:set_translation:95 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布赖恩, 28, 老师]
+2023-08-13 17:51:24.367 | DEBUG    | book.content:set_translation:109 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布赖恩  28   老师
+2023-08-13 17:51:24.376 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 17:51:27.870 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [测试1, 25, 工程师] [测试2, 30, 医生] [测试3, 28, 教师]
+2023-08-13 17:51:27.874 | DEBUG    | book.content:set_translation:95 - [姓名, 年龄, 职业] [测试1, 25, 工程师] [测试2, 30, 医生] [测试3, 28, 教师]
+2023-08-13 17:51:27.878 | DEBUG    | book.content:set_translation:109 -     姓名  年龄   职业
+0  测试1  25  工程师
+1  测试2  30   医生
+2  测试3  28   教师
+2023-08-13 17:51:27.887 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Summary
+¶¶¶
+The tables provided offer a snapshot of the sample data, which includes names, ages, and professions of multiple individuals. The overarching objective of this test is to ensure that both textualandtabularinformationistranslatedaccurately,preservingtheformat,structure,andthe integrityofthedata.
+¶¶¶
+Table3:Asmalltabletotesttablesize
+¶¶¶
+FutureRecommendations
+¶¶¶
+For subsequent tests, it might be useful to incorporate different kinds of data formats, such as graphs, images with embedded text, and more complex tables. This would provide a comprehensiveassessmentofthetranslationtool'sversatilityandrobustness.'
+Translation (to Chinese):
+2023-08-13 17:51:40.066 | INFO     | translator.pdf_translator:translate_pdf:23 - 摘要
+¶¶¶
+提供的表格提供了样本数据的快照，其中包括多个个体的姓名、年龄和职业。这个测试的总体目标是确保对文本和表格信息进行准确翻译，保持格式、结构和数据的完整性。
+¶¶¶
+表3：用于测试表格大小的小表格
+¶¶¶
+未来的建议
+¶¶¶
+对于后续的测试，可能需要将不同种类的数据格式纳入其中，例如带有嵌入文本的图形、图像和更复杂的表格。这将为翻译工具的多功能性和稳健性提供全面评估。
+2023-08-13 17:51:40.071 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]'
+Translation (to Chinese):
+
+2023-08-13 17:51:44.630 | INFO     | translator.pdf_translator:translate_pdf:23 - [地点, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS Monterey]
+2023-08-13 17:51:44.632 | DEBUG    | book.content:set_translation:95 - [地点, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS Monterey]
+2023-08-13 17:51:44.634 | DEBUG    | book.content:set_translation:109 -    地点       设备            操作系统
+0  北京   iPhone           IOS15
+1  上海       三星       Android12
+2  纽约  MacBook  macOS Monterey
+2023-08-13 17:51:44.643 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 17:51:44.645 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 17:51:44.795 | INFO     | translator.writer:_save_translated_book_pdf:112 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 17:53:34.027 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese.pdf
+2023-08-13 17:53:34.031 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 17:53:34.157 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: ДокументацияПродукта Введение Данный документ пред... | Size: 10.450000000000045
+2023-08-13 17:53:34.160 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Основныефункции: Импортизображенийвразличныхформат... | Size: 10.450000000000045
+2023-08-13 17:53:34.162 | DEBUG    | translator.pdf_parser:parse_pdf:80 - [paragraph] Text: Таблицаподдерживаемыхформатов:... | Size: 10.450000000000045
+2023-08-13 17:53:34.166 | DEBUG    | translator.pdf_parser:parse_pdf:100 - [table]
+[Номер, Форматфайла, Описание] [1, .JPEG, Стандартныйформатфото] [2, .PNG, Форматспрозрачностью] [3, .GIF, Анимированныйформат] [4, .BMP, Битоваякарта]
+2023-08-13 17:53:34.168 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'ДокументацияПродукта Введение Данный документ представляет собой руководство по использованию программы "SampleApp",разработаннойдляобработкиграфическихизображений.
+¶¶¶
+Основныефункции: Импортизображенийвразличныхформатах. Редактированиеизображения(обрезка,масштабирование). Применениеразличныхфильтровиэффектов. Экспортобработанногоизображения.
+¶¶¶
+Таблицаподдерживаемыхформатов:'
+Translation (to Chinese):
+2023-08-13 17:53:43.913 | INFO     | translator.pdf_translator:translate_pdf:23 - 文档产品介绍这份文档是关于使用"SampleApp"程序的指南，该程序用于处理图像。
+¶¶¶
+主要功能：导入不同格式的图像。编辑图像（裁剪，缩放）。应用各种过滤器和效果。导出处理后的图像。
+¶¶¶
+支持的格式表格：
+2023-08-13 17:53:43.919 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Номер, Форматфайла, Описание] [1, .JPEG, Стандартныйформатфото] [2, .PNG, Форматспрозрачностью] [3, .GIF, Анимированныйформат] [4, .BMP, Битоваякарта]'
+Translation (to Chinese):
+
+2023-08-13 17:53:49.268 | INFO     | translator.pdf_translator:translate_pdf:23 - [编号, 文件格式, 描述] [1, .JPEG, 标准照片格式] [2, .PNG, 具有透明度的格式] [3, .GIF, 动画格式] [4, .BMP, 位图]
+2023-08-13 17:53:49.270 | DEBUG    | book.content:set_translation:95 - [编号, 文件格式, 描述] [1, .JPEG, 标准照片格式] [2, .PNG, 具有透明度的格式] [3, .GIF, 动画格式] [4, .BMP, 位图]
+2023-08-13 17:53:49.274 | DEBUG    | book.content:set_translation:109 -   编号   文件格式        描述
+0  1  .JPEG    标准照片格式
+1  2   .PNG  具有透明度的格式
+2  3   .GIF      动画格式
+3  4   .BMP        位图
+2023-08-13 17:53:49.284 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese.pdf
+2023-08-13 17:53:49.287 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese_translated.pdf
+2023-08-13 17:53:49.521 | INFO     | translator.writer:_save_translated_book_pdf:112 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese_translated.pdf
+2023-08-13 18:07:48.559 | DEBUG    | translator.pdf_parser:parse_pdf:99 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-13 18:07:48.621 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+¶¶¶
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI. These samples include a markdown table and an English text passage, which can be used to test an English-to-Chinese translation software supporting both text and table formats.
+¶¶¶
+Text testing
+¶¶¶
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related tools. In addition to English, there are pangrams in many other languages. Some pangrams are more difficult to construct due to the unique characteristics of the language.
+¶¶¶
+Table Testing'
+Translation (to Chinese):
+2023-08-13 18:08:07.050 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+¶¶¶
+这个数据集包含了两个由OpenAI的AI语言模型ChatGPT提供的测试样本。这些样本包括一个Markdown表格和一个英文文本段落，可用于测试同时支持文本和表格格式的英文到中文的翻译软件。
+¶¶¶
+文本测试
+¶¶¶
+快速的棕色狐狸跳过懒惰的狗。这个句子包含了英文字母表中至少一次出现的每个字母。句子常常用来测试字体、键盘和其他与文本相关的工具。除了英语之外，其他许多语言也有这种句子。由于语言的特点，有些句子更难构造。
+¶¶¶
+表格测试
+2023-08-13 18:08:07.055 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Chinese):
+
+2023-08-13 18:08:18.465 | INFO     | translator.pdf_translator:translate_pdf:23 - [水果, 颜色, 价格（美元）] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [奇异果, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-13 18:08:18.467 | DEBUG    | book.content:set_translation:95 - [水果, 颜色, 价格（美元）] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [奇异果, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-13 18:08:18.470 | DEBUG    | book.content:set_translation:109 -     水果  颜色 价格（美元）
+0   苹果  红色   1.20
+1   香蕉  黄色   0.50
+2   橙子  橙色   0.80
+3   草莓  红色   2.50
+4   蓝莓  蓝色   3.00
+5  奇异果  绿色   1.00
+6   芒果  橙色   1.50
+7   葡萄  紫色   2.00
+2023-08-13 18:08:18.481 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: ''
+Translation (to Chinese):
+2023-08-13 18:08:19.706 | INFO     | translator.pdf_translator:translate_pdf:23 - Text: ''
+Translation (to Chinese): ''
+2023-08-13 18:08:19.710 | INFO     | translator.writer:_save_translated_book_markdown:119 - pdf_file_path: tests/test.pdf
+2023-08-13 18:08:19.713 | INFO     | translator.writer:_save_translated_book_markdown:120 - 开始翻译: tests/test_translated.md
+2023-08-13 18:08:19.718 | INFO     | translator.writer:_save_translated_book_markdown:153 - 翻译完成: tests/test_translated.md
+2023-08-13 18:09:19.509 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 18:09:19.513 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 18:09:19.927 | DEBUG    | translator.pdf_parser:parse_pdf:99 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 18:09:19.931 | DEBUG    | translator.pdf_parser:parse_pdf:99 - [table]
+[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]
+2023-08-13 18:09:20.095 | DEBUG    | translator.pdf_parser:parse_pdf:99 - [table]
+[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]
+2023-08-13 18:09:20.100 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.Forthesakeofthoroughness,wewillinclude additionaldataandanothertabletoseehowwellthesystemcanhandleincreasedcomplexity.
+¶¶¶
+Objective
+¶¶¶
+Our main aim in creating this document is to rigorously test the capabilities of AI-driven translationtools, especiallywhen handlingdifferentdataformats. Weareparticularlyinterested in seeing how the tool manages with textual descriptions, tabular data, and more intricate content.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Observations
+¶¶¶
+Based on Table 1, we see a diverse range of professions spanning from engineering to medicine to education. It gives an idea about the versatility of our sample data and represents a cross-sectionoftheprofessionallandscape.
+¶¶¶
+Table2:Extratabletotest2table
+¶¶¶
+Discussion
+¶¶¶
+The addition of Table2 allowsus to testthe system's capacity to differentiate between multiple tablesinasingledocument.Eachtable,whilesimilarinstructure,containsdistinctdata.Itwillbe interesting to note if the translation tool can maintain this distinction without any overlaps or misinterpretations.'
+Translation (to Chinese):
+2023-08-13 18:09:46.215 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文档，旨在验证OpenAI动力翻译器的效率和准确性。它包括了文本和表格内容。为了彻底性，我们将包括额外的数据和另一个表格，以测试系统处理增加复杂性的能力。
+¶¶¶
+目标
+¶¶¶
+我们创建此文档的主要目的是对AI驱动的翻译工具的能力进行严格测试，尤其是处理不同的数据格式。我们特别关注翻译工具在处理文本描述、表格数据和更复杂内容时的表现。
+¶¶¶
+表1:样本数据
+¶¶¶
+观察
+¶¶¶
+根据表1，我们可以看到涵盖了从工程到医学到教育等各种职业的广泛范围。它给出了我们样本数据的多样性，并代表了职业领域的横截面。
+¶¶¶
+表2:用于测试两个表格的额外表格
+¶¶¶
+讨论
+¶¶¶
+添加表2可以测试系统在单个文档中区分多个表格的能力。每个表格在结构上相似，但包含不同的数据。有趣的是，我们将注意翻译工具是否能够保持这种区别，避免任何重叠或错误解释。
+2023-08-13 18:09:46.222 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 18:09:50.260 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 18:09:50.263 | DEBUG    | book.content:set_translation:95 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 18:09:50.267 | DEBUG    | book.content:set_translation:109 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-13 18:09:50.284 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 18:09:53.780 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名，年龄，职业] [Test1，25，工程师] [Test2，30，医生] [Test3，28，教师]
+2023-08-13 18:09:53.784 | DEBUG    | book.content:set_translation:95 - [姓名,年龄,职业] [Test1,25,工程师] [Test2,30,医生] [Test3,28,教师]
+2023-08-13 18:09:53.788 | DEBUG    | book.content:set_translation:109 -        姓名,年龄,职业
+0  Test1,25,工程师
+1   Test2,30,医生
+2   Test3,28,教师
+2023-08-13 18:09:53.796 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Summary
+¶¶¶
+The tables provided offer a snapshot of the sample data, which includes names, ages, and professions of multiple individuals. The overarching objective of this test is to ensure that both textualandtabularinformationistranslatedaccurately,preservingtheformat,structure,andthe integrityofthedata.
+¶¶¶
+Table3:Asmalltabletotesttablesize
+¶¶¶
+FutureRecommendations
+¶¶¶
+For subsequent tests, it might be useful to incorporate different kinds of data formats, such as graphs, images with embedded text, and more complex tables. This would provide a comprehensiveassessmentofthetranslationtool'sversatilityandrobustness.'
+Translation (to Chinese):
+2023-08-13 18:10:08.518 | INFO     | translator.pdf_translator:translate_pdf:23 - 摘要
+¶¶¶
+提供的表格提供了样本数据的快照，包括多个个体的姓名、年龄和职业。这个测试的总体目标是确保文本和表格信息都能准确翻译，并保留格式、结构和数据的完整性。
+¶¶¶
+表3：一个小表格用于测试表格大小
+¶¶¶
+未来的建议
+¶¶¶
+对于随后的测试，将不同类型的数据格式（如图表、嵌入文本的图像和更复杂的表格）纳入其中可能会很有用。这将全面评估翻译工具的多功能性和稳健性。
+2023-08-13 18:10:08.523 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]'
+Translation (to Chinese):
+
+2023-08-13 18:10:11.785 | INFO     | translator.pdf_translator:translate_pdf:23 - [位置, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS Monterey]
+2023-08-13 18:10:11.788 | DEBUG    | book.content:set_translation:95 - [位置, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS Monterey]
+2023-08-13 18:10:11.792 | DEBUG    | book.content:set_translation:109 -    位置       设备            操作系统
+0  北京   iPhone           IOS15
+1  上海       三星       Android12
+2  纽约  MacBook  macOS Monterey
+2023-08-13 18:10:11.802 | INFO     | translator.writer:_save_translated_book_markdown:119 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 18:10:11.805 | INFO     | translator.writer:_save_translated_book_markdown:120 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.md
+2023-08-13 18:10:11.814 | INFO     | translator.writer:_save_translated_book_markdown:153 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.md
+2023-08-13 18:17:18.604 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 18:17:18.614 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 18:17:19.036 | DEBUG    | translator.pdf_parser:parse_pdf:99 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 18:17:19.039 | DEBUG    | translator.pdf_parser:parse_pdf:99 - [table]
+[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]
+2023-08-13 18:17:19.210 | DEBUG    | translator.pdf_parser:parse_pdf:99 - [table]
+[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]
+2023-08-13 18:17:19.213 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.Forthesakeofthoroughness,wewillinclude additionaldataandanothertabletoseehowwellthesystemcanhandleincreasedcomplexity.
+¶¶¶
+Objective
+¶¶¶
+Our main aim in creating this document is to rigorously test the capabilities of AI-driven translationtools, especiallywhen handlingdifferentdataformats. Weareparticularlyinterested in seeing how the tool manages with textual descriptions, tabular data, and more intricate content.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Observations
+¶¶¶
+Based on Table 1, we see a diverse range of professions spanning from engineering to medicine to education. It gives an idea about the versatility of our sample data and represents a cross-sectionoftheprofessionallandscape.
+¶¶¶
+Table2:Extratabletotest2table
+¶¶¶
+Discussion
+¶¶¶
+The addition of Table2 allowsus to testthe system's capacity to differentiate between multiple tablesinasingledocument.Eachtable,whilesimilarinstructure,containsdistinctdata.Itwillbe interesting to note if the translation tool can maintain this distinction without any overlaps or misinterpretations.'
+Translation (to Chinese):
+2023-08-13 18:17:45.954 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文件
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文件，用于验证OpenAI动力翻译器的效率和准确性。它包含文本和表格内容。为了保证彻底性，我们将包含额外的数据和另一个表来看看系统如何处理增加的复杂性。
+¶¶¶
+目标
+¶¶¶
+我们创建这个文件的主要目的是对AI驱动的翻译工具的能力进行严格测试，特别是处理不同数据格式时的能力。我们特别关注工具在处理文本描述、表格数据和更复杂内容方面的表现。
+¶¶¶
+表1:样本数据
+¶¶¶
+观察
+¶¶¶
+根据表1，我们可以看到从工程到医学到教育等各种职业。这给出了关于我们样本数据的多样性，并代表了职业领域的一个横截面。
+¶¶¶
+表2:测试2个表的附加表
+¶¶¶
+讨论
+¶¶¶
+增加表2可以测试系统区分单个文档中的多个表的能力。每个表虽然结构相似，但包含不同的数据。我们将注意到翻译工具是否能够在没有重叠或错误解释的情况下保持这种区别。
+2023-08-13 18:17:45.960 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 18:17:51.799 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 18:17:51.801 | DEBUG    | book.content:set_translation:95 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-13 18:17:51.804 | DEBUG    | book.content:set_translation:112 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-13 18:17:51.821 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 18:17:56.555 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [Test1, 25, 工程师] [Test2, 30, 医生] [Test3, 28, 教师]
+2023-08-13 18:17:56.558 | DEBUG    | book.content:set_translation:95 - [姓名, 年龄, 职业] [Test1, 25, 工程师] [Test2, 30, 医生] [Test3, 28, 教师]
+2023-08-13 18:17:56.562 | DEBUG    | book.content:set_translation:112 -       姓名  年龄   职业
+0  Test1  25  工程师
+1  Test2  30   医生
+2  Test3  28   教师
+2023-08-13 18:17:56.570 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Summary
+¶¶¶
+The tables provided offer a snapshot of the sample data, which includes names, ages, and professions of multiple individuals. The overarching objective of this test is to ensure that both textualandtabularinformationistranslatedaccurately,preservingtheformat,structure,andthe integrityofthedata.
+¶¶¶
+Table3:Asmalltabletotesttablesize
+¶¶¶
+FutureRecommendations
+¶¶¶
+For subsequent tests, it might be useful to incorporate different kinds of data formats, such as graphs, images with embedded text, and more complex tables. This would provide a comprehensiveassessmentofthetranslationtool'sversatilityandrobustness.'
+Translation (to Chinese):
+2023-08-13 18:18:10.885 | INFO     | translator.pdf_translator:translate_pdf:23 - 摘要
+¶¶¶
+提供的表格为样本数据提供了一个概览，其中包括多个人的姓名、年龄和职业。本测试的主要目标是确保文本和表格信息都能准确翻译，保留格式、结构和数据的完整性。
+¶¶¶
+表3：一个用于测试表格大小的小表格
+¶¶¶
+未来的建议
+¶¶¶
+对于后续的测试，可以考虑加入不同种类的数据格式，例如带有嵌入文本的图形、图像和更复杂的表格。这将提供对翻译工具的多功能性和健壮性的全面评估。
+2023-08-13 18:18:10.890 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]'
+Translation (to Chinese):
+
+2023-08-13 18:18:13.882 | INFO     | translator.pdf_translator:translate_pdf:23 - [位置, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS
+Monterey]
+2023-08-13 18:18:13.886 | DEBUG    | book.content:set_translation:95 - [位置, 设备, 操作系统] [北京, iPhone, IOS15] [上海, 三星, Android12] [纽约, MacBook, macOS
+Monterey]
+2023-08-13 18:18:13.890 | DEBUG    | book.content:set_translation:112 -    位置       设备             操作系统
+0  北京   iPhone            IOS15
+1  上海       三星        Android12
+2  纽约  MacBook  macOS\nMonterey
+2023-08-13 18:18:13.898 | INFO     | translator.writer:_save_translated_book_markdown:119 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 18:18:13.900 | INFO     | translator.writer:_save_translated_book_markdown:120 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.md
+2023-08-13 18:18:13.907 | INFO     | translator.writer:_save_translated_book_markdown:153 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.md
+2023-08-13 19:25:29.041 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 19:25:29.099 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-13 19:25:29.507 | DEBUG    | translator.pdf_parser:parse_pdf:99 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-13 19:25:29.510 | DEBUG    | translator.pdf_parser:parse_pdf:99 - [table]
+[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]
+2023-08-13 19:25:29.660 | DEBUG    | translator.pdf_parser:parse_pdf:99 - [table]
+[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]
+2023-08-13 19:25:29.664 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+¶¶¶
+Introduction
+¶¶¶
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered translator.Itconsistsofbothtextandtablecontent.Forthesakeofthoroughness,wewillinclude additionaldataandanothertabletoseehowwellthesystemcanhandleincreasedcomplexity.
+¶¶¶
+Objective
+¶¶¶
+Our main aim in creating this document is to rigorously test the capabilities of AI-driven translationtools, especiallywhen handlingdifferentdataformats. Weareparticularlyinterested in seeing how the tool manages with textual descriptions, tabular data, and more intricate content.
+¶¶¶
+Table1:SampleData
+¶¶¶
+Observations
+¶¶¶
+Based on Table 1, we see a diverse range of professions spanning from engineering to medicine to education. It gives an idea about the versatility of our sample data and represents a cross-sectionoftheprofessionallandscape.
+¶¶¶
+Table2:Extratabletotest2table
+¶¶¶
+Discussion
+¶¶¶
+The addition of Table2 allowsus to testthe system's capacity to differentiate between multiple tablesinasingledocument.Eachtable,whilesimilarinstructure,containsdistinctdata.Itwillbe interesting to note if the translation tool can maintain this distinction without any overlaps or misinterpretations.'
+Translation (to Chinese):
+2023-08-13 19:25:56.969 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文件
+¶¶¶
+介绍
+¶¶¶
+这是一个测试文档，旨在验证OpenAI动力翻译器的效率和准确性。它包含了文本和表格内容。为了彻底性，我们将包括额外的数据和另一个表格，以测试系统处理增加复杂性的能力。
+¶¶¶
+目标
+¶¶¶
+我们创建此文档的主要目的是严格测试人工智能驱动的翻译工具的能力，特别是处理不同数据格式时的能力。我们对该工具在处理文本描述、表格数据和更复杂内容方面的表现特别感兴趣。
+¶¶¶
+表1：样本数据
+¶¶¶
+观察
+¶¶¶
+根据表1，我们看到了涵盖从工程到医学到教育的多样化职业范围。它给我们展示了样本数据的多样性，并代表了职业领域的一个概览。
+¶¶¶
+表2：用于测试两个表格的额外表格
+¶¶¶
+讨论
+¶¶¶
+添加了表2后，我们可以测试系统在单个文档中区分多个表格的能力。每个表格在结构上相似，但包含不同的数据。有趣的是观察翻译工具是否能够保持这种区分而不产生重叠或误解。
+2023-08-13 19:25:56.977 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 19:26:02.265 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 老师]
+2023-08-13 19:26:02.267 | DEBUG    | book.content:set_translation:95 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 老师]
+2023-08-13 19:26:02.271 | DEBUG    | book.content:set_translation:112 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   老师
+2023-08-13 19:26:02.291 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [Test1, 25, Engineer] [Test2, 30, Doctor] [Test3, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-13 19:26:06.177 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [测试1, 25, 工程师] [测试2, 30, 医生] [测试3, 28, 教师]
+2023-08-13 19:26:06.180 | DEBUG    | book.content:set_translation:95 - [姓名, 年龄, 职业] [测试1, 25, 工程师] [测试2, 30, 医生] [测试3, 28, 教师]
+2023-08-13 19:26:06.184 | DEBUG    | book.content:set_translation:112 -     姓名  年龄   职业
+0  测试1  25  工程师
+1  测试2  30   医生
+2  测试3  28   教师
+2023-08-13 19:26:06.195 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Summary
+¶¶¶
+The tables provided offer a snapshot of the sample data, which includes names, ages, and professions of multiple individuals. The overarching objective of this test is to ensure that both textualandtabularinformationistranslatedaccurately,preservingtheformat,structure,andthe integrityofthedata.
+¶¶¶
+Table3:Asmalltabletotesttablesize
+¶¶¶
+FutureRecommendations
+¶¶¶
+For subsequent tests, it might be useful to incorporate different kinds of data formats, such as graphs, images with embedded text, and more complex tables. This would provide a comprehensiveassessmentofthetranslationtool'sversatilityandrobustness.'
+Translation (to Chinese):
+2023-08-13 19:26:21.464 | INFO     | translator.pdf_translator:translate_pdf:23 - 摘要
+¶¶¶
+所提供的表格提供了样本数据的快照，其中包括多个个体的姓名、年龄和职业。本测试的总体目标是确保准确地翻译文本和表格信息，保持格式、结构和数据的完整性。
+¶¶¶
+Table3:一个小表格用于测试表格大小
+¶¶¶
+未来的建议
+¶¶¶
+对于后续的测试，将不同类型的数据格式纳入其中可能是有用的，例如图形、嵌入文本的图像和更复杂的表格。这将为翻译工具的多功能性和健壮性提供全面的评估。
+2023-08-13 19:26:21.469 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Location, Device, Operating
+System] [Beijing, iPhone, IOS15] [Shanghai, Samsung, Android12] [NewYouk, MacBook, macOS
+Monterey]'
+Translation (to Chinese):
+
+2023-08-13 19:26:25.134 | INFO     | translator.pdf_translator:translate_pdf:23 - [位置, 设备, 操作系统] [北京, iPhone, IOS15] [上海, Samsung, Android12] [纽约, MacBook, macOS Monterey]
+2023-08-13 19:26:25.137 | DEBUG    | book.content:set_translation:95 - [位置, 设备, 操作系统] [北京, iPhone, IOS15] [上海, Samsung, Android12] [纽约, MacBook, macOS Monterey]
+2023-08-13 19:26:25.141 | DEBUG    | book.content:set_translation:112 -    位置       设备            操作系统
+0  北京   iPhone           IOS15
+1  上海  Samsung       Android12
+2  纽约  MacBook  macOS Monterey
+2023-08-13 19:26:25.152 | INFO     | translator.writer:_save_translated_book_pdf:30 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages.pdf
+2023-08-13 19:26:25.155 | INFO     | translator.writer:_save_translated_book_pdf:31 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 19:26:25.333 | INFO     | translator.writer:_save_translated_book_pdf:112 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\5b845d3be3646299a2e8863be0f513e5880a7eef\2 pages_translated.pdf
+2023-08-13 20:01:58.547 | DEBUG    | translator.pdf_parser:parse_pdf:99 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-13 20:01:58.649 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+¶¶¶
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI. These samples include a markdown table and an English text passage, which can be used to test an English-to-Chinese translation software supporting both text and table formats.
+¶¶¶
+Text testing
+¶¶¶
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related tools. In addition to English, there are pangrams in many other languages. Some pangrams are more difficult to construct due to the unique characteristics of the language.
+¶¶¶
+Table Testing'
+Translation (to Chinese):
+2023-08-13 20:02:17.407 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+¶¶¶
+此数据集包含两个由ChatGPT提供的测试样本，ChatGPT是OpenAI的人工智能语言模型。这些样本包括一个markdown表格和一个英文文本段落，可用于测试同时支持文本和表格格式的英文到中文翻译软件。
+¶¶¶
+文本测试
+¶¶¶
+快速的棕色狐狸跳过懒狗。这个句子包含了英文字母表中的每一个字母。句子用来测试字体、键盘和其他与文本相关的工具。除了英语，还有许多其他语言中的句子。一些句子由于语言的独特特点而更难构建。
+¶¶¶
+表格测试
+2023-08-13 20:02:17.412 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Chinese):
+
+2023-08-13 20:02:31.618 | INFO     | translator.pdf_translator:translate_pdf:23 - [水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-13 20:02:31.621 | DEBUG    | book.content:set_translation:95 - [水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-13 20:02:31.625 | DEBUG    | book.content:set_translation:112 -     水果  颜色 价格 (美元)
+0   苹果  红色    1.20
+1   香蕉  黄色    0.50
+2   橙子  橙色    0.80
+3   草莓  红色    2.50
+4   蓝莓  蓝色    3.00
+5  猕猴桃  绿色    1.00
+6   芒果  橙色    1.50
+7   葡萄  紫色    2.00
+2023-08-13 20:02:31.642 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: ''
+Translation (to Chinese):
+2023-08-13 20:02:33.508 | INFO     | translator.pdf_translator:translate_pdf:23 - Text: ''
+Translation (to Chinese): ''
+2023-08-13 20:02:33.510 | INFO     | translator.writer:_save_translated_book_markdown:119 - pdf_file_path: tests/test.pdf
+2023-08-13 20:02:33.512 | INFO     | translator.writer:_save_translated_book_markdown:120 - 开始翻译: tests/test_translated.md
+2023-08-13 20:02:33.515 | INFO     | translator.writer:_save_translated_book_markdown:153 - 翻译完成: tests/test_translated.md

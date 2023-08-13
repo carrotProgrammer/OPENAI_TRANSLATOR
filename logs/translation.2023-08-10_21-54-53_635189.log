@@ -1,0 +1,1040 @@
+2023-08-10 21:54:53.626 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ .
+Summary
+2023-08-10 21:55:07.823 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ .
+Summary
+2023-08-10 22:02:45.122 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ .
+Summary
+2023-08-10 22:07:58.345 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-10 22:07:58.375 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-10 22:09:43.575 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-10 22:09:43.585 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-10 22:10:29.356 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-10 22:10:29.367 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-10 22:11:15.118 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-10 22:11:15.128 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-10 22:11:15.132 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to 中文):
+2023-08-10 22:11:25.568 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+介绍
+这是一个测试文档，旨在验证OpenAI动力翻译器的效率和准确性。它包含文本和表格内容。
+表1：样本数据
+摘要
+上表提供了样本数据的快照，其中包括三个个人的姓名、年龄和职业。本次测试的目标是确保文本和表格信息都能准确翻译，并保留格式和结构。
+2023-08-10 22:11:25.574 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Please detect the language and translate the following table into 中文, maintaining its original formatting, such as spaces and separators:
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-10 22:11:32.000 | INFO     | translator.pdf_translator:translate_pdf:23 - 检测到源语言为英语。以下是将表格翻译为中文并保持原始格式的内容：
+[姓名，年龄，职业] [约翰，25，工程师] [安娜，30，医生] [布莱恩，28，教师]
+2023-08-10 22:11:32.003 | DEBUG    | book.content:set_translation:49 - 检测到源语言为英语。以下是将表格翻译为中文并保持原始格式的内容：
+[姓名，年龄，职业] [约翰，25，工程师] [安娜，30，医生] [布莱恩，28，教师]
+2023-08-10 22:11:32.006 | DEBUG    | book.content:set_translation:52 - [['检测到源语言为英语。以下是将表格翻译为中文并保持原始格式的内容：'], ['[姓名，年龄，职业]', '[约翰，25，工程师]', '[安娜，30，医生]', '[布莱恩，28，教师]']]
+2023-08-10 22:11:32.009 | ERROR    | book.content:set_translation:59 - An error occurred during table translation: 1 columns passed, passed data had 4 columns
+2023-08-10 22:11:32.011 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test2.pdf
+2023-08-10 22:11:32.013 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test2_translated.md
+2023-08-10 22:11:32.017 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test2_translated.md
+2023-08-10 22:20:44.140 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-10 22:20:44.151 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-10 22:20:44.154 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to 中文):
+2023-08-10 22:20:54.393 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+介绍
+这是一个测试文档，用于验证OpenAI驱动的翻译器的效率和准确性。它包含了文本和表格内容。
+表格1：样本数据
+摘要
+上面的表格提供了样本数据的快照，其中包括三个人的姓名、年龄和职业。这个测试的目标是确保文本和表格信息都被准确翻译，并保留格式和结构。
+2023-08-10 22:20:54.401 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Translate the table into 中文 while maintaining its original formatting:
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-10 22:21:00.477 | INFO     | translator.pdf_translator:translate_pdf:23 - 翻译成中文并保持原始格式：
+[姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-10 22:21:00.480 | DEBUG    | book.content:set_translation:49 - 翻译成中文并保持原始格式：
+[姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-10 22:21:00.483 | DEBUG    | book.content:set_translation:52 - [['翻译成中文并保持原始格式：'], ['[姓名,', '年龄,', '职业]', '[约翰,', '25,', '工程师]', '[安娜,', '30,', '医生]', '[布莱恩,', '28,', '教师]']]
+2023-08-10 22:21:00.487 | ERROR    | book.content:set_translation:59 - An error occurred during table translation: 1 columns passed, passed data had 12 columns
+2023-08-10 22:21:00.490 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test2.pdf
+2023-08-10 22:21:00.493 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test2_translated.md
+2023-08-10 22:21:00.497 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test2_translated.md
+2023-08-10 22:31:10.204 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-10 22:31:10.226 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-10 22:31:10.229 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to 中文):
+2023-08-10 22:31:18.869 | INFO     | translator.pdf_translator:translate_pdf:23 - 文档测试
+介绍
+这是一个测试文档，用于验证OpenAI提供的翻译器的效率和准确性。它包含文本和表格内容。
+表1：样本数据
+摘要
+上述表格提供了样本数据的快照，其中包括三个人的姓名、年龄和职业。本测试的目标是确保文本和表格信息都能准确翻译，并保留其格式和结构。
+2023-08-10 22:31:18.875 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Table: [Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to 中文):
+2023-08-10 22:31:22.602 | INFO     | translator.pdf_translator:translate_pdf:23 - '表格: [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布赖恩, 28, 教师]'
+2023-08-10 22:31:22.605 | DEBUG    | book.content:set_translation:49 - '表格: [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布赖恩, 28, 教师]'
+2023-08-10 22:31:22.608 | DEBUG    | book.content:set_translation:52 - [["'表格:", '[姓名,', '年龄,', '职业]', '[约翰,', '25,', '工程师]', '[安娜,', '30,', '医生]', '[布赖恩,', '28,', "教师]'"]]
+2023-08-10 22:31:22.616 | DEBUG    | book.content:set_translation:55 - Empty DataFrame
+Columns: ['表格:, [姓名,, 年龄,, 职业], [约翰,, 25,, 工程师], [安娜,, 30,, 医生], [布赖恩,, 28,, 教师]']
+Index: []
+2023-08-10 22:31:22.620 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test2.pdf
+2023-08-10 22:31:22.623 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test2_translated.md
+2023-08-10 22:31:22.627 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test2_translated.md
+2023-08-10 22:33:40.511 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-10 22:33:40.531 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-10 22:33:40.535 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to 中文):
+2023-08-10 22:33:50.194 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+简介
+这是一个测试文档，旨在验证OpenAI动力的翻译器的效率和准确性。它包括了文本和表格内容。
+表1:样本数据
+概要
+上述表格给出了样本数据的快照，包括了三个个人的姓名、年龄和职业。本次测试的目的是确保文本和表格信息都能被准确翻译，并保留格式和结构。
+2023-08-10 22:33:50.200 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to 中文):
+2023-08-10 22:33:54.883 | INFO     | translator.pdf_translator:translate_pdf:23 - '[姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]'
+2023-08-10 22:33:54.886 | DEBUG    | book.content:set_translation:49 - '[姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]'
+2023-08-10 22:33:54.889 | DEBUG    | book.content:set_translation:52 - [["'[姓名,", '年龄,', '职业]', '[约翰,', '25,', '工程师]', '[安娜,', '30,', '医生]', '[布莱恩,', '28,', "教师]'"]]
+2023-08-10 22:33:54.895 | DEBUG    | book.content:set_translation:55 - Empty DataFrame
+Columns: ['[姓名,, 年龄,, 职业], [约翰,, 25,, 工程师], [安娜,, 30,, 医生], [布莱恩,, 28,, 教师]']
+Index: []
+2023-08-10 22:33:54.899 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test2.pdf
+2023-08-10 22:33:54.902 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test2_translated.md
+2023-08-10 22:33:54.906 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test2_translated.md
+2023-08-10 22:35:41.344 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-10 22:35:41.355 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-10 22:35:41.419 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to 中文):
+2023-08-10 22:35:55.366 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+这个数据集包含了两个由ChatGPT提供的测试样本，ChatGPT是OpenAI的一个AI语言模型。
+这些样本包括一个Markdown表格和一个英文文本段落，可用于测试同时支持文本和表格格式的英文到中文翻译软件。
+文本测试
+敏捷的棕色狐狸跳过了懒狗。这个特定句子至少包含了英文字母表中的每一个字母。特定句子经常用于测试字体、键盘和其他相关文本工具。除了英语，其他许多语言也有特定句子。由于语言的独特特性，有些特定句子更难构建。
+2023-08-10 22:35:55.374 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to 中文):
+2023-08-10 22:36:06.324 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-10 22:36:06.327 | DEBUG    | book.content:set_translation:49 - '[水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-10 22:36:06.330 | DEBUG    | book.content:set_translation:52 - [["'[水果,", '颜色,', '价格', '(美元)]', '[苹果,', '红色,', '1.20]', '[香蕉,', '黄色,', '0.50]', '[橙子,', '橙色,', '0.80]', '[草莓,', '红色,', '2.50]', '[蓝莓,', '蓝色,', '3.00]', '[猕猴桃,', '绿色,', '1.00]', '[芒果,', '橙色,', '1.50]', '[葡萄,', '紫色,', "2.00]'"]]
+2023-08-10 22:36:06.335 | DEBUG    | book.content:set_translation:55 - Empty DataFrame
+Columns: ['[水果,, 颜色,, 价格, (美元)], [苹果,, 红色,, 1.20], [香蕉,, 黄色,, 0.50], [橙子,, 橙色,, 0.80], [草莓,, 红色,, 2.50], [蓝莓,, 蓝色,, 3.00], [猕猴桃,, 绿色,, 1.00], [芒果,, 橙色,, 1.50], [葡萄,, 紫色,, 2.00]']
+Index: []
+2023-08-10 22:36:06.339 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test.pdf
+2023-08-10 22:36:06.342 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test_translated.md
+2023-08-10 22:36:06.399 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test_translated.md
+2023-08-10 22:45:38.340 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-10 22:45:38.460 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-10 22:45:38.525 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to 中文):
+2023-08-10 22:45:53.143 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+这个数据集包含两个由ChatGPT提供的测试样本，ChatGPT是OpenAI的AI语言模型。
+这些样本包括一个Markdown表格和一个英文文本段落，可用于测试支持文本和表格格式的英文到中文翻译软件。
+文本测试
+敏捷的棕色狐狸跳过懒狗。这个句子中至少包含了英文字母表的每个字母。句子常常被用来测试字体、键盘和其他文本相关工具。除了英语以外，还有其他语言的句子。有些句子由于语言的独特特性而更难构建。
+表格测试
+2023-08-10 22:45:53.151 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Table:
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to 中文):
+
+2023-08-10 22:46:04.266 | INFO     | translator.pdf_translator:translate_pdf:23 - 表格：
+[水果，颜色，价格（美元）] [苹果，红色，1.20] [香蕉，黄色，0.50] [橙子，橙色，0.80] [草莓，红色，2.50] [蓝莓，蓝色，3.00] [奇异果，绿色，1.00] [芒果，橙色，1.50] [葡萄，紫色，2.00]
+2023-08-10 22:46:04.269 | DEBUG    | book.content:set_translation:49 - 表格：
+[水果，颜色，价格（美元）] [苹果，红色，1.20] [香蕉，黄色，0.50] [橙子，橙色，0.80] [草莓，红色，2.50] [蓝莓，蓝色，3.00] [奇异果，绿色，1.00] [芒果，橙色，1.50] [葡萄，紫色，2.00]
+2023-08-10 22:46:04.272 | DEBUG    | book.content:set_translation:52 - [['表格：'], ['[水果，颜色，价格（美元）]', '[苹果，红色，1.20]', '[香蕉，黄色，0.50]', '[橙子，橙色，0.80]', '[草莓，红色，2.50]', '[蓝莓，蓝色，3.00]', '[奇异果，绿色，1.00]', '[芒果，橙色，1.50]', '[葡萄，紫色，2.00]']]
+2023-08-10 22:46:04.275 | ERROR    | book.content:set_translation:59 - An error occurred during table translation: 1 columns passed, passed data had 9 columns
+2023-08-10 22:46:04.277 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test.pdf
+2023-08-10 22:46:04.279 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test_translated.md
+2023-08-10 22:46:04.282 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test_translated.md
+2023-08-10 22:55:44.774 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-10 22:55:44.793 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-10 22:55:44.858 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to 中文):
+2023-08-10 22:55:59.313 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+这个数据集包含了OpenAI的AI语言模型ChatGPT提供的两个测试样例。
+这些样例包括一个markdown表格和一段英文文本，可以用来测试支持文本和表格格式的英文到中文的翻译软件。
+文本测试
+快速的棕色狐狸跳过懒狗。这个句子包含了英文字母表中的每个字母至少一次。句子通常用来测试字体，键盘和其他与文本相关的工具。除了英语之外，还有很多其他语言的句子。由于语言的特殊性，有些句子构造起来更困难。表格测试
+2023-08-10 22:55:59.321 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to 中文):
+
+2023-08-10 22:56:10.156 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格（美元）] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-10 22:56:10.159 | DEBUG    | book.content:set_translation:49 - '[水果, 颜色, 价格（美元）] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-10 22:56:10.162 | DEBUG    | book.content:set_translation:52 - [["'[水果,", '颜色,', '价格（美元）]', '[苹果,', '红色,', '1.20]', '[香蕉,', '黄色,', '0.50]', '[橙子,', '橙色,', '0.80]', '[草莓,', '红色,', '2.50]', '[蓝莓,', '蓝色,', '3.00]', '[猕猴桃,', '绿色,', '1.00]', '[芒果,', '橙色,', '1.50]', '[葡萄,', '紫色,', "2.00]'"]]
+2023-08-10 22:56:10.168 | DEBUG    | book.content:set_translation:55 - Empty DataFrame
+Columns: ['[水果,, 颜色,, 价格（美元）], [苹果,, 红色,, 1.20], [香蕉,, 黄色,, 0.50], [橙子,, 橙色,, 0.80], [草莓,, 红色,, 2.50], [蓝莓,, 蓝色,, 3.00], [猕猴桃,, 绿色,, 1.00], [芒果,, 橙色,, 1.50], [葡萄,, 紫色,, 2.00]']
+Index: []
+2023-08-10 22:56:10.174 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test.pdf
+2023-08-10 22:56:10.177 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test_translated.md
+2023-08-10 22:56:10.182 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test_translated.md
+2023-08-10 22:58:22.856 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-10 22:58:22.867 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-10 22:58:22.931 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to 中文):
+2023-08-10 22:58:38.500 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+该数据集包含了两个由ChatGPT提供的测试样本，ChatGPT是OpenAI的一个AI语言模型。
+这些样本包括一个Markdown表格和一个英文文本段落，可用于测试支持文本和表格格式的英译中翻译软件。
+文本测试
+快速的棕色狐狸跳过懒狗。这个句子包含了英语字母表中的每一个字母。句子通常用来测试字体、键盘和其他与文本相关的工具。除了英语外，还有很多其他语言的句子。由于语言的独特特性，有些句子更难构造。
+2023-08-10 22:58:38.508 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to 中文):
+
+2023-08-10 22:58:47.177 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-10 22:58:47.180 | DEBUG    | book.content:set_translation:49 - '[水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-10 22:58:47.182 | DEBUG    | book.content:set_translation:54 - [["'水果", '颜色', '价格 (美元) 苹果', '红色', '1.20 香蕉', '黄色', '0.50 橙子', '橙色', '0.80 草莓', '红色', '2.50 蓝莓', '蓝色', '3.00 猕猴桃', '绿色', '1.00 芒果', '橙色', '1.50 葡萄', '紫色', "2.00'"]]
+2023-08-10 22:58:47.186 | DEBUG    | book.content:set_translation:57 - Empty DataFrame
+Columns: ['水果, 颜色, 价格 (美元) 苹果, 红色, 1.20 香蕉, 黄色, 0.50 橙子, 橙色, 0.80 草莓, 红色, 2.50 蓝莓, 蓝色, 3.00 猕猴桃, 绿色, 1.00 芒果, 橙色, 1.50 葡萄, 紫色, 2.00']
+Index: []
+2023-08-10 22:58:47.189 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test.pdf
+2023-08-10 22:58:47.191 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test_translated.md
+2023-08-10 22:58:47.194 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test_translated.md
+2023-08-10 23:04:39.963 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-10 23:04:39.975 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-10 23:04:40.049 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to 中文):
+2023-08-10 23:04:53.058 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+此数据集包含两个由OpenAI的AI语言模型ChatGPT提供的测试样本。
+这些样本包括一个Markdown表格和一个英文文本段落，可用于测试支持文本和表格格式的英译中翻译软件。
+文本测试
+敏捷的棕色狐狸跃过懒狗。这个句子包含了至少一次使用每个英文字母的字母组合。句子常被用来测试字体、键盘和其他与文本相关的工具。除了英语之外，还有许多其他语言的句子。有些句子因为特定语言的独特特性而更难构建。
+表格测试
+2023-08-10 23:04:53.066 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to 中文):
+
+2023-08-10 23:05:01.507 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-10 23:05:01.509 | DEBUG    | book.content:set_translation:49 - '[水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-10 23:05:01.511 | DEBUG    | book.content:set_translation:59 - [["'[水果", '颜色', '价格 (美元)] [苹果', '红色', '1.20] [香蕉', '黄色', '0.50] [橙子', '橙色', '0.80] [草莓', '红色', '2.50] [蓝莓', '蓝色', '3.00] [猕猴桃', '绿色', '1.00] [芒果', '橙色', '1.50] [葡萄', '紫色', "2.00]'"]]
+2023-08-10 23:05:01.515 | DEBUG    | book.content:set_translation:63 - Empty DataFrame
+Columns: ['[水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]']
+Index: []
+2023-08-10 23:05:01.519 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test.pdf
+2023-08-10 23:05:01.521 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test_translated.md
+2023-08-10 23:05:01.525 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test_translated.md
+2023-08-10 23:08:46.585 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-10 23:08:46.598 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-10 23:08:46.673 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to 中文):
+2023-08-10 23:09:03.818 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+此数据集包含两个由OpenAI的AI语言模型ChatGPT提供的测试样本。
+这些样本包括一个Markdown表格和一个英语文本段落，可以用来测试同时支持文本和表格格式的英译中翻译软件。
+文本测试
+快速的棕色狐狸跳过懒狗。这个句子包含了英语字母表中的每一个字母，是一个全句可读的句子。全句可读句子通常用来测试字体、键盘和其他与文本相关的工具。除了英语之外，不同语言中都有它们自己的全句可读句子。由于语言的特殊性，有些全句可读句子会更难构造。
+表格测试
+2023-08-10 23:09:03.826 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to 中文):
+
+2023-08-10 23:09:14.181 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-10 23:09:14.185 | DEBUG    | book.content:set_translation:49 - '[水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-10 23:09:14.188 | DEBUG    | book.content:set_translation:56 - [["'[水果", '颜色', '价格 (美元)'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', "2.00]'"]]
+2023-08-10 23:09:14.193 | DEBUG    | book.content:set_translation:60 -   '[水果  颜色 价格 (美元)
+0   苹果  红色    1.20
+1   香蕉  黄色    0.50
+2   橙子  橙色    0.80
+3   草莓  红色    2.50
+4   蓝莓  蓝色    3.00
+5  猕猴桃  绿色    1.00
+6   芒果  橙色    1.50
+7   葡萄  紫色  2.00]'
+2023-08-10 23:09:14.209 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test.pdf
+2023-08-10 23:09:14.212 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test_translated.md
+2023-08-10 23:09:14.216 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test_translated.md
+2023-08-10 23:12:10.427 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-10 23:12:10.443 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-10 23:12:10.495 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to 中文):
+2023-08-10 23:12:23.465 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+此数据集包含由OpenAI的ChatGPT，一个AI语言模型提供的两个测试样本。
+这些样本包括一个Markdown表格和一段英文文本，可用于测试同时支持文本和表格格式的英文到中文的翻译软件。
+文本测试
+敏捷的棕色狐狸跳过懒狗。这个句子中至少包含了英文字母表中的每个字母。句子都常用来测试字体、键盘和其他与文本相关的工具。除了英文之外，还有很多其他语言的句子。由于每种语言的独特特点，有些句子更难构造。
+2023-08-10 23:12:23.472 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to 中文):
+
+2023-08-10 23:12:33.994 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格（美元）] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-10 23:12:33.997 | DEBUG    | book.content:set_translation:49 - '[水果, 颜色, 价格（美元）] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-10 23:12:33.998 | DEBUG    | book.content:set_translation:59 - [["'[水果", '颜色', '价格（美元）'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', "2.00]'"]]
+2023-08-10 23:12:34.001 | DEBUG    | book.content:set_translation:63 -   '[水果  颜色  价格（美元）
+0   苹果  红色    1.20
+1   香蕉  黄色    0.50
+2   橙子  橙色    0.80
+3   草莓  红色    2.50
+4   蓝莓  蓝色    3.00
+5  猕猴桃  绿色    1.00
+6   芒果  橙色    1.50
+7   葡萄  紫色  2.00]'
+2023-08-10 23:12:34.011 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test.pdf
+2023-08-10 23:12:34.014 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test_translated.md
+2023-08-10 23:12:34.018 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test_translated.md
+2023-08-10 23:14:55.529 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-10 23:14:55.542 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-10 23:14:55.608 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to 中文):
+2023-08-10 23:15:09.871 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+该数据集包含由ChatGPT提供的两个测试样本，ChatGPT是由OpenAI开发的语言模型。
+这些样本包括一个Markdown表格和一个英文文本段落，可用于测试支持文本和表格格式的英译中软件。
+文本测试
+快速的棕色狐狸跳过了懒狗。这个句子包含了英文字母表中的每一个字母。用于测试字体、键盘和其他与文本相关的工具经常使用句子。除了英语，其他语言也有这样的句子。有些句子由于语言的独特特性而难以构造。
+表格测试
+2023-08-10 23:15:09.879 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to 中文):
+
+2023-08-10 23:15:20.879 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格 (USD)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-10 23:15:20.882 | DEBUG    | book.content:set_translation:52 - [水果, 颜色, 价格 (USD)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-10 23:15:20.886 | DEBUG    | book.content:set_translation:62 - [['水果', '颜色', '价格 (USD)'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
+2023-08-10 23:15:20.890 | DEBUG    | book.content:set_translation:66 -     水果  颜色 价格 (USD)
+0   苹果  红色     1.20
+1   香蕉  黄色     0.50
+2   橙子  橙色     0.80
+3   草莓  红色     2.50
+4   蓝莓  蓝色     3.00
+5  猕猴桃  绿色     1.00
+6   芒果  橙色     1.50
+7   葡萄  紫色     2.00
+2023-08-10 23:15:20.902 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test.pdf
+2023-08-10 23:15:20.904 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test_translated.md
+2023-08-10 23:15:20.909 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test_translated.md
+2023-08-10 23:17:35.381 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-10 23:17:35.390 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-10 23:17:35.394 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to 中文):
+2023-08-10 23:17:52.630 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+介绍
+这是一个测试文档，用于验证OpenAI动力翻译器的效率和准确性。它包含了文本和表格内容。
+表格1：样本数据
+摘要
+上面的表格提供了样本数据的快照，其中包括三个人的姓名、年龄和职业。这个测试的目的是确保文字和表格信息都被准确地翻译，并保留格式和结构。
+2023-08-10 23:17:52.636 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to 中文):
+
+2023-08-10 23:17:57.000 | INFO     | translator.pdf_translator:translate_pdf:23 - '[姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布赖恩, 28, 教师]'
+2023-08-10 23:17:57.003 | DEBUG    | book.content:set_translation:52 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布赖恩, 28, 教师]
+2023-08-10 23:17:57.006 | DEBUG    | book.content:set_translation:62 - [['姓名', '年龄', '职业'], ['约翰', '25', '工程师'], ['安娜', '30', '医生'], ['布赖恩', '28', '教师']]
+2023-08-10 23:17:57.010 | DEBUG    | book.content:set_translation:66 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布赖恩  28   教师
+2023-08-10 23:17:57.017 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test2.pdf
+2023-08-10 23:17:57.019 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test2_translated.md
+2023-08-10 23:17:57.022 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test2_translated.md
+2023-08-10 23:20:44.842 | DEBUG    | translator.pdf_parser:parse_pdf:48 - [raw_text]
+ Ѐҷ࡬ǗęƓ Ǖ ؘখˡѳʹ 뻛 ΡǊ 뻜 ΀ӪΒ
+Project Specification Form
+Part 1 – Supervisor
+ΡǊʚϝ
+Project Title
+ʚϝœ ׮
+Scope
+ǂđʭ ̗ Virtual pedagogical agents can be used to motivate online learners, to provide
+Project affective and mental support during self-studying, and to improve the overall
+description online learning experience. The integration of pedagogical agents in virtual
+learning environments is highly desirable, but their exact impact is yet to be
+assessed. The aim of the project is to further the understanding of the effect that
+pedagogical agents have on the learning experience of students. You will examine
+how students perceive the role of pedagogical agents as learning companions
+during specific learning activities and the effect that their assistance has on their
+overall learning experience. The goal is to equip virtual pedagogical agents with
+the ability to interact with the student and to respond to the student’s affective and
+mental states through appropriate expressive motions and motivational behaviours.
+The project entails to first evaluate some existing pedagogical agents using user
+experiments (e.g., Wizard-of-Oz type experiments) and questionnaires, paying
+particular attention to aspects such as appearance, expressivity, interpretability,
+transparency, trust and potential for bonding. You will then propose new designs
+to address your evaluation findings, implement (e.g., in Blender and Unity 3D),
+deploy and evaluate the new pedagogical agents.
+ȱਢࠍ Online learning, virtual agents, motivational behaviour, Unity 3D, wizard-of-oz
+Keywords experiments, evaluation studies
+ǂđ΀Ӫ
+Main tasks
+ǂđŪư
+Measurable
+2 Methodology for evaluating the impact of virtual pedagogical agents on the
+outcomes
+learning experience
+2023-08-10 23:20:44.886 | DEBUG    | translator.pdf_parser:parse_pdf:56 - [table]
+[ΡǊʚϝ\nProject Title, Design, implementation and evaluation of virtual pedagogical agents, None, None] [ʚϝœ ׮\nScope, Multimedia and Vision, Research, Software] [ǂđʭ ̗\nProject\ndescription, Virtual pedagogical agents can be used to motivate online learners, to provide\naffective and mental support during self-studying, and to improve the overall\nonline learning experience. The integration of pedagogical agents in virtual\nlearning environments is highly desirable, but their exact impact is yet to be\nassessed. The aim of the project is to further the understanding of the effect that\npedagogical agents have on the learning experience of students. You will examine\nhow students perceive the role of pedagogical agents as learning companions\nduring specific learning activities and the effect that their assistance has on their\noverall learning experience. The goal is to equip virtual pedagogical agents with\nthe ability to interact with the student and to respond to the student’s affective and\nmental states through appropriate expressive motions and motivational behaviours.\nThe project entails to first evaluate some existing pedagogical agents using user\nexperiments (e.g., Wizard-of-Oz type experiments) and questionnaires, paying\nparticular attention to aspects such as appearance, expressivity, interpretability,\ntransparency, trust and potential for bonding. You will then propose new designs\nto address your evaluation findings, implement (e.g., in Blender and Unity 3D),\ndeploy and evaluate the new pedagogical agents., None, None] [ȱਢࠍ\nKeywords, Online learning, virtual agents, motivational behaviour, Unity 3D, wizard-of-oz\nexperiments, evaluation studies, None, None] [ǂđ΀Ӫ\nMain tasks, 1 Research the use of virtual pedagogical agents to provide motivational support, None, None] [None, 2 Evaluation of existing agents through user studies, None, None] [None, 3 Design and implementation of new pedagogical agents, None, None] [None, 4 Evaluation of the new agents, None, None] [ǂđŪư\nMeasurable\noutcomes, 1 Virtual pedagogical agents, None, None] [None, 2 Methodology for evaluating the impact of virtual pedagogical agents on the\nlearning experience, None, None] [None, 3 Guidelines for the design of pedagogical agents, None, None]
+2023-08-10 23:20:44.893 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Ѐҷ࡬ǗęƓ Ǖ ؘখˡѳʹ 뻛 ΡǊ 뻜 ΀ӪΒ
+Project Specification Form
+Part 1 – Supervisor
+ΡǊʚϝ
+Project Title
+ʚϝœ ׮
+Scope
+ǂđʭ ̗ Virtual pedagogical agents can be used to motivate online learners, to provide
+Project affective and mental support during self-studying, and to improve the overall
+description online learning experience. The integration of pedagogical agents in virtual
+learning environments is highly desirable, but their exact impact is yet to be
+assessed. The aim of the project is to further the understanding of the effect that
+pedagogical agents have on the learning experience of students. You will examine
+how students perceive the role of pedagogical agents as learning companions
+during specific learning activities and the effect that their assistance has on their
+overall learning experience. The goal is to equip virtual pedagogical agents with
+the ability to interact with the student and to respond to the student’s affective and
+mental states through appropriate expressive motions and motivational behaviours.
+The project entails to first evaluate some existing pedagogical agents using user
+experiments (e.g., Wizard-of-Oz type experiments) and questionnaires, paying
+particular attention to aspects such as appearance, expressivity, interpretability,
+transparency, trust and potential for bonding. You will then propose new designs
+to address your evaluation findings, implement (e.g., in Blender and Unity 3D),
+deploy and evaluate the new pedagogical agents.
+ȱਢࠍ Online learning, virtual agents, motivational behaviour, Unity 3D, wizard-of-oz
+Keywords experiments, evaluation studies
+ǂđ΀Ӫ
+Main tasks
+ǂđŪư
+Measurable
+2 Methodology for evaluating the impact of virtual pedagogical agents on the
+outcomes
+learning experience'
+Translation (to 中文):
+2023-08-10 23:22:01.302 | INFO     | translator.pdf_translator:translate_pdf:23 - 文本：'Ѐҷ࡬ǗęƓ Ǖ ؘেখˡѳʹ 뻛 ΡǊ 뻜 ΀ӪΒ
+项目规范表格
+第1部分 - 主管
+ΡǊʚϝ
+项目标题
+ʚϝœ ׮
+范围
+ǂđʭ ̗ 虚拟教育代理可以用来激励在线学习者，在自学过程中提供情感和心理支持，以及改善整体在线学习体验。将教学代理融入虚拟学习环境中非常有必要，但它们确切的影响尚待评估。该项目的目标是进一步了解教学代理对学生学习体验的影响。您将研究学生在特定学习活动中如何感知教学代理作为学习伴侣的角色，以及他们的帮助对整体学习体验的影响。其目标是使虚拟教学代理具备与学生进行互动并通过适当的表达动作和激励行为回应学生的情感和心理状态的能力。该项目首先涉及使用用户实验（例如，Wizard-of-Oz类型实验）和问卷评估一些现有的教学代理，特别关注外观、表现力、可解释性、透明度、信任和建立潜力等方面。然后您将提出新的设计来解决您的评估结果，实施（例如，使用Blender和Unity 3D），部署和评估新的教学代理。
+ȱਢࠍ 在线学习、虚拟代理、激励行为、Unity 3D、Wizard-of-Oz
+关键词 实验、评估研究
+ǂđ΀Ӫ
+主要任务
+ǂđŪư
+可测量
+2 评估虚拟教育代理对学习体验的影响的方法论'
+中文翻译：'Ѐҷ࡬ǗęƓ Ǖ ؘখˡѳʹ 뻛 ΡǊ 뻜 ΀ӪΒ
+项目规范表格
+第1部分 - 主管
+ΡǊʚϝ
+项目标题
+ʚϝœ ׮
+范围
+ǂđʭ ̗ 虚拟教育代理可以用来激励在线学习者，在自学过程中提供情感和心理支持，以及改善整体在线学习体验。将教学代理融入虚拟学习环境中非常有必要，但它们确切的影响尚待评估。该项目的目标是进一步了解教学代理对学生学习体验的影响。您将研究学生在特定学习活动中如何感知教学代理作为学习伴侣的角色，以及他们的帮助对整体学习体验的影响。其目标是使虚拟教学代理具备与学生进行互动并通过适当的表达动作和激励行为回应学生的情感和心理状态的能力。该项目首先涉及使用用户实验（例如，Wizard-of-Oz类型实验）和问卷评估一些现有的教学代理，特别关注外观、表现力、可解释性、透明度、信任和建立潜力等方面。然后您将提出新的设计来解决您的评估结果，实施（例如，使用Blender和Unity 3D），部署和评估新的教学代理。
+ȱਢࠍ 在线学习、虚拟代理、激励行为、Unity 3D、Wizard-of-Oz
+关键词 实验、评估研究
+ǂđ΀Ӫ
+主要任务
+ǂđŪư
+可测量
+2 评估虚拟教育代理对学习体验的影响的方法论'
+2023-08-10 23:22:01.318 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[ΡǊʚϝ\nProject Title, Design, implementation and evaluation of virtual pedagogical agents, None, None] [ʚϝœ ׮\nScope, Multimedia and Vision, Research, Software] [ǂđʭ ̗\nProject\ndescription, Virtual pedagogical agents can be used to motivate online learners, to provide\naffective and mental support during self-studying, and to improve the overall\nonline learning experience. The integration of pedagogical agents in virtual\nlearning environments is highly desirable, but their exact impact is yet to be\nassessed. The aim of the project is to further the understanding of the effect that\npedagogical agents have on the learning experience of students. You will examine\nhow students perceive the role of pedagogical agents as learning companions\nduring specific learning activities and the effect that their assistance has on their\noverall learning experience. The goal is to equip virtual pedagogical agents with\nthe ability to interact with the student and to respond to the student’s affective and\nmental states through appropriate expressive motions and motivational behaviours.\nThe project entails to first evaluate some existing pedagogical agents using user\nexperiments (e.g., Wizard-of-Oz type experiments) and questionnaires, paying\nparticular attention to aspects such as appearance, expressivity, interpretability,\ntransparency, trust and potential for bonding. You will then propose new designs\nto address your evaluation findings, implement (e.g., in Blender and Unity 3D),\ndeploy and evaluate the new pedagogical agents., None, None] [ȱਢࠍ\nKeywords, Online learning, virtual agents, motivational behaviour, Unity 3D, wizard-of-oz\nexperiments, evaluation studies, None, None] [ǂđ΀Ӫ\nMain tasks, 1 Research the use of virtual pedagogical agents to provide motivational support, None, None] [None, 2 Evaluation of existing agents through user studies, None, None] [None, 3 Design and implementation of new pedagogical agents, None, None] [None, 4 Evaluation of the new agents, None, None] [ǂđŪư\nMeasurable\noutcomes, 1 Virtual pedagogical agents, None, None] [None, 2 Methodology for evaluating the impact of virtual pedagogical agents on the\nlearning experience, None, None] [None, 3 Guidelines for the design of pedagogical agents, None, None]'
+Translation (to 中文):
+
+2023-08-10 23:22:42.700 | INFO     | translator.pdf_translator:translate_pdf:23 - '[ΡǊʚϝ\n项目标题，虚拟教育代理的设计，实施和评估，无，无] [ʚϝœ ׮\n范围，多媒体和视觉，研究，软件] [ǂđʭ ̗\n项目描述，虚拟教育代理可以用于激励在线学习者，在自主学习过程中提供情感和心理支持，并提高整体在线学习体验。将教育代理整合到虚拟学习环境中是非常理想的，但它们的确切影响尚未得到评估。该项目的目标是进一步了解教育代理对学生学习体验的影响。您将研究学生对教育代理作为学习伙伴在特定学习活动中的角色的感知以及他们辅助对整体学习体验的影响。目标是使虚拟教育代理能够与学生进行互动，并通过适当的表达动作和激励行为对学生的情感和心理状态做出反应。该项目首先涉及使用用户实验（例如，奥兹巫师类型实验）和问卷评估一些现有的教育代理，特别关注外观、表现力、可解释性、透明度、信任和建立关系的潜力等方面。然后，您将根据评估结果提出新的设计，实施（例如使用Blender和Unity 3D），部署和评估新的教育代理。, 无, 无] [ȱਢࠍ\n关键词，在线学习，虚拟代理，激励行为，Unity 3D，奥兹巫师实验，评估研究，无，无] [ǂđ΀Ӫ\n主要任务，1 研究使用虚拟教育代理提供激励支持, 无, 无] [无, 2 通过用户研究对现有代理进行评估, 无, 无] [无, 3 设计和实现新的教育代理, 无, 无] [无, 4 评估新的代理, 无, 无] [ǂđŪư\n可衡量\n成果，1 虚拟教育代理, 无, 无] [无, 2 评估虚拟教育代理对学习体验的影响的方法论, 无, 无] [无, 3 设计教育代理指南, 无, 无]'
+2023-08-10 23:22:42.704 | DEBUG    | book.content:set_translation:52 - [ΡǊʚϝ\n项目标题，虚拟教育代理的设计，实施和评估，无，无] [ʚϝœ ׮\n范围，多媒体和视觉，研究，软件] [ǂđʭ ̗\n项目描述，虚拟教育代理可以用于激励在线学习者，在自主学习过程中提供情感和心理支持，并提高整体在线学习体验。将教育代理整合到虚拟学习环境中是非常理想的，但它们的确切影响尚未得到评估。该项目的目标是进一步了解教育代理对学生学习体验的影响。您将研究学生对教育代理作为学习伙伴在特定学习活动中的角色的感知以及他们辅助对整体学习体验的影响。目标是使虚拟教育代理能够与学生进行互动，并通过适当的表达动作和激励行为对学生的情感和心理状态做出反应。该项目首先涉及使用用户实验（例如，奥兹巫师类型实验）和问卷评估一些现有的教育代理，特别关注外观、表现力、可解释性、透明度、信任和建立关系的潜力等方面。然后，您将根据评估结果提出新的设计，实施（例如使用Blender和Unity 3D），部署和评估新的教育代理。, 无, 无] [ȱਢࠍ\n关键词，在线学习，虚拟代理，激励行为，Unity 3D，奥兹巫师实验，评估研究，无，无] [ǂđ΀Ӫ\n主要任务，1 研究使用虚拟教育代理提供激励支持, 无, 无] [无, 2 通过用户研究对现有代理进行评估, 无, 无] [无, 3 设计和实现新的教育代理, 无, 无] [无, 4 评估新的代理, 无, 无] [ǂđŪư\n可衡量\n成果，1 虚拟教育代理, 无, 无] [无, 2 评估虚拟教育代理对学习体验的影响的方法论, 无, 无] [无, 3 设计教育代理指南, 无, 无]
+2023-08-10 23:22:42.707 | DEBUG    | book.content:set_translation:62 - [['ΡǊʚϝ\\n项目标题，虚拟教育代理的设计，实施和评估，无，无'], ['ʚϝœ \u05ee\\n范围，多媒体和视觉，研究，软件'], ['ǂđʭ ̗\\n项目描述，虚拟教育代理可以用于激励在线学习者，在自主学习过程中提供情感和心理支持，并提高整体在线学习体验。将教育代理整合到虚拟学习环境中是非常理想的，但它们的确切影响尚未得到评估。该项目的目标是进一步了解教育代理对学生学习体验的影响。您将研究学生对教育代理作为学习伙伴在特定学习活动中的角色的感知以及他们辅助对整体学习体验的影响。目标是使虚拟教育代理能够与学生进行互动，并通过适当的表达动作和激励行为对学生的情感和心理状态做出反应。该项目首先涉及使用用户实验（例如，奥兹巫师类型实验）和问卷评估一些现有的教育代理，特别关注外观、表现力、可解释性、透明度、信任和建立关系的潜力等方面。然后，您将根据评估结果提出新的设计，实施（例如使用Blender和Unity 3D），部署和评估新的教育代理。', '无', '无'], ['ȱਢࠍ\\n关键词，在线学习，虚拟代理，激励行为，Unity 3D，奥兹巫师实验，评估研究，无，无'], ['ǂđ\u0380Ӫ\\n主要任务，1 研究使用虚拟教育代理提供激励支持', '无', '无'], ['无', '2 通过用户研究对现有代理进行评估', '无', '无'], ['无', '3 设计和实现新的教育代理', '无', '无'], ['无', '4 评估新的代理', '无', '无'], ['ǂđŪư\\n可衡量\\n成果，1 虚拟教育代理', '无', '无'], ['无', '2 评估虚拟教育代理对学习体验的影响的方法论', '无', '无'], ['无', '3 设计教育代理指南', '无', '无']]
+2023-08-10 23:22:42.710 | ERROR    | book.content:set_translation:70 - An error occurred during table translation: 1 columns passed, passed data had 4 columns
+2023-08-10 23:22:42.712 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/QMLB4.pdf
+2023-08-10 23:22:42.715 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/QMLB4_translated.md
+2023-08-10 23:22:43.034 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/QMLB4_translated.md
+2023-08-10 23:57:45.236 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Ѐҷ࡬ǗęƓ Ǖ ؘখˡѳʹ 뻛 ΡǊ 뻜 ΀ӪΒ
+Project Specification Form
+Part 1 – Supervisor
+ΡǊʚϝ
+Project Title
+ʚϝœ ׮
+Scope
+ǂđʭ ̗ Virtual pedagogical agents can be used to motivate online learners, to provide
+Project affective and mental support during self-studying, and to improve the overall
+description online learning experience. The integration of pedagogical agents in virtual
+learning environments is highly desirable, but their exact impact is yet to be
+assessed. The aim of the project is to further the understanding of the effect that
+pedagogical agents have on the learning experience of students. You will examine
+how students perceive the role of pedagogical agents as learning companions
+during specific learning activities and the effect that their assistance has on their
+overall learning experience. The goal is to equip virtual pedagogical agents with
+the ability to interact with the student and to respond to the student’s affective and
+mental states through appropriate expressive motions and motivational behaviours.
+The project entails to first evaluate some existing pedagogical agents using user
+experiments (e.g., Wizard-of-Oz type experiments) and questionnaires, paying
+particular attention to aspects such as appearance, expressivity, interpretability,
+transparency, trust and potential for bonding. You will then propose new designs
+to address your evaluation findings, implement (e.g., in Blender and Unity 3D),
+deploy and evaluate the new pedagogical agents.
+ȱਢࠍ Online learning, virtual agents, motivational behaviour, Unity 3D, wizard-of-oz
+Keywords experiments, evaluation studies
+ǂđ΀Ӫ
+Main tasks
+ǂđŪư
+Measurable
+2 Methodology for evaluating the impact of virtual pedagogical agents on the
+outcomes
+learning experience
+2023-08-10 23:57:45.308 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[ΡǊʚϝ\nProject Title, Design, implementation and evaluation of virtual pedagogical agents, None, None] [ʚϝœ ׮\nScope, Multimedia and Vision, Research, Software] [ǂđʭ ̗\nProject\ndescription, Virtual pedagogical agents can be used to motivate online learners, to provide\naffective and mental support during self-studying, and to improve the overall\nonline learning experience. The integration of pedagogical agents in virtual\nlearning environments is highly desirable, but their exact impact is yet to be\nassessed. The aim of the project is to further the understanding of the effect that\npedagogical agents have on the learning experience of students. You will examine\nhow students perceive the role of pedagogical agents as learning companions\nduring specific learning activities and the effect that their assistance has on their\noverall learning experience. The goal is to equip virtual pedagogical agents with\nthe ability to interact with the student and to respond to the student’s affective and\nmental states through appropriate expressive motions and motivational behaviours.\nThe project entails to first evaluate some existing pedagogical agents using user\nexperiments (e.g., Wizard-of-Oz type experiments) and questionnaires, paying\nparticular attention to aspects such as appearance, expressivity, interpretability,\ntransparency, trust and potential for bonding. You will then propose new designs\nto address your evaluation findings, implement (e.g., in Blender and Unity 3D),\ndeploy and evaluate the new pedagogical agents., None, None] [ȱਢࠍ\nKeywords, Online learning, virtual agents, motivational behaviour, Unity 3D, wizard-of-oz\nexperiments, evaluation studies, None, None] [ǂđ΀Ӫ\nMain tasks, 1 Research the use of virtual pedagogical agents to provide motivational support, None, None] [None, 2 Evaluation of existing agents through user studies, None, None] [None, 3 Design and implementation of new pedagogical agents, None, None] [None, 4 Evaluation of the new agents, None, None] [ǂđŪư\nMeasurable\noutcomes, 1 Virtual pedagogical agents, None, None] [None, 2 Methodology for evaluating the impact of virtual pedagogical agents on the\nlearning experience, None, None] [None, 3 Guidelines for the design of pedagogical agents, None, None]
+2023-08-10 23:57:45.314 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Ѐҷ࡬ǗęƓ Ǖ ؘখˡѳʹ 뻛 ΡǊ 뻜 ΀ӪΒ
+Project Specification Form
+Part 1 – Supervisor
+ΡǊʚϝ
+Project Title
+ʚϝœ ׮
+Scope
+ǂđʭ ̗ Virtual pedagogical agents can be used to motivate online learners, to provide
+Project affective and mental support during self-studying, and to improve the overall
+description online learning experience. The integration of pedagogical agents in virtual
+learning environments is highly desirable, but their exact impact is yet to be
+assessed. The aim of the project is to further the understanding of the effect that
+pedagogical agents have on the learning experience of students. You will examine
+how students perceive the role of pedagogical agents as learning companions
+during specific learning activities and the effect that their assistance has on their
+overall learning experience. The goal is to equip virtual pedagogical agents with
+the ability to interact with the student and to respond to the student’s affective and
+mental states through appropriate expressive motions and motivational behaviours.
+The project entails to first evaluate some existing pedagogical agents using user
+experiments (e.g., Wizard-of-Oz type experiments) and questionnaires, paying
+particular attention to aspects such as appearance, expressivity, interpretability,
+transparency, trust and potential for bonding. You will then propose new designs
+to address your evaluation findings, implement (e.g., in Blender and Unity 3D),
+deploy and evaluate the new pedagogical agents.
+ȱਢࠍ Online learning, virtual agents, motivational behaviour, Unity 3D, wizard-of-oz
+Keywords experiments, evaluation studies
+ǂđ΀Ӫ
+Main tasks
+ǂđŪư
+Measurable
+2 Methodology for evaluating the impact of virtual pedagogical agents on the
+outcomes
+learning experience'
+Translation (to 中文):
+2023-08-10 23:58:22.861 | INFO     | translator.pdf_translator:translate_pdf:23 - 'Ѐҷ࡬ǗęƓ Ǖ ؘখˡѳʹ 뻛 ΡǊ 뻜 ΀ӪΒ
+项目规范表格
+第一部分 - 主管
+ΡǊʚϝ
+项目标题
+ʚϝœ ׮
+范围
+ǂđʭ ̗ 虚拟教育体验软件可以用于激励在线学习者，提供自学过程中的情感和心理支持，并提高整体在线学习体验。将教育体验软件与虚拟学习环境结合是非常有价值的，但其确切影响尚待评估。该项目旨在进一步了解教育体验软件对学生学习体验的影响。您将研究学生如何看待教育体验软件作为学习伴侣，在特定学习活动中他们的帮助对整体学习体验的影响。目标是使虚拟教育体验软件能够与学生互动，并通过适当的表情和激励行为响应学生的情感和心态。该项目首先需要通过用户实验（例如，奥兹巫师类型实验）和问卷评估一些现有的教育体验软件，特别关注外观、表达能力、可解释性、透明度、信任和结合潜力等方面。然后，您将提出新的设计来应对评估结果，实现（例如，在Blender和Unity 3D中），部署和评估新的教育体验软件。
+ȱਢࠍ 在线学习，虚拟伴侣，激励行为，Unity 3D，奥兹巫师类型实验
+关键词 实验，评估研究
+ǂđ΀Ӫ
+主要任务
+ǂđŪư
+可衡量的
+2 评估虚拟教育体验软件对学习体验影响的方法论'
+2023-08-10 23:58:22.873 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[ΡǊʚϝ\nProject Title, Design, implementation and evaluation of virtual pedagogical agents, None, None] [ʚϝœ ׮\nScope, Multimedia and Vision, Research, Software] [ǂđʭ ̗\nProject\ndescription, Virtual pedagogical agents can be used to motivate online learners, to provide\naffective and mental support during self-studying, and to improve the overall\nonline learning experience. The integration of pedagogical agents in virtual\nlearning environments is highly desirable, but their exact impact is yet to be\nassessed. The aim of the project is to further the understanding of the effect that\npedagogical agents have on the learning experience of students. You will examine\nhow students perceive the role of pedagogical agents as learning companions\nduring specific learning activities and the effect that their assistance has on their\noverall learning experience. The goal is to equip virtual pedagogical agents with\nthe ability to interact with the student and to respond to the student’s affective and\nmental states through appropriate expressive motions and motivational behaviours.\nThe project entails to first evaluate some existing pedagogical agents using user\nexperiments (e.g., Wizard-of-Oz type experiments) and questionnaires, paying\nparticular attention to aspects such as appearance, expressivity, interpretability,\ntransparency, trust and potential for bonding. You will then propose new designs\nto address your evaluation findings, implement (e.g., in Blender and Unity 3D),\ndeploy and evaluate the new pedagogical agents., None, None] [ȱਢࠍ\nKeywords, Online learning, virtual agents, motivational behaviour, Unity 3D, wizard-of-oz\nexperiments, evaluation studies, None, None] [ǂđ΀Ӫ\nMain tasks, 1 Research the use of virtual pedagogical agents to provide motivational support, None, None] [None, 2 Evaluation of existing agents through user studies, None, None] [None, 3 Design and implementation of new pedagogical agents, None, None] [None, 4 Evaluation of the new agents, None, None] [ǂđŪư\nMeasurable\noutcomes, 1 Virtual pedagogical agents, None, None] [None, 2 Methodology for evaluating the impact of virtual pedagogical agents on the\nlearning experience, None, None] [None, 3 Guidelines for the design of pedagogical agents, None, None]'
+Translation (to 中文):
+
+2023-08-10 23:59:12.232 | INFO     | translator.pdf_translator:translate_pdf:23 - '[ΡǊʚϝ
+项目标题， 虚拟教育代理的设计、实施和评估， 无， 无] [ʚϝœ ׮
+范围， 多媒体和视觉， 研究， 软件] [ǂđʭ ̗
+项目描述， 虚拟教育代理可以用于激励在线学习者， 在自学过程中提供情感和心理支持， 并提高整体在线学习体验。 教育代理在虚拟学习环境中的集成是非常理想的， 但它们的确切影响尚待评估。 该项目的目标是进一步理解教育代理对学生学习体验的影响。 您将研究学生如何看待教育代理作为学习伴侣在特定学习活动中的角色， 以及他们的帮助对他们整体学习体验的影响。 目标是让虚拟教育代理具备与学生互动并通过适当的表达动作和激励行为回应学生的情感和心理状态的能力。 该项目首先将通过用户实验（例如，奥兹的巫师类型实验）和问卷调查评估一些现有的教育代理，特别关注外观、表现力、可解释性、透明度、信任和建立联系的潜力等方面。 然后，您将提出新的设计来解决评估结果，实施（例如，在Blender和Unity 3D中），部署和评估新的教育代理， 无， 无] [ȱਢࠍ
+关键词， 在线学习，虚拟代理，激励行为，Unity 3D， 奥兹类型实验，评估研究， 无， 无] [ǂđ΀Ӫ
+主要任务， 1 研究使用虚拟教育代理提供激励支持， 无， 无] [无， 2 通过用户研究评估现有代理， 无， 无] [无， 3 设计和实施新的教育代理， 无， 无] [无， 4 评估新的代理， 无， 无] [ǂđŪư
+可衡量的结果， 1 虚拟教育代理， 无， 无] [无， 2 评估虚拟教育代理对学习体验影响的方法论， 无， 无] [无， 3 设计教育代理的指导方针， 无， 无]'
+2023-08-10 23:59:12.236 | DEBUG    | book.content:set_translation:52 - [ΡǊʚϝ
+项目标题， 虚拟教育代理的设计、实施和评估， 无， 无] [ʚϝœ ׮
+范围， 多媒体和视觉， 研究， 软件] [ǂđʭ ̗
+项目描述， 虚拟教育代理可以用于激励在线学习者， 在自学过程中提供情感和心理支持， 并提高整体在线学习体验。 教育代理在虚拟学习环境中的集成是非常理想的， 但它们的确切影响尚待评估。 该项目的目标是进一步理解教育代理对学生学习体验的影响。 您将研究学生如何看待教育代理作为学习伴侣在特定学习活动中的角色， 以及他们的帮助对他们整体学习体验的影响。 目标是让虚拟教育代理具备与学生互动并通过适当的表达动作和激励行为回应学生的情感和心理状态的能力。 该项目首先将通过用户实验（例如，奥兹的巫师类型实验）和问卷调查评估一些现有的教育代理，特别关注外观、表现力、可解释性、透明度、信任和建立联系的潜力等方面。 然后，您将提出新的设计来解决评估结果，实施（例如，在Blender和Unity 3D中），部署和评估新的教育代理， 无， 无] [ȱਢࠍ
+关键词， 在线学习，虚拟代理，激励行为，Unity 3D， 奥兹类型实验，评估研究， 无， 无] [ǂđ΀Ӫ
+主要任务， 1 研究使用虚拟教育代理提供激励支持， 无， 无] [无， 2 通过用户研究评估现有代理， 无， 无] [无， 3 设计和实施新的教育代理， 无， 无] [无， 4 评估新的代理， 无， 无] [ǂđŪư
+可衡量的结果， 1 虚拟教育代理， 无， 无] [无， 2 评估虚拟教育代理对学习体验影响的方法论， 无， 无] [无， 3 设计教育代理的指导方针， 无， 无]
+2023-08-10 23:59:12.240 | DEBUG    | book.content:set_translation:62 - [['ΡǊʚϝ\n项目标题， 虚拟教育代理的设计、实施和评估， 无， 无'], ['ʚϝœ \u05ee\n范围， 多媒体和视觉， 研究， 软件'], ['ǂđʭ ̗\n项目描述， 虚拟教育代理可以用于激励在线学习者， 在自学过程中提供情感和心理支持， 并提高整体在线学习体验。 教育代理在虚拟学习环境中的集成是非常理想的， 但它们的确切影响尚待评估。 该项目的目标是进一步理解教育代理对学生学习体验的影响。 您将研究学生如何看待教育代理作为学习伴侣在特定学习活动中的角色， 以及他们的帮助对他们整体学习体验的影响。 目标是让虚拟教育代理具备与学生互动并通过适当的表达动作和激励行为回应学生的情感和心理状态的能力。 该项目首先将通过用户实验（例如，奥兹的巫师类型实验）和问卷调查评估一些现有的教育代理，特别关注外观、表现力、可解释性、透明度、信任和建立联系的潜力等方面。 然后，您将提出新的设计来解决评估结果，实施（例如，在Blender和Unity 3D中），部署和评估新的教育代理， 无， 无'], ['ȱਢࠍ\n关键词， 在线学习，虚拟代理，激励行为，Unity 3D， 奥兹类型实验，评估研究， 无， 无'], ['ǂđ\u0380Ӫ\n主要任务， 1 研究使用虚拟教育代理提供激励支持， 无， 无'], ['无， 2 通过用户研究评估现有代理， 无， 无'], ['无， 3 设计和实施新的教育代理， 无， 无'], ['无， 4 评估新的代理， 无， 无'], ['ǂđŪư\n可衡量的结果， 1 虚拟教育代理， 无， 无'], ['无， 2 评估虚拟教育代理对学习体验影响的方法论， 无， 无'], ['无， 3 设计教育代理的指导方针， 无， 无']]
+2023-08-10 23:59:12.246 | DEBUG    | book.content:set_translation:66 -                    ΡǊʚϝ\n项目标题， 虚拟教育代理的设计、实施和评估， 无， 无
+0                          ʚϝœ ׮\n范围， 多媒体和视觉， 研究， 软件
+1  ǂđʭ ̗\n项目描述， 虚拟教育代理可以用于激励在线学习者， 在自学过程中提供情感和心理支...
+2  ȱਢࠍ\n关键词， 在线学习，虚拟代理，激励行为，Unity 3D， 奥兹类型实验，评估研究...
+3               ǂđ΀Ӫ\n主要任务， 1 研究使用虚拟教育代理提供激励支持， 无， 无
+4                            无， 2 通过用户研究评估现有代理， 无， 无
+5                             无， 3 设计和实施新的教育代理， 无， 无
+6                                  无， 4 评估新的代理， 无， 无
+7                       ǂđŪư\n可衡量的结果， 1 虚拟教育代理， 无， 无
+8                     无， 2 评估虚拟教育代理对学习体验影响的方法论， 无， 无
+9                             无， 3 设计教育代理的指导方针， 无， 无
+2023-08-10 23:59:12.261 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/QMLB4.pdf
+2023-08-10 23:59:12.263 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/QMLB4_translated.md
+2023-08-10 23:59:12.267 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/QMLB4_translated.md
+2023-08-11 00:06:19.198 | DEBUG    | __main__:translate_with_gui:13 - PDF文件路径: <tempfile._TemporaryFileWrapper object at 0x0000019857C8D0F0>
+2023-08-11 00:06:19.251 | DEBUG    | __main__:translate_with_gui:14 - 目标语言: 中文
+2023-08-11 00:11:08.906 | DEBUG    | __main__:translate_with_gui:16 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 00:11:08.910 | DEBUG    | __main__:translate_with_gui:17 - 目标语言: 中文
+2023-08-11 00:11:09.107 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 00:11:09.130 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 00:11:09.209 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to 中文):
+2023-08-11 00:15:34.078 | DEBUG    | __main__:translate_with_gui:16 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 00:15:34.082 | DEBUG    | __main__:translate_with_gui:17 - 目标语言: 中文
+2023-08-11 00:15:34.270 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 00:15:34.284 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 00:15:34.348 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to 中文):
+2023-08-11 00:15:48.414 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+这个数据集包含了两个测试样本，由OpenAI的ChatGPT提供，这是一个AI语言模型。
+这些样本包含了一个Markdown表格和一个英文文本段落，可以用来测试支持文本和表格格式的英译中翻译软件。
+文本测试
+敏捷的棕色狐狸跳过懒狗。这个句子包含了英语字母表中的每一个字母，是用来测试字体、键盘和其他与文字相关的工具的。除了英语外，其他语言也有包含每个字母的句子。有些句子由于语言的特点而更难构造。
+表格测试
+2023-08-11 00:15:48.423 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to 中文):
+
+2023-08-11 00:15:58.483 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格（美元）] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-11 00:15:58.486 | DEBUG    | book.content:set_translation:52 - [水果, 颜色, 价格（美元）] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-11 00:15:58.489 | DEBUG    | book.content:set_translation:62 - [['水果', '颜色', '价格（美元）'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
+2023-08-11 00:15:58.495 | DEBUG    | book.content:set_translation:66 -     水果  颜色 价格（美元）
+0   苹果  红色   1.20
+1   香蕉  黄色   0.50
+2   橙子  橙色   0.80
+3   草莓  红色   2.50
+4   蓝莓  蓝色   3.00
+5  猕猴桃  绿色   1.00
+6   芒果  橙色   1.50
+7   葡萄  紫色   2.00
+2023-08-11 00:22:21.037 | DEBUG    | __main__:translate_with_gui:16 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 00:22:21.041 | DEBUG    | __main__:translate_with_gui:17 - 目标语言: 中文
+2023-08-11 00:22:21.229 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 00:22:21.243 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 00:22:21.312 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to 中文):
+2023-08-11 00:22:37.186 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+此数据集包含由OpenAI的ChatGPT提供的两个测试样本，这是一个AI语言模型。
+这些样本包括一个markdown表格和一个英文文本段落，可以用于测试支持文本和表格格式的英译中翻译软件。
+文本测试
+快速的棕色狐狸跳过懒惰的狗。这个字母表句子至少包含了英文字母中的每一个字母。字母表句子经常用来测试字体、键盘和其他与文本相关的工具。除了英文外，还有许多其他语言的字母表句子。由于语言的独特特征，有些字母表句子更难构建。
+2023-08-11 00:22:37.193 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to 中文):
+
+2023-08-11 00:22:47.779 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格 (USD)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-11 00:22:47.781 | DEBUG    | book.content:set_translation:52 - [水果, 颜色, 价格 (USD)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-11 00:22:47.785 | DEBUG    | book.content:set_translation:62 - [['水果', '颜色', '价格 (USD)'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
+2023-08-11 00:22:47.788 | DEBUG    | book.content:set_translation:66 -     水果  颜色 价格 (USD)
+0   苹果  红色     1.20
+1   香蕉  黄色     0.50
+2   橙子  橙色     0.80
+3   草莓  红色     2.50
+4   蓝莓  蓝色     3.00
+5  猕猴桃  绿色     1.00
+6   芒果  橙色     1.50
+7   葡萄  紫色     2.00
+2023-08-11 00:24:22.864 | DEBUG    | __main__:translate_with_gui:16 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 00:24:22.870 | DEBUG    | __main__:translate_with_gui:17 - 目标语言: 中文
+2023-08-11 00:24:23.066 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 00:24:23.079 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 00:24:23.146 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to 中文):
+2023-08-11 00:24:34.975 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+该数据集包含由OpenAI的AI语言模型ChatGPT提供的两个测试样本。
+这些样本包括一个Markdown表格和一个英文文本段落，可以用来测试支持文本和表格格式的英文到中文翻译软件。
+文本测试
+敏捷的棕色狐狸跳过慵懒的狗。这个句子包含了英语字母表中的每个字母。句子常用于测试字体、键盘和其他文本相关工具。除了英语，许多其他语言都有句子。由于每种语言的独特特点，有些句子更难构造。
+表格测试
+2023-08-11 00:24:34.982 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to 中文):
+
+2023-08-11 00:24:44.023 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格（美元）] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-11 00:24:44.027 | DEBUG    | book.content:set_translation:52 - [水果, 颜色, 价格（美元）] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-11 00:24:44.030 | DEBUG    | book.content:set_translation:62 - [['水果', '颜色', '价格（美元）'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
+2023-08-11 00:24:44.035 | DEBUG    | book.content:set_translation:66 -     水果  颜色 价格（美元）
+0   苹果  红色   1.20
+1   香蕉  黄色   0.50
+2   橙子  橙色   0.80
+3   草莓  红色   2.50
+4   蓝莓  蓝色   3.00
+5  猕猴桃  绿色   1.00
+6   芒果  橙色   1.50
+7   葡萄  紫色   2.00
+2023-08-11 00:24:44.045 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 00:24:44.047 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 00:24:44.198 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 00:34:30.033 | DEBUG    | __main__:translate_with_gui:16 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 00:34:30.038 | DEBUG    | __main__:translate_with_gui:17 - 目标语言: 中文
+2023-08-11 00:34:30.250 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 00:34:30.264 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 00:34:30.333 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to 中文):
+2023-08-11 00:34:46.353 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+这个数据集包含了两个由ChatGPT提供的测试样本，ChatGPT是OpenAI的一个AI语言模型。
+这些样本包括一个Markdown表格和一个英文文本段落，可用于测试支持文本和表格格式的英文到中文翻译软件。
+文本测试
+快速的棕色狐狸跳过懒狗。这个句子里包含了英文字母表中的每个字母。句子中的每个字母至少出现一次的句子称为全字母句。全字母句经常被用于测试字体、键盘和其他与文本相关的工具。除了英文之外，其他语言也有全字母句。由于语言的特点，有些全字母句更难构造。
+表格测试
+2023-08-11 00:34:46.361 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to 中文):
+
+2023-08-11 00:34:54.374 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [奇异果, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-11 00:34:54.378 | DEBUG    | book.content:set_translation:52 - [水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [奇异果, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-11 00:34:54.381 | DEBUG    | book.content:set_translation:62 - [['水果', '颜色', '价格 (美元)'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['奇异果', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
+2023-08-11 00:34:54.385 | DEBUG    | book.content:set_translation:66 -     水果  颜色 价格 (美元)
+0   苹果  红色    1.20
+1   香蕉  黄色    0.50
+2   橙子  橙色    0.80
+3   草莓  红色    2.50
+4   蓝莓  蓝色    3.00
+5  奇异果  绿色    1.00
+6   芒果  橙色    1.50
+7   葡萄  紫色    2.00
+2023-08-11 00:34:54.396 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 00:34:54.399 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 00:34:54.581 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf

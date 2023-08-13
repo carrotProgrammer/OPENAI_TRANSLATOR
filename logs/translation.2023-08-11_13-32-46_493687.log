@@ -1,0 +1,1734 @@
+2023-08-11 13:32:46.483 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 13:32:46.493 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Spanish
+2023-08-11 13:32:46.627 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 13:32:46.649 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-11 13:32:46.652 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Spanish):
+2023-08-11 13:32:55.156 | INFO     | translator.pdf_translator:translate_pdf:23 - 'Documento de prueba
+Introducción
+Este es un documento de prueba creado para validar la eficiencia y precisión del traductor impulsado por OpenAI. Consiste en contenido de texto y tablas.
+Tabla1: Datos de muestra
+Resumen
+La tabla anterior ofrece una instantánea de los datos de muestra, que incluye nombres, edades y profesiones de tres individuos. El objetivo de esta prueba es asegurar que tanto la información textual como la tabular se traduzcan con precisión, preservando el formato y la estructura.'
+2023-08-11 13:32:55.162 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Spanish):
+
+2023-08-11 13:32:57.986 | INFO     | translator.pdf_translator:translate_pdf:23 - '[Nombre, Edad, Profesión] [John, 25, Ingeniero] [Anna, 30, Doctora] [Brian, 28, Maestro]'
+2023-08-11 13:32:57.989 | DEBUG    | book.content:set_translation:52 - [Nombre, Edad, Profesión] [John, 25, Ingeniero] [Anna, 30, Doctora] [Brian, 28, Maestro]
+2023-08-11 13:32:57.991 | DEBUG    | book.content:set_translation:62 - [['Nombre', 'Edad', 'Profesión'], ['John', '25', 'Ingeniero'], ['Anna', '30', 'Doctora'], ['Brian', '28', 'Maestro']]
+2023-08-11 13:32:57.994 | DEBUG    | book.content:set_translation:66 -   Nombre Edad  Profesión
+0   John   25  Ingeniero
+1   Anna   30    Doctora
+2  Brian   28    Maestro
+2023-08-11 13:32:58.008 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 13:32:58.010 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 13:32:58.161 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 13:35:57.547 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 13:35:57.550 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Japanese
+2023-08-11 13:35:57.667 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 13:35:57.676 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-11 13:35:57.679 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Japanese):
+2023-08-11 13:36:10.455 | INFO     | translator.pdf_translator:translate_pdf:23 - テストドキュメント
+紹介
+このテストドキュメントは、OpenAIパワードトランスレータの効率と正確性を検証するために作成されました。テキストとテーブルの内容の両方で構成されています。
+Table1：サンプルデータ
+要約
+上記の表は、3人の個人の名前、年齢、職業を含むサンプルデータのスナップショットを提供しています。このテストの目的は、テキストとテーブルの情報が正確に翻訳され、形式と構造が保持されることを確認することです。
+2023-08-11 13:36:10.461 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Japanese):
+
+2023-08-11 13:36:13.476 | INFO     | translator.pdf_translator:translate_pdf:23 - '[名前、年齢、職業] [ジョン、25、エンジニア] [アンナ、30、医者] [ブライアン、28、教師]'
+2023-08-11 13:36:13.478 | DEBUG    | book.content:set_translation:52 - [名前、年齢、職業] [ジョン、25、エンジニア] [アンナ、30、医者] [ブライアン、28、教師]
+2023-08-11 13:36:13.482 | DEBUG    | book.content:set_translation:62 - [['名前、年齢、職業'], ['ジョン、25、エンジニア'], ['アンナ、30、医者'], ['ブライアン、28、教師']]
+2023-08-11 13:36:13.484 | DEBUG    | book.content:set_translation:66 -        名前、年齢、職業
+0  ジョン、25、エンジニア
+1     アンナ、30、医者
+2   ブライアン、28、教師
+2023-08-11 13:36:13.490 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 13:36:13.492 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 13:36:13.735 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 13:38:03.301 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 13:38:03.304 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 13:38:03.435 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 13:38:03.442 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-11 13:38:03.446 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Chinese):
+2023-08-11 13:38:13.993 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+介绍
+这是一个测试文档，旨在验证OpenAI驱动的翻译器的效率和准确性。它包含了文本和表格内容。
+表1：样本数据
+摘要
+上面的表格提供了样本数据的快照，其中包括了三个人的姓名、年龄和职业。本次测试的目标是确保文本和表格信息都被准确地翻译，同时保留格式和结构。
+2023-08-11 13:38:13.998 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-11 13:38:17.955 | INFO     | translator.pdf_translator:translate_pdf:23 - '[姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]'
+2023-08-11 13:38:17.958 | DEBUG    | book.content:set_translation:52 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 13:38:17.960 | DEBUG    | book.content:set_translation:62 - [['姓名', '年龄', '职业'], ['约翰', '25', '工程师'], ['安娜', '30', '医生'], ['布莱恩', '28', '教师']]
+2023-08-11 13:38:17.962 | DEBUG    | book.content:set_translation:66 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-11 13:38:17.972 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 13:38:17.975 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 13:38:18.103 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 13:39:12.322 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 13:39:12.326 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 13:39:12.513 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 13:39:12.524 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 13:39:12.596 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to Chinese):
+2023-08-11 13:39:24.839 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+此数据集包含由OpenAI的ChatGPT提供的两个测试样本，ChatGPT是一个AI语言模型。
+这些样本包括一个Markdown表格和一个英文文本段落，可用于测试支持文本和表格格式的英文到中文的翻译软件。
+文本测试
+快速的棕色狐狸跳过懒狗。这篇句子包含了英语字母表中的每个字母，是一段彩虹句。彩虹句通常用于测试字体、键盘和其他文本相关工具。除了英语，许多其他语言也有彩虹句。由于语言的独特特性，有些彩虹句更难构建。
+表格测试
+2023-08-11 13:39:24.848 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Chinese):
+
+2023-08-11 13:39:34.116 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橘色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-11 13:39:34.118 | DEBUG    | book.content:set_translation:52 - [水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橘色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-11 13:39:34.121 | DEBUG    | book.content:set_translation:62 - [['水果', '颜色', '价格 (美元)'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橘色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
+2023-08-11 13:39:34.124 | DEBUG    | book.content:set_translation:66 -     水果  颜色 价格 (美元)
+0   苹果  红色    1.20
+1   香蕉  黄色    0.50
+2   橙子  橘色    0.80
+3   草莓  红色    2.50
+4   蓝莓  蓝色    3.00
+5  猕猴桃  绿色    1.00
+6   芒果  橙色    1.50
+7   葡萄  紫色    2.00
+2023-08-11 13:39:34.134 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 13:39:34.136 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 13:39:34.262 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 14:22:52.058 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 14:22:52.063 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 14:22:52.266 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 14:22:52.279 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 14:22:52.347 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to Chinese):
+2023-08-11 14:23:07.256 | INFO     | translator.pdf_translator:translate_pdf:23 - '测试数据
+这个数据集包含ChatGPT提供的两个测试样本，ChatGPT是OpenAI的AI语言模型。
+这些样本包括一个Markdown表格和一个英文文本段落，可用于测试支持文本和表格格式的英文到中文翻译软件。
+文本测试
+敏捷的棕色狐狸跳过了懒狗。 这个句子包含了英文字母表中的每个字母至少一次。 句子常用来测试字体、键盘和其他与文本相关的工具。 除了英语，还有许多其他语言中的句子。 由于语言的独特特征，有些句子更难构造。
+表格测试'
+2023-08-11 14:23:07.264 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Chinese):
+
+2023-08-11 14:23:17.961 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-11 14:23:17.965 | DEBUG    | book.content:set_translation:52 - [水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-11 14:23:17.967 | DEBUG    | book.content:set_translation:62 - [['水果', '颜色', '价格 (美元)'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
+2023-08-11 14:23:17.970 | DEBUG    | book.content:set_translation:66 -     水果  颜色 价格 (美元)
+0   苹果  红色    1.20
+1   香蕉  黄色    0.50
+2   橙子  橙色    0.80
+3   草莓  红色    2.50
+4   蓝莓  蓝色    3.00
+5  猕猴桃  绿色    1.00
+6   芒果  橙色    1.50
+7   葡萄  紫色    2.00
+2023-08-11 14:29:10.691 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 14:29:10.752 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 14:29:10.929 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 14:29:10.945 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 14:29:11.011 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to Chinese):
+2023-08-11 14:29:23.422 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+该数据集包含了两个由OpenAI的ChatGPT提供的测试样本，ChatGPT是一个AI语言模型。
+这些样本包括一个Markdown表格和一个英文文本段落，可以用来测试支持文本和表格格式的英文到中文翻译软件。
+文本测试
+敏捷的棕色狐狸跳过懒狗。这个句子包含了英文字母表中的每一个字母。句子经常被用来测试字体、键盘和其他与文本相关的工具。除了英文之外，许多其他语言也有这样的句子。一些句子由于语言的独特特点更难以构造。
+表格测试
+2023-08-11 14:29:23.431 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Chinese):
+
+2023-08-11 14:29:33.843 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-11 14:29:33.845 | DEBUG    | book.content:set_translation:52 - [水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-11 14:29:33.848 | DEBUG    | book.content:set_translation:62 - [['水果', '颜色', '价格 (美元)'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
+2023-08-11 14:29:33.851 | DEBUG    | book.content:set_translation:66 -     水果  颜色 价格 (美元)
+0   苹果  红色    1.20
+1   香蕉  黄色    0.50
+2   橙子  橙色    0.80
+3   草莓  红色    2.50
+4   蓝莓  蓝色    3.00
+5  猕猴桃  绿色    1.00
+6   芒果  橙色    1.50
+7   葡萄  紫色    2.00
+2023-08-11 14:29:33.861 | INFO     | translator.writer:_save_translated_book_markdown:84 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 14:29:33.863 | INFO     | translator.writer:_save_translated_book_markdown:85 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.md
+2023-08-11 14:29:33.872 | INFO     | translator.writer:_save_translated_book_markdown:109 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.md
+2023-08-11 14:32:20.799 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 14:32:20.802 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Spanish
+2023-08-11 14:32:20.918 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 14:32:20.925 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-11 14:32:20.928 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Spanish):
+2023-08-11 14:32:28.331 | INFO     | translator.pdf_translator:translate_pdf:23 - Documento de prueba
+Introducción
+Este es un documento de prueba creado para validar la eficiencia y precisión del traductor impulsado por OpenAI. Consiste tanto en contenido de texto como de tabla.
+Tabla1: Datos de muestra
+Resumen
+La tabla anterior proporciona una instantánea de los datos de muestra, que incluye nombres, edades y profesiones de tres personas. El objetivo de esta prueba es asegurar que tanto la información textual como tabular se traduzcan con precisión, preservando el formato y la estructura.
+2023-08-11 14:32:28.338 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Spanish):
+
+2023-08-11 14:32:31.757 | INFO     | translator.pdf_translator:translate_pdf:23 - '[Nombre, Edad, Profesión] [John, 25, Ingeniero] [Anna, 30, Doctora] [Brian, 28, Profesor]'
+2023-08-11 14:32:31.761 | DEBUG    | book.content:set_translation:52 - [Nombre, Edad, Profesión] [John, 25, Ingeniero] [Anna, 30, Doctora] [Brian, 28, Profesor]
+2023-08-11 14:32:31.764 | DEBUG    | book.content:set_translation:62 - [['Nombre', 'Edad', 'Profesión'], ['John', '25', 'Ingeniero'], ['Anna', '30', 'Doctora'], ['Brian', '28', 'Profesor']]
+2023-08-11 14:32:31.768 | DEBUG    | book.content:set_translation:66 -   Nombre Edad  Profesión
+0   John   25  Ingeniero
+1   Anna   30    Doctora
+2  Brian   28   Profesor
+2023-08-11 14:32:31.778 | INFO     | translator.writer:_save_translated_book_markdown:84 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 14:32:31.780 | INFO     | translator.writer:_save_translated_book_markdown:85 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.md
+2023-08-11 14:32:31.785 | INFO     | translator.writer:_save_translated_book_markdown:109 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.md
+2023-08-11 14:32:53.159 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 14:32:53.163 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Japanese
+2023-08-11 14:32:53.284 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 14:32:53.290 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-11 14:32:53.292 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Japanese):
+2023-08-11 14:33:07.019 | INFO     | translator.pdf_translator:translate_pdf:23 - テストドキュメント
+紹介
+これは、OpenAIパワードトランスレーターの効率と正確性を検証するために作成されたテストドキュメントです。テキストとテーブルの内容の両方で構成されています。
+テーブル1：サンプルデータ
+要約
+上記のテーブルは、3人の個人の名前、年齢、および職業を含むサンプルデータのスナップショットを提供しています。このテストの目的は、テキストと表形式の情報の両方が正確に翻訳され、形式と構造が保持されることを確認することです。
+2023-08-11 14:33:07.026 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Japanese):
+
+2023-08-11 14:33:11.189 | INFO     | translator.pdf_translator:translate_pdf:23 - '[名前, 年齢, 職業] [ジョン, 25, エンジニア] [アンナ, 30, 医師] [ブライアン, 28, 教師]'
+2023-08-11 14:33:11.192 | DEBUG    | book.content:set_translation:52 - [名前, 年齢, 職業] [ジョン, 25, エンジニア] [アンナ, 30, 医師] [ブライアン, 28, 教師]
+2023-08-11 14:33:11.196 | DEBUG    | book.content:set_translation:62 - [['名前', '年齢', '職業'], ['ジョン', '25', 'エンジニア'], ['アンナ', '30', '医師'], ['ブライアン', '28', '教師']]
+2023-08-11 14:33:11.198 | DEBUG    | book.content:set_translation:66 -       名前  年齢     職業
+0    ジョン  25  エンジニア
+1    アンナ  30     医師
+2  ブライアン  28     教師
+2023-08-11 14:33:11.206 | INFO     | translator.writer:_save_translated_book_markdown:84 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 14:33:11.208 | INFO     | translator.writer:_save_translated_book_markdown:85 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.md
+2023-08-11 14:33:11.213 | INFO     | translator.writer:_save_translated_book_markdown:109 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.md
+2023-08-11 14:48:54.346 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 14:48:54.351 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Japanese
+2023-08-11 14:48:54.550 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 14:48:54.562 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 14:48:54.633 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Source: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to Japanese):
+2023-08-11 14:49:17.413 | INFO     | translator.pdf_translator:translate_pdf:23 - データテスト
+このデータセットには、OpenAIのAI言語モデルであるChatGPTによって提供される2つのテストサンプルが含まれています。
+これらのサンプルには、テキストとテーブルの形式をサポートする英語から中国語への翻訳ソフトウェアをテストするために使用できるマークダウンテーブルと英語のテキストパッセージが含まれています。
+テキストテスト
+素早い茶色のキツネがのろまな犬を飛び越えます。このパングラムには英語のすべてのアルファベットが少なくとも1回は含まれています。パングラムはフォント、キーボード、その他のテキスト関連のツールのテストによく使用されます。英語以外にも、多くの他の言語にもパングラムがあります。一部のパングラムは、言語の固有の特性のため、作成がより困難です。
+テーブルテスト
+2023-08-11 14:49:17.422 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Source (Table): '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Japanese):
+
+2023-08-11 14:49:26.760 | INFO     | translator.pdf_translator:translate_pdf:23 - '[果物, 色, 価格 (USD)] [りんご, 赤, 1.20] [バナナ, 黄色, 0.50] [オレンジ, オレンジ, 0.80] [イチゴ, 赤, 2.50] [ブルーベリー, 青, 3.00] [キウイ, 緑, 1.00] [マンゴー, オレンジ, 1.50] [ぶどう, 紫, 2.00]'
+2023-08-11 14:49:26.762 | DEBUG    | book.content:set_translation:52 - [果物, 色, 価格 (USD)] [りんご, 赤, 1.20] [バナナ, 黄色, 0.50] [オレンジ, オレンジ, 0.80] [イチゴ, 赤, 2.50] [ブルーベリー, 青, 3.00] [キウイ, 緑, 1.00] [マンゴー, オレンジ, 1.50] [ぶどう, 紫, 2.00]
+2023-08-11 14:49:26.765 | DEBUG    | book.content:set_translation:62 - [['果物', '色', '価格 (USD)'], ['りんご', '赤', '1.20'], ['バナナ', '黄色', '0.50'], ['オレンジ', 'オレンジ', '0.80'], ['イチゴ', '赤', '2.50'], ['ブルーベリー', '青', '3.00'], ['キウイ', '緑', '1.00'], ['マンゴー', 'オレンジ', '1.50'], ['ぶどう', '紫', '2.00']]
+2023-08-11 14:49:26.770 | DEBUG    | book.content:set_translation:66 -        果物     色 価格 (USD)
+0     りんご     赤     1.20
+1     バナナ    黄色     0.50
+2    オレンジ  オレンジ     0.80
+3     イチゴ     赤     2.50
+4  ブルーベリー     青     3.00
+5     キウイ     緑     1.00
+6    マンゴー  オレンジ     1.50
+7     ぶどう     紫     2.00
+2023-08-11 14:49:26.781 | INFO     | translator.writer:_save_translated_book_markdown:84 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 14:49:26.783 | INFO     | translator.writer:_save_translated_book_markdown:85 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.md
+2023-08-11 14:49:26.788 | INFO     | translator.writer:_save_translated_book_markdown:109 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.md
+2023-08-11 14:50:22.923 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 14:50:22.927 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Japanese
+2023-08-11 14:50:23.104 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 14:50:23.113 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 14:50:23.179 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Source: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to Japanese):
+2023-08-11 14:50:45.747 | INFO     | translator.pdf_translator:translate_pdf:23 - テストデータ
+このデータセットには、OpenAIのAI言語モデルであるChatGPTが提供する2つのテストサンプルが含まれています。
+これらのサンプルには、テキストとテーブルの形式の両方をサポートする英語から中国語への翻訳ソフトウェアをテストするために使用することができるMarkdownテーブルと英文の文章が含まれています。
+テキストのテスト
+素早い茶色の狐がのんびりした犬を飛び越えます。このパングラムには、英語のアルファベットのすべての文字が少なくとも1回は含まれています。パングラムは、フォント、キーボード、その他のテキスト関連のツールをテストするためによく使用されます。英語に加えて、他の言語でもパングラムがあります。一部のパングラムは、言語の固有の特性により、構築がより難しいです。
+テーブルのテスト
+2023-08-11 14:50:45.756 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Source (Table): '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Japanese):
+
+2023-08-11 14:50:55.533 | INFO     | translator.pdf_translator:translate_pdf:23 - '[フルーツ, 色, 価格(USD)] [りんご, 赤, 1.20] [ばなな, 黄色, 0.50] [オレンジ, オレンジ, 0.80] [いちご, 赤, 2.50] [ブルーベリー, 青, 3.00] [キウイ, 緑, 1.00] [マンゴー, オレンジ, 1.50] [ぶどう, 紫, 2.00]'
+2023-08-11 14:50:55.536 | DEBUG    | book.content:set_translation:52 - [フルーツ, 色, 価格(USD)] [りんご, 赤, 1.20] [ばなな, 黄色, 0.50] [オレンジ, オレンジ, 0.80] [いちご, 赤, 2.50] [ブルーベリー, 青, 3.00] [キウイ, 緑, 1.00] [マンゴー, オレンジ, 1.50] [ぶどう, 紫, 2.00]
+2023-08-11 14:50:55.538 | DEBUG    | book.content:set_translation:62 - [['フルーツ', '色', '価格(USD)'], ['りんご', '赤', '1.20'], ['ばなな', '黄色', '0.50'], ['オレンジ', 'オレンジ', '0.80'], ['いちご', '赤', '2.50'], ['ブルーベリー', '青', '3.00'], ['キウイ', '緑', '1.00'], ['マンゴー', 'オレンジ', '1.50'], ['ぶどう', '紫', '2.00']]
+2023-08-11 14:50:55.541 | DEBUG    | book.content:set_translation:66 -      フルーツ     色 価格(USD)
+0     りんご     赤    1.20
+1     ばなな    黄色    0.50
+2    オレンジ  オレンジ    0.80
+3     いちご     赤    2.50
+4  ブルーベリー     青    3.00
+5     キウイ     緑    1.00
+6    マンゴー  オレンジ    1.50
+7     ぶどう     紫    2.00
+2023-08-11 14:50:55.550 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 14:50:55.552 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 14:50:55.694 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 15:08:52.990 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 15:08:52.995 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Spanish
+2023-08-11 15:08:53.172 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 15:08:53.188 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 15:08:53.268 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Source: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to Spanish):
+2023-08-11 15:09:26.681 | INFO     | translator.pdf_translator:translate_pdf:23 - Datos de prueba
+Este conjunto de datos contiene dos muestras de prueba proporcionadas por ChatGPT, un modelo de lenguaje de IA desarrollado por OpenAI.
+Estas muestras incluyen una tabla en formato markdown y un pasaje de texto en inglés, que se pueden usar para probar un software de traducción de inglés a chino que admita tanto formatos de texto como de tabla.
+Prueba de texto
+El rápido zorro marrón salta sobre el perro perezoso. Este pangrama contiene todas las letras del alfabeto inglés al menos una vez. Se suelen utilizar pangramas para probar fuentes, teclados y otras herramientas relacionadas con el texto. Además del inglés, hay pangramas en muchos otros idiomas. Algunos pangramas son más difíciles de construir debido a las características únicas del idioma.
+Prueba de tabla
+2023-08-11 15:09:26.690 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Source (Table): '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Spanish):
+
+2023-08-11 15:09:35.618 | INFO     | translator.pdf_translator:translate_pdf:23 - '[Fruta, Color, Precio (USD)] [Manzana, Rojo, 1.20] [Plátano, Amarillo, 0.50] [Naranja, Naranja, 0.80] [Fresa, Rojo, 2.50] [Arándano, Azul, 3.00] [Kiwi, Verde, 1.00] [Mango, Naranja, 1.50] [Uva, Morado, 2.00]'
+2023-08-11 15:09:35.621 | DEBUG    | book.content:set_translation:52 - [Fruta, Color, Precio (USD)] [Manzana, Rojo, 1.20] [Plátano, Amarillo, 0.50] [Naranja, Naranja, 0.80] [Fresa, Rojo, 2.50] [Arándano, Azul, 3.00] [Kiwi, Verde, 1.00] [Mango, Naranja, 1.50] [Uva, Morado, 2.00]
+2023-08-11 15:09:35.624 | DEBUG    | book.content:set_translation:62 - [['Fruta', 'Color', 'Precio (USD)'], ['Manzana', 'Rojo', '1.20'], ['Plátano', 'Amarillo', '0.50'], ['Naranja', 'Naranja', '0.80'], ['Fresa', 'Rojo', '2.50'], ['Arándano', 'Azul', '3.00'], ['Kiwi', 'Verde', '1.00'], ['Mango', 'Naranja', '1.50'], ['Uva', 'Morado', '2.00']]
+2023-08-11 15:09:35.628 | DEBUG    | book.content:set_translation:66 -       Fruta     Color Precio (USD)
+0   Manzana      Rojo         1.20
+1   Plátano  Amarillo         0.50
+2   Naranja   Naranja         0.80
+3     Fresa      Rojo         2.50
+4  Arándano      Azul         3.00
+5      Kiwi     Verde         1.00
+6     Mango   Naranja         1.50
+7       Uva    Morado         2.00
+2023-08-11 15:09:35.637 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 15:09:35.640 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 15:09:35.763 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 15:10:09.133 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 15:10:09.137 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 15:10:09.309 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 15:10:09.319 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 15:10:09.375 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Source: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to Chinese):
+2023-08-11 15:10:22.842 | INFO     | translator.pdf_translator:translate_pdf:23 - 源文："测试数据
+该数据集包含由OpenAI的AI语言模型ChatGPT提供的两个测试样本。
+这些样本包含一个Markdown表格和一个英文文本段落，可用于测试支持文本和表格格式的英语到中文的翻译软件。
+文本测试
+快速的棕色狐狸跳过懒惰的狗。这个句子包含了英语字母表中的每一个字母，有时被用来测试字体、键盘和其他与文本有关的工具。除了英语，还有许多其他语言的句子。由于语言的独特特性，有些句子更难构造。
+表格测试"
+2023-08-11 15:10:22.850 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Source (Table): '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Chinese):
+
+2023-08-11 15:10:32.742 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓，蓝色, 3.00] [猕猴桃，绿色, 1.00] [芒果，橙色, 1.50] [葡萄，紫色, 2.00]'
+2023-08-11 15:10:32.745 | DEBUG    | book.content:set_translation:52 - [水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓，蓝色, 3.00] [猕猴桃，绿色, 1.00] [芒果，橙色, 1.50] [葡萄，紫色, 2.00]
+2023-08-11 15:10:32.749 | DEBUG    | book.content:set_translation:62 - [['水果', '颜色', '价格 (美元)'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓，蓝色', '3.00'], ['猕猴桃，绿色', '1.00'], ['芒果，橙色', '1.50'], ['葡萄，紫色', '2.00']]
+2023-08-11 15:10:32.753 | DEBUG    | book.content:set_translation:66 -        水果    颜色 价格 (美元)
+0      苹果    红色    1.20
+1      香蕉    黄色    0.50
+2      橙子    橙色    0.80
+3      草莓    红色    2.50
+4   蓝莓，蓝色  3.00    None
+5  猕猴桃，绿色  1.00    None
+6   芒果，橙色  1.50    None
+7   葡萄，紫色  2.00    None
+2023-08-11 15:10:32.763 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 15:10:32.767 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 15:10:32.991 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 15:17:27.879 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 15:17:27.883 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 15:17:28.078 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 15:17:28.091 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 15:17:28.163 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Source: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to Chinese):
+2023-08-11 15:17:44.137 | INFO     | translator.pdf_translator:translate_pdf:23 - 源代码：'测试数据
+此数据集包含两个由ChatGPT（OpenAI的AI语言模型）提供的测试样本。
+这些样本包括一个Markdown表格和一个英文文本段落，可用于测试支持文本和表格格式的英文到中文翻译软件。
+文本测试
+The quick brown fox jumps over the lazy dog. 这个全字母句包含了所有英文字母。全字母句经常被用来测试字体、键盘和其他文本相关的工具。除了英语，还有许多其他语言的全字母句。由于语言的独特特性，有些全字母句更难以构造。
+表格测试'
+2023-08-11 15:17:44.146 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Source (Table): '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Chinese):
+
+2023-08-11 15:17:56.255 | INFO     | translator.pdf_translator:translate_pdf:23 - '[水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-11 15:17:56.259 | DEBUG    | book.content:set_translation:55 - [水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-11 15:17:56.261 | DEBUG    | book.content:set_translation:65 - [['水果', '颜色', '价格 (美元)'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
+2023-08-11 15:17:56.265 | DEBUG    | book.content:set_translation:69 -     水果  颜色 价格 (美元)
+0   苹果  红色    1.20
+1   香蕉  黄色    0.50
+2   橙子  橙色    0.80
+3   草莓  红色    2.50
+4   蓝莓  蓝色    3.00
+5  猕猴桃  绿色    1.00
+6   芒果  橙色    1.50
+7   葡萄  紫色    2.00
+2023-08-11 15:17:56.279 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 15:17:56.282 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 15:17:56.427 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 15:22:04.851 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 15:22:04.855 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 15:22:05.082 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 15:22:05.097 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 15:22:05.170 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to Chinese):
+2023-08-11 15:22:19.442 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+此数据集包含由OpenAI的ChatGPT提供的两个测试样本，这是一个AI语言模型。
+这些样本包括一个Markdown表格和一个英文文本段落，可用于测试支持文本和表格格式的英译中翻译软件。
+文本测试
+敏捷的棕色狐狸跃过懒狗。这个句子中至少包含了英文字母表中的每个字母。句子通常用来测试字体、键盘和其他与文本相关的工具。除了英语之外，还有许多其他语言的句子。由于每种语言的独特特点，有些句子构造起来更困难。
+表格测试
+2023-08-11 15:22:19.451 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Chinese):
+
+2023-08-11 15:22:30.940 | INFO     | translator.pdf_translator:translate_pdf:23 - [水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-11 15:22:30.943 | DEBUG    | book.content:set_translation:55 - [水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-11 15:22:30.944 | DEBUG    | book.content:set_translation:65 - [['水果', '颜色', '价格 (美元)'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
+2023-08-11 15:22:30.948 | DEBUG    | book.content:set_translation:69 -     水果  颜色 价格 (美元)
+0   苹果  红色    1.20
+1   香蕉  黄色    0.50
+2   橙子  橙色    0.80
+3   草莓  红色    2.50
+4   蓝莓  蓝色    3.00
+5  猕猴桃  绿色    1.00
+6   芒果  橙色    1.50
+7   葡萄  紫色    2.00
+2023-08-11 15:22:30.959 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 15:22:30.962 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 15:22:31.102 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 15:22:59.845 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 15:22:59.848 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 15:22:59.970 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 15:22:59.978 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-11 15:22:59.982 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Chinese):
+2023-08-11 15:23:10.401 | INFO     | translator.pdf_translator:translate_pdf:23 - 文档测试
+介绍
+这是一个测试文档，用于验证OpenAI动力翻译器的效率和准确性。它包含文本和表格内容。
+表1：样本数据
+概要
+上面的表格提供了样本数据的快照，其中包括三个个体的姓名、年龄和职业。本次测试的目标是确保文本和表格信息都能准确翻译，并保持格式和结构。
+2023-08-11 15:23:10.406 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-11 15:23:16.633 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布赖恩, 28, 教师]
+2023-08-11 15:23:16.636 | DEBUG    | book.content:set_translation:55 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布赖恩, 28, 教师]
+2023-08-11 15:23:16.638 | DEBUG    | book.content:set_translation:65 - [['姓名', '年龄', '职业'], ['约翰', '25', '工程师'], ['安娜', '30', '医生'], ['布赖恩', '28', '教师']]
+2023-08-11 15:23:16.641 | DEBUG    | book.content:set_translation:69 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布赖恩  28   教师
+2023-08-11 15:23:16.651 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 15:23:16.654 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 15:23:16.920 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 15:48:46.972 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\177c90e0e2f2c37a8a6f58c2ebc26246b940fa8f\RussiaToChinese.pdf
+2023-08-11 15:48:46.975 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 15:48:47.228 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ ТестовыеСценариидляOpenAIПереводчика
+1.ТестированиеПереводаТекста
+Цель:Проверитькорректностьпереводаанглийскоготекставкитайский.
+Шаги:
+Открытьприложение.
+Вставитьанглийскийтекствполеввода.
+Нажатькнопку"Перевести".
+Сравнитьрезультатсожидаемымпереводом.
+Ожидаемыйрезультат:Текстуспешнопереводитсясанглийскогонакитайский.
+2.ТестированиеПереводаТаблицы
+Цель:Проверитькорректностьпереводаанглийскойтаблицывкитайскуютаблицу.
+Шаги:
+Открытьприложение.
+Вставитьанглийскуютаблицувполеввода.
+Нажатькнопку"Перевести".
+Сравнитьрезультатсожидаемойпереведеннойтаблицей.
+Ожидаемый результат: Таблица успешно переводится с английского на китайский, сохраняя
+форматирование.
+Примечание:Пожалуйста,учтите,чтоэтотпримерпростойибазовый.Вреальнойситуациивам,
+возможно, потребуется более детализированный и сложный тестовый план, а также
+использованиеспециализированныхинструментовдляавтоматическоготестирования.
+2023-08-11 15:48:47.242 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Английский(English), Русский(Russian)] [Hello, Здравствуйте] [Goodbye, Досвидания] [Yes, Да] [No, Нет]
+2023-08-11 15:48:47.245 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'ТестовыеСценариидляOpenAIПереводчика
+1.ТестированиеПереводаТекста
+Цель:Проверитькорректностьпереводаанглийскоготекставкитайский.
+Шаги:
+Открытьприложение.
+Вставитьанглийскийтекствполеввода.
+Нажатькнопку"Перевести".
+Сравнитьрезультатсожидаемымпереводом.
+Ожидаемыйрезультат:Текстуспешнопереводитсясанглийскогонакитайский.
+2.ТестированиеПереводаТаблицы
+Цель:Проверитькорректностьпереводаанглийскойтаблицывкитайскуютаблицу.
+Шаги:
+Открытьприложение.
+Вставитьанглийскуютаблицувполеввода.
+Нажатькнопку"Перевести".
+Сравнитьрезультатсожидаемойпереведеннойтаблицей.
+Ожидаемый результат: Таблица успешно переводится с английского на китайский, сохраняя
+форматирование.
+Примечание:Пожалуйста,учтите,чтоэтотпримерпростойибазовый.Вреальнойситуациивам,
+возможно, потребуется более детализированный и сложный тестовый план, а также
+использованиеспециализированныхинструментовдляавтоматическоготестирования.'
+Translation (to Chinese):
+2023-08-11 15:50:59.547 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\177c90e0e2f2c37a8a6f58c2ebc26246b940fa8f\RussiaToChinese.pdf
+2023-08-11 15:50:59.552 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 15:50:59.792 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ ТестовыеСценариидляOpenAIПереводчика
+1.ТестированиеПереводаТекста
+Цель:Проверитькорректностьпереводаанглийскоготекставкитайский.
+Шаги:
+Открытьприложение.
+Вставитьанглийскийтекствполеввода.
+Нажатькнопку"Перевести".
+Сравнитьрезультатсожидаемымпереводом.
+Ожидаемыйрезультат:Текстуспешнопереводитсясанглийскогонакитайский.
+2.ТестированиеПереводаТаблицы
+Цель:Проверитькорректностьпереводаанглийскойтаблицывкитайскуютаблицу.
+Шаги:
+Открытьприложение.
+Вставитьанглийскуютаблицувполеввода.
+Нажатькнопку"Перевести".
+Сравнитьрезультатсожидаемойпереведеннойтаблицей.
+Ожидаемый результат: Таблица успешно переводится с английского на китайский, сохраняя
+форматирование.
+Примечание:Пожалуйста,учтите,чтоэтотпримерпростойибазовый.Вреальнойситуациивам,
+возможно, потребуется более детализированный и сложный тестовый план, а также
+использованиеспециализированныхинструментовдляавтоматическоготестирования.
+2023-08-11 15:50:59.808 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Английский(English), Русский(Russian)] [Hello, Здравствуйте] [Goodbye, Досвидания] [Yes, Да] [No, Нет]
+2023-08-11 15:50:59.811 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'ТестовыеСценариидляOpenAIПереводчика
+1.ТестированиеПереводаТекста
+Цель:Проверитькорректностьпереводаанглийскоготекставкитайский.
+Шаги:
+Открытьприложение.
+Вставитьанглийскийтекствполеввода.
+Нажатькнопку"Перевести".
+Сравнитьрезультатсожидаемымпереводом.
+Ожидаемыйрезультат:Текстуспешнопереводитсясанглийскогонакитайский.
+2.ТестированиеПереводаТаблицы
+Цель:Проверитькорректностьпереводаанглийскойтаблицывкитайскуютаблицу.
+Шаги:
+Открытьприложение.
+Вставитьанглийскуютаблицувполеввода.
+Нажатькнопку"Перевести".
+Сравнитьрезультатсожидаемойпереведеннойтаблицей.
+Ожидаемый результат: Таблица успешно переводится с английского на китайский, сохраняя
+форматирование.
+Примечание:Пожалуйста,учтите,чтоэтотпримерпростойибазовый.Вреальнойситуациивам,
+возможно, потребуется более детализированный и сложный тестовый план, а также
+использованиеспециализированныхинструментовдляавтоматическоготестирования.'
+Translation (to Chinese):
+2023-08-11 15:51:23.887 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试计划OpenAI翻译器
+1. 文本翻译测试 
+目标: 验证将英文文本翻译为中文的准确性。
+步骤: 
+打开应用程序。
+将英文文本粘贴到输入框中。
+点击"翻译"按钮。
+比较结果与预期翻译。
+预期结果: 文本能够成功从英文翻译成中文。
+2. 表格翻译测试
+目标: 验证将英文表格翻译为中文表格的准确性，并保留格式。
+步骤:
+打开应用程序。
+将英文表格粘贴到输入框中。
+点击"翻译"按钮。
+比较结果与预期翻译表格。
+预期结果: 表格能够成功从英文翻译成中文，并保留格式。
+备注: 请注意，这个示例是简单而基础的。在实际情况中，您可能需要更详细和复杂的测试计划，以及使用专门的测试工具。
+2023-08-11 15:51:23.894 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Английский(English), Русский(Russian)] [Hello, Здравствуйте] [Goodbye, Досвидания] [Yes, Да] [No, Нет]'
+Translation (to Chinese):
+
+2023-08-11 15:51:28.271 | INFO     | translator.pdf_translator:translate_pdf:23 - [英语, 俄语] [你好, Здравствуйте] [再见, Досвидания] [是, Да] [不, Нет]
+2023-08-11 15:51:28.275 | DEBUG    | book.content:set_translation:55 - [英语, 俄语] [你好, Здравствуйте] [再见, Досвидания] [是, Да] [不, Нет]
+2023-08-11 15:51:28.277 | DEBUG    | book.content:set_translation:65 - [['英语', '俄语'], ['你好', 'Здравствуйте'], ['再见', 'Досвидания'], ['是', 'Да'], ['不', 'Нет']]
+2023-08-11 15:51:28.280 | DEBUG    | book.content:set_translation:69 -    英语            俄语
+0  你好  Здравствуйте
+1  再见    Досвидания
+2   是            Да
+3   不           Нет
+2023-08-11 15:51:28.289 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\177c90e0e2f2c37a8a6f58c2ebc26246b940fa8f\RussiaToChinese.pdf
+2023-08-11 15:51:28.292 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\177c90e0e2f2c37a8a6f58c2ebc26246b940fa8f\RussiaToChinese_translated.pdf
+2023-08-11 15:51:28.430 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\177c90e0e2f2c37a8a6f58c2ebc26246b940fa8f\RussiaToChinese_translated.pdf
+2023-08-11 15:59:36.922 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\1d3acf0c543a961e907df4e45900fcd1f7d79901\RussiaToChinese.pdf
+2023-08-11 15:59:36.926 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 15:59:37.043 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Документация Продукта
+Введение
+Данный документ представляет собой руково
+дство по использованию программы "SampleApp", ра
+зработанной для обработки графических изо
+бражений.
+Основные функции:
+Импорт изображений в различных форматах.
+Редактирование изображения (обрезка, масшт
+абирование).
+Применение различных фильтров и эффектов.
+Экспорт обработанного изображения.
+Таблица поддерживаемых форматов:
+2023-08-11 15:59:37.053 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Номер, Формат файла, Описание] [1, .JPEG, Стандартный ф\nормат фото] [2, .PNG, Формат с прозр\nачностью] [3, .GIF, Анимированн\nый формат] [4, .BMP, Битовая карта]
+2023-08-11 15:59:37.057 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Документация Продукта
+Введение
+Данный документ представляет собой руково
+дство по использованию программы "SampleApp", ра
+зработанной для обработки графических изо
+бражений.
+Основные функции:
+Импорт изображений в различных форматах.
+Редактирование изображения (обрезка, масшт
+абирование).
+Применение различных фильтров и эффектов.
+Экспорт обработанного изображения.
+Таблица поддерживаемых форматов:'
+Translation (to Chinese):
+2023-08-11 15:59:43.735 | INFO     | translator.pdf_translator:translate_pdf:23 - 文档化产品
+介绍
+本文档是有关使用“SampleApp”程序的指导文
+件，该程序用于处理图像。
+主要功能：
+以不同格式导入图像。
+编辑图像（裁剪，缩放）。
+应用各种滤镜和效果。
+导出处理后的图像。
+支持的格式表：
+2023-08-11 15:59:43.742 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Номер, Формат файла, Описание] [1, .JPEG, Стандартный ф\nормат фото] [2, .PNG, Формат с прозр\nачностью] [3, .GIF, Анимированн\nый формат] [4, .BMP, Битовая карта]'
+Translation (to Chinese):
+
+2023-08-11 15:59:48.362 | INFO     | translator.pdf_translator:translate_pdf:23 - [编号, 文件格式, 描述] [1，.JPEG，标准照片格式] [2，.PNG，带透明度的格式] [3，.GIF，动画格式] [4，.BMP，位图]
+2023-08-11 15:59:48.366 | DEBUG    | book.content:set_translation:55 - [编号, 文件格式, 描述] [1,.JPEG,标准照片格式] [2,.PNG,带透明度的格式] [3,.GIF,动画格式] [4,.BMP,位图]
+2023-08-11 15:59:48.368 | DEBUG    | book.content:set_translation:65 - [['编号', '文件格式', '描述'], ['1,.JPEG,标准照片格式'], ['2,.PNG,带透明度的格式'], ['3,.GIF,动画格式'], ['4,.BMP,位图']]
+2023-08-11 15:59:48.371 | ERROR    | book.content:set_translation:73 - An error occurred during table translation: 3 columns passed, passed data had 1 columns
+2023-08-11 15:59:48.374 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\1d3acf0c543a961e907df4e45900fcd1f7d79901\RussiaToChinese.pdf
+2023-08-11 15:59:48.377 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\1d3acf0c543a961e907df4e45900fcd1f7d79901\RussiaToChinese_translated.pdf
+2023-08-11 15:59:48.614 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\1d3acf0c543a961e907df4e45900fcd1f7d79901\RussiaToChinese_translated.pdf
+2023-08-11 16:09:11.701 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\1d3acf0c543a961e907df4e45900fcd1f7d79901\RussiaToChinese.pdf
+2023-08-11 16:09:11.707 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 16:09:11.839 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Документация Продукта
+Введение
+Данный документ представляет собой руково
+дство по использованию программы "SampleApp", ра
+зработанной для обработки графических изо
+бражений.
+Основные функции:
+Импорт изображений в различных форматах.
+Редактирование изображения (обрезка, масшт
+абирование).
+Применение различных фильтров и эффектов.
+Экспорт обработанного изображения.
+Таблица поддерживаемых форматов:
+2023-08-11 16:09:11.849 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Номер, Формат файла, Описание] [1, .JPEG, Стандартный ф\nормат фото] [2, .PNG, Формат с прозр\nачностью] [3, .GIF, Анимированн\nый формат] [4, .BMP, Битовая карта]
+2023-08-11 16:09:11.853 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Документация Продукта
+Введение
+Данный документ представляет собой руково
+дство по использованию программы "SampleApp", ра
+зработанной для обработки графических изо
+бражений.
+Основные функции:
+Импорт изображений в различных форматах.
+Редактирование изображения (обрезка, масшт
+абирование).
+Применение различных фильтров и эффектов.
+Экспорт обработанного изображения.
+Таблица поддерживаемых форматов:'
+Translation (to Chinese):
+2023-08-11 16:09:18.839 | INFO     | translator.pdf_translator:translate_pdf:23 - 文档产品介绍
+引言
+本文档是使用"SampleApp"程序的指南，用于处理图像。
+主要功能：
+导入不同格式的图像。
+编辑图像（剪裁，缩放）。
+应用各种滤镜和特效。
+导出处理后的图像。
+支持的格式表：
+2023-08-11 16:09:18.845 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Номер, Формат файла, Описание] [1, .JPEG, Стандартный ф\nормат фото] [2, .PNG, Формат с прозр\nачностью] [3, .GIF, Анимированн\nый формат] [4, .BMP, Битовая карта]'
+Translation (to Chinese):
+
+2023-08-11 16:09:24.208 | INFO     | translator.pdf_translator:translate_pdf:23 - [编号, 文件格式, 描述] [1, .JPEG, 标准照片格式] [2, .PNG, 支持透明度的格式] [3, .GIF, 动画格式] [4, .BMP, 位图]
+2023-08-11 16:09:24.211 | DEBUG    | book.content:set_translation:58 - [编号, 文件格式, 描述] [1, .JPEG, 标准照片格式] [2, .PNG, 支持透明度的格式] [3, .GIF, 动画格式] [4, .BMP, 位图]
+2023-08-11 16:09:24.214 | DEBUG    | book.content:set_translation:68 - [['编号', '文件格式', '描述'], ['1', '.JPEG', '标准照片格式'], ['2', '.PNG', '支持透明度的格式'], ['3', '.GIF', '动画格式'], ['4', '.BMP', '位图']]
+2023-08-11 16:09:24.218 | DEBUG    | book.content:set_translation:72 -   编号   文件格式        描述
+0  1  .JPEG    标准照片格式
+1  2   .PNG  支持透明度的格式
+2  3   .GIF      动画格式
+3  4   .BMP        位图
+2023-08-11 16:09:24.234 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\1d3acf0c543a961e907df4e45900fcd1f7d79901\RussiaToChinese.pdf
+2023-08-11 16:09:24.237 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\1d3acf0c543a961e907df4e45900fcd1f7d79901\RussiaToChinese_translated.pdf
+2023-08-11 16:09:24.375 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\1d3acf0c543a961e907df4e45900fcd1f7d79901\RussiaToChinese_translated.pdf
+2023-08-11 16:09:59.230 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\1d3acf0c543a961e907df4e45900fcd1f7d79901\RussiaToChinese.pdf
+2023-08-11 16:09:59.234 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Japanese
+2023-08-11 16:09:59.376 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ Документация Продукта
+Введение
+Данный документ представляет собой руково
+дство по использованию программы "SampleApp", ра
+зработанной для обработки графических изо
+бражений.
+Основные функции:
+Импорт изображений в различных форматах.
+Редактирование изображения (обрезка, масшт
+абирование).
+Применение различных фильтров и эффектов.
+Экспорт обработанного изображения.
+Таблица поддерживаемых форматов:
+2023-08-11 16:09:59.389 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Номер, Формат файла, Описание] [1, .JPEG, Стандартный ф\nормат фото] [2, .PNG, Формат с прозр\nачностью] [3, .GIF, Анимированн\nый формат] [4, .BMP, Битовая карта]
+2023-08-11 16:09:59.392 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Документация Продукта
+Введение
+Данный документ представляет собой руково
+дство по использованию программы "SampleApp", ра
+зработанной для обработки графических изо
+бражений.
+Основные функции:
+Импорт изображений в различных форматах.
+Редактирование изображения (обрезка, масшт
+абирование).
+Применение различных фильтров и эффектов.
+Экспорт обработанного изображения.
+Таблица поддерживаемых форматов:'
+Translation (to Japanese):
+2023-08-11 16:10:15.292 | INFO     | translator.pdf_translator:translate_pdf:23 - テキスト：「製品ドキュメンテーション
+イントロダクション
+本文書は、「SampleApp」というプログラムの使用
+ガイドであり、グラフィックイメージの処理のために開発されています。
+主な機能：
+さまざまな形式のイメージのインポート。
+イメージの編集（トリミング、スケーリング）。
+さまざまなフィルターとエフェクトの適用。
+処理されたイメージのエクスポート。
+サポートされているフォーマットの表：」
+
+Translation (to English): 'Product Documentation
+Introduction
+This document is a guide to using the "SampleApp" program, developed for processing graphical images.
+Main functions:
+Importing images in various formats.
+Image editing (cropping, scaling).
+Applying various filters and effects.
+Exporting processed images.
+Table of supported formats:'
+2023-08-11 16:10:15.299 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Номер, Формат файла, Описание] [1, .JPEG, Стандартный ф\nормат фото] [2, .PNG, Формат с прозр\nачностью] [3, .GIF, Анимированн\nый формат] [4, .BMP, Битовая карта]'
+Translation (to Japanese):
+
+2023-08-11 16:10:22.042 | INFO     | translator.pdf_translator:translate_pdf:23 - [番号, ファイル形式, 説明] [1, .JPEG, 標準の写真形式] [2, .PNG, 透明形式] [3, .GIF, アニメーション形式] [4, .BMP, ビットマップ]
+2023-08-11 16:10:22.045 | DEBUG    | book.content:set_translation:58 - [番号, ファイル形式, 説明] [1, .JPEG, 標準の写真形式] [2, .PNG, 透明形式] [3, .GIF, アニメーション形式] [4, .BMP, ビットマップ]
+2023-08-11 16:10:22.048 | DEBUG    | book.content:set_translation:68 - [['番号', 'ファイル形式', '説明'], ['1', '.JPEG', '標準の写真形式'], ['2', '.PNG', '透明形式'], ['3', '.GIF', 'アニメーション形式'], ['4', '.BMP', 'ビットマップ']]
+2023-08-11 16:10:22.050 | DEBUG    | book.content:set_translation:72 -   番号 ファイル形式         説明
+0  1  .JPEG    標準の写真形式
+1  2   .PNG       透明形式
+2  3   .GIF  アニメーション形式
+3  4   .BMP     ビットマップ
+2023-08-11 16:10:22.060 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\1d3acf0c543a961e907df4e45900fcd1f7d79901\RussiaToChinese.pdf
+2023-08-11 16:10:22.063 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\1d3acf0c543a961e907df4e45900fcd1f7d79901\RussiaToChinese_translated.pdf
+2023-08-11 16:10:22.297 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\1d3acf0c543a961e907df4e45900fcd1f7d79901\RussiaToChinese_translated.pdf
+2023-08-11 16:15:25.553 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese.pdf
+2023-08-11 16:15:25.555 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 16:15:25.665 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ ДокументацияПродукта
+Введение
+Данный документ представляет собой руководство по использованию программы
+"SampleApp",разработаннойдляобработкиграфическихизображений.
+Основныефункции:
+Импортизображенийвразличныхформатах.
+Редактированиеизображения(обрезка,масштабирование).
+Применениеразличныхфильтровиэффектов.
+Экспортобработанногоизображения.
+Таблицаподдерживаемыхформатов:
+2023-08-11 16:15:25.674 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Номер, Форматфайла, Описание] [1, .JPEG, Стандартныйформатфото] [2, .PNG, Форматспрозрачностью] [3, .GIF, Анимированныйформат] [4, .BMP, Битоваякарта]
+2023-08-11 16:15:25.676 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'ДокументацияПродукта
+Введение
+Данный документ представляет собой руководство по использованию программы
+"SampleApp",разработаннойдляобработкиграфическихизображений.
+Основныефункции:
+Импортизображенийвразличныхформатах.
+Редактированиеизображения(обрезка,масштабирование).
+Применениеразличныхфильтровиэффектов.
+Экспортобработанногоизображения.
+Таблицаподдерживаемыхформатов:'
+Translation (to Chinese):
+2023-08-11 16:15:32.842 | INFO     | translator.pdf_translator:translate_pdf:23 - 文档产品介绍
+介绍
+该文件是关于使用"SampleApp"程序的指南，该程序专为处理图像而开发。
+主要功能：
+以不同格式导入图像。
+编辑图像（裁剪、缩放）。
+应用各种滤镜和效果。
+导出处理后的图像。
+支持的格式表：
+2023-08-11 16:15:32.848 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Номер, Форматфайла, Описание] [1, .JPEG, Стандартныйформатфото] [2, .PNG, Форматспрозрачностью] [3, .GIF, Анимированныйформат] [4, .BMP, Битоваякарта]'
+Translation (to Chinese):
+
+2023-08-11 16:15:39.419 | INFO     | translator.pdf_translator:translate_pdf:23 - [编号, 文件格式, 描述] [1, .JPEG, 标准照片格式] [2, .PNG, 具有透明度的格式] [3, .GIF, 动画格式] [4, .BMP, 位图]
+2023-08-11 16:15:39.423 | DEBUG    | book.content:set_translation:58 - [编号, 文件格式, 描述] [1, .JPEG, 标准照片格式] [2, .PNG, 具有透明度的格式] [3, .GIF, 动画格式] [4, .BMP, 位图]
+2023-08-11 16:15:39.426 | DEBUG    | book.content:set_translation:68 - [['编号', '文件格式', '描述'], ['1', '.JPEG', '标准照片格式'], ['2', '.PNG', '具有透明度的格式'], ['3', '.GIF', '动画格式'], ['4', '.BMP', '位图']]
+2023-08-11 16:15:39.430 | DEBUG    | book.content:set_translation:72 -   编号   文件格式        描述
+0  1  .JPEG    标准照片格式
+1  2   .PNG  具有透明度的格式
+2  3   .GIF      动画格式
+3  4   .BMP        位图
+2023-08-11 16:15:39.438 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese.pdf
+2023-08-11 16:15:39.442 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese_translated.pdf
+2023-08-11 16:15:39.557 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese_translated.pdf
+2023-08-11 16:16:02.781 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese.pdf
+2023-08-11 16:16:02.784 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Spanish
+2023-08-11 16:16:02.899 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ ДокументацияПродукта
+Введение
+Данный документ представляет собой руководство по использованию программы
+"SampleApp",разработаннойдляобработкиграфическихизображений.
+Основныефункции:
+Импортизображенийвразличныхформатах.
+Редактированиеизображения(обрезка,масштабирование).
+Применениеразличныхфильтровиэффектов.
+Экспортобработанногоизображения.
+Таблицаподдерживаемыхформатов:
+2023-08-11 16:16:02.908 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Номер, Форматфайла, Описание] [1, .JPEG, Стандартныйформатфото] [2, .PNG, Форматспрозрачностью] [3, .GIF, Анимированныйформат] [4, .BMP, Битоваякарта]
+2023-08-11 16:16:02.911 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'ДокументацияПродукта
+Введение
+Данный документ представляет собой руководство по использованию программы
+"SampleApp",разработаннойдляобработкиграфическихизображений.
+Основныефункции:
+Импортизображенийвразличныхформатах.
+Редактированиеизображения(обрезка,масштабирование).
+Применениеразличныхфильтровиэффектов.
+Экспортобработанногоизображения.
+Таблицаподдерживаемыхформатов:'
+Translation (to Spanish):
+2023-08-11 16:16:08.952 | INFO     | translator.pdf_translator:translate_pdf:23 - Texto: 'Documento técnico del producto
+Introducción
+Este documento es una guía de uso del programa "SampleApp", diseñado para el procesamiento de imágenes gráficas.
+Funciones principales:
+Importar imágenes en varios formatos.
+Editar imágenes (recortar, escalar).
+Aplicar varios filtros y efectos.
+Exportar la imagen procesada.
+Tabla de formatos compatibles:'
+2023-08-11 16:16:08.958 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Номер, Форматфайла, Описание] [1, .JPEG, Стандартныйформатфото] [2, .PNG, Форматспрозрачностью] [3, .GIF, Анимированныйформат] [4, .BMP, Битоваякарта]'
+Translation (to Spanish):
+
+2023-08-11 16:16:13.556 | INFO     | translator.pdf_translator:translate_pdf:23 - [Numero, Formato de archivo, Descripcion] [1, .JPEG, Formato estandar de foto] [2, .PNG, Formato con transparencia] [3, .GIF, Formato animado] [4, .BMP, Mapa de bits]
+2023-08-11 16:16:13.559 | DEBUG    | book.content:set_translation:58 - [Numero, Formato de archivo, Descripcion] [1, .JPEG, Formato estandar de foto] [2, .PNG, Formato con transparencia] [3, .GIF, Formato animado] [4, .BMP, Mapa de bits]
+2023-08-11 16:16:13.562 | DEBUG    | book.content:set_translation:68 - [['Numero', 'Formato de archivo', 'Descripcion'], ['1', '.JPEG', 'Formato estandar de foto'], ['2', '.PNG', 'Formato con transparencia'], ['3', '.GIF', 'Formato animado'], ['4', '.BMP', 'Mapa de bits']]
+2023-08-11 16:16:13.565 | DEBUG    | book.content:set_translation:72 -   Numero Formato de archivo                Descripcion
+0      1              .JPEG   Formato estandar de foto
+1      2               .PNG  Formato con transparencia
+2      3               .GIF            Formato animado
+3      4               .BMP               Mapa de bits
+2023-08-11 16:16:13.574 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese.pdf
+2023-08-11 16:16:13.577 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese_translated.pdf
+2023-08-11 16:16:13.706 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese_translated.pdf
+2023-08-11 16:16:58.377 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese.pdf
+2023-08-11 16:16:58.380 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 16:16:58.494 | DEBUG    | translator.pdf_parser:parse_pdf:47 - [raw_text]
+ ДокументацияПродукта
+Введение
+Данный документ представляет собой руководство по использованию программы
+"SampleApp",разработаннойдляобработкиграфическихизображений.
+Основныефункции:
+Импортизображенийвразличныхформатах.
+Редактированиеизображения(обрезка,масштабирование).
+Применениеразличныхфильтровиэффектов.
+Экспортобработанногоизображения.
+Таблицаподдерживаемыхформатов:
+2023-08-11 16:16:58.501 | DEBUG    | translator.pdf_parser:parse_pdf:55 - [table]
+[Номер, Форматфайла, Описание] [1, .JPEG, Стандартныйформатфото] [2, .PNG, Форматспрозрачностью] [3, .GIF, Анимированныйформат] [4, .BMP, Битоваякарта]
+2023-08-11 16:16:58.503 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'ДокументацияПродукта
+Введение
+Данный документ представляет собой руководство по использованию программы
+"SampleApp",разработаннойдляобработкиграфическихизображений.
+Основныефункции:
+Импортизображенийвразличныхформатах.
+Редактированиеизображения(обрезка,масштабирование).
+Применениеразличныхфильтровиэффектов.
+Экспортобработанногоизображения.
+Таблицаподдерживаемыхформатов:'
+Translation (to Chinese):
+2023-08-11 16:17:04.993 | INFO     | translator.pdf_translator:translate_pdf:23 - 文档产品
+引言
+本文档是“SampleApp”程序的使用手册，用于处理图像。
+主要功能：
+以各种格式导入图像。
+编辑图像（裁剪，缩放）。
+应用各种滤镜和效果。
+导出处理后的图像。
+支持的格式表：
+2023-08-11 16:17:05.000 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Номер, Форматфайла, Описание] [1, .JPEG, Стандартныйформатфото] [2, .PNG, Форматспрозрачностью] [3, .GIF, Анимированныйформат] [4, .BMP, Битоваякарта]'
+Translation (to Chinese):
+
+2023-08-11 16:17:10.305 | INFO     | translator.pdf_translator:translate_pdf:23 - [编号, 文件格式, 描述] [1, .JPEG, 标准照片格式] [2, .PNG, 带有透明度的格式] [3, .GIF, 动画格式] [4, .BMP, 位图]
+2023-08-11 16:17:10.308 | DEBUG    | book.content:set_translation:58 - [编号, 文件格式, 描述] [1, .JPEG, 标准照片格式] [2, .PNG, 带有透明度的格式] [3, .GIF, 动画格式] [4, .BMP, 位图]
+2023-08-11 16:17:10.310 | DEBUG    | book.content:set_translation:68 - [['编号', '文件格式', '描述'], ['1', '.JPEG', '标准照片格式'], ['2', '.PNG', '带有透明度的格式'], ['3', '.GIF', '动画格式'], ['4', '.BMP', '位图']]
+2023-08-11 16:17:10.313 | DEBUG    | book.content:set_translation:72 -   编号   文件格式        描述
+0  1  .JPEG    标准照片格式
+1  2   .PNG  带有透明度的格式
+2  3   .GIF      动画格式
+3  4   .BMP        位图
+2023-08-11 16:17:10.322 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese.pdf
+2023-08-11 16:17:10.324 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese_translated.pdf
+2023-08-11 16:17:10.554 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\0c01b91d680743125f56e58f84ae82b8d7e9fa26\RussiaToChinese_translated.pdf
+2023-08-11 16:46:13.700 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 16:46:13.704 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 16:46:13.858 | DEBUG    | translator.pdf_parser:parse_pdf:40 - Text Position: (90.0, 743.28345, 7.895250000000004, 15.950000000000045)
+2023-08-11 16:46:13.861 | DEBUG    | translator.pdf_parser:parse_pdf:41 - Text Style: {'font_name': 'TVOIEN+Calibri-Bold', 'font_size': 15.950000000000045, 'bold': True, 'italic': False}
+2023-08-11 16:46:13.878 | DEBUG    | translator.pdf_parser:parse_pdf:61 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 16:46:13.888 | DEBUG    | translator.pdf_parser:parse_pdf:69 - Table Position: (84.6, 197.03999999999996, 426.1, 64.39999999999998)
+2023-08-11 16:51:35.932 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 16:51:35.937 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 16:51:36.077 | DEBUG    | translator.pdf_parser:parse_pdf:40 - Text Position: (90.0, 743.28345, 7.895250000000004, 15.950000000000045)
+2023-08-11 16:51:36.081 | DEBUG    | translator.pdf_parser:parse_pdf:41 - Text Style: {'font_name': 'TVOIEN+Calibri-Bold', 'font_size': 15.950000000000045, 'bold': True, 'italic': False}
+2023-08-11 16:51:36.093 | DEBUG    | translator.pdf_parser:parse_pdf:61 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 16:51:36.099 | DEBUG    | translator.pdf_parser:parse_pdf:69 - Table Position: (84.6, 197.03999999999996, 426.1, 64.39999999999998)
+2023-08-11 16:51:36.110 | DEBUG    | translator.pdf_parser:parse_pdf:73 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-11 16:51:36.113 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Chinese):
+2023-08-11 16:51:46.749 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文件
+介绍
+这是一个测试文件，用于验证OpenAI驱动的翻译器的效率和准确性。它包含文本和表格内容。
+表1：示例数据
+摘要
+上表提供了示例数据的快照，其中包括三个人的姓名、年龄和职业。本测试的目标是确保文本和表格信息都能准确地翻译，并保留其格式和结构。
+2023-08-11 16:51:46.756 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-11 16:51:51.546 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 16:51:51.549 | DEBUG    | book.content:set_translation:58 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 16:51:51.553 | DEBUG    | book.content:set_translation:68 - [['姓名', '年龄', '职业'], ['约翰', '25', '工程师'], ['安娜', '30', '医生'], ['布莱恩', '28', '教师']]
+2023-08-11 16:51:51.557 | DEBUG    | book.content:set_translation:72 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-11 16:51:51.567 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 16:51:51.571 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 16:51:51.699 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 17:10:52.472 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 17:10:52.476 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 17:10:52.593 | DEBUG    | translator.pdf_parser:parse_pdf:40 - Text Position: (90.0, 743.28345, 7.895250000000004, 15.950000000000045)
+2023-08-11 17:10:52.595 | DEBUG    | translator.pdf_parser:parse_pdf:41 - Text Style: {'font_name': 'TVOIEN+Calibri-Bold', 'font_size': 15.950000000000045, 'bold': True, 'italic': False}
+2023-08-11 17:10:52.605 | DEBUG    | translator.pdf_parser:parse_pdf:61 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 17:10:52.610 | DEBUG    | translator.pdf_parser:parse_pdf:69 - Table Position: (84.6, 197.03999999999996, 426.1, 64.39999999999998)
+2023-08-11 17:10:52.618 | DEBUG    | translator.pdf_parser:parse_pdf:73 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-11 17:10:52.620 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Chinese):
+2023-08-11 17:11:02.496 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+介绍
+这是一个测试文档，旨在验证由OpenAI驱动的翻译器的效率和准确性。它包含了文本和表格内容。
+表1：样本数据
+摘要
+上表提供了样本数据的快照，其中包括了三个个体的姓名、年龄和职业。这个测试的目标是确保文本和表格信息都是准确翻译的，同时保留格式和结构。
+2023-08-11 17:11:02.502 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-11 17:11:06.759 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 17:11:06.762 | DEBUG    | book.content:set_translation:58 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 17:11:06.765 | DEBUG    | book.content:set_translation:68 - [['姓名', '年龄', '职业'], ['约翰', '25', '工程师'], ['安娜', '30', '医生'], ['布莱恩', '28', '教师']]
+2023-08-11 17:11:06.768 | DEBUG    | book.content:set_translation:72 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-11 17:11:06.778 | INFO     | translator.writer:_save_translated_book_pdf:31 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 17:11:06.781 | INFO     | translator.writer:_save_translated_book_pdf:32 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 17:18:51.706 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 17:18:51.711 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 17:18:51.842 | DEBUG    | translator.pdf_parser:parse_pdf:40 - Text Position: (90.0, 743.28345, 7.895250000000004, 15.950000000000045)
+2023-08-11 17:18:51.845 | DEBUG    | translator.pdf_parser:parse_pdf:41 - Text Style: {'font_name': 'TVOIEN+Calibri-Bold', 'font_size': 15.950000000000045, 'bold': True, 'italic': False}
+2023-08-11 17:18:51.857 | DEBUG    | translator.pdf_parser:parse_pdf:61 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 17:18:51.863 | DEBUG    | translator.pdf_parser:parse_pdf:69 - Table Position: (84.6, 197.03999999999996, 426.1, 64.39999999999998)
+2023-08-11 17:18:51.871 | DEBUG    | translator.pdf_parser:parse_pdf:73 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-11 17:18:51.875 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Chinese):
+2023-08-11 17:19:01.382 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+介绍
+这是一个测试文档，用于验证OpenAI动力翻译器的效率和准确性。它包含文本和表格内容。
+表1:示例数据
+摘要
+上面的表格提供了示例数据的快照，包括三个人的姓名、年龄和职业。这个测试的目标是确保文本和表格信息都准确地翻译，保留格式和结构。
+2023-08-11 17:19:01.389 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-11 17:19:05.526 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 17:19:05.530 | DEBUG    | book.content:set_translation:58 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 17:19:05.533 | DEBUG    | book.content:set_translation:68 - [['姓名', '年龄', '职业'], ['约翰', '25', '工程师'], ['安娜', '30', '医生'], ['布莱恩', '28', '教师']]
+2023-08-11 17:19:05.537 | DEBUG    | book.content:set_translation:72 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-11 17:19:05.548 | INFO     | translator.writer:_save_translated_book_pdf:31 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 17:19:05.552 | INFO     | translator.writer:_save_translated_book_pdf:32 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 22:19:02.134 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 22:19:02.138 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 22:19:02.275 | DEBUG    | translator.pdf_parser:parse_pdf:40 - Text Position: (90.0, 743.28345, 7.895250000000004, 15.950000000000045)
+2023-08-11 22:19:02.277 | DEBUG    | translator.pdf_parser:parse_pdf:41 - Text Style: {'font_name': 'TVOIEN+Calibri-Bold', 'font_size': 15.950000000000045, 'bold': True, 'italic': False}
+2023-08-11 22:19:02.286 | DEBUG    | translator.pdf_parser:parse_pdf:61 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 22:19:02.291 | DEBUG    | translator.pdf_parser:parse_pdf:69 - Table Position: (84.6, 197.03999999999996, 426.1, 64.39999999999998)
+2023-08-11 22:19:02.300 | DEBUG    | translator.pdf_parser:parse_pdf:73 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-11 22:19:02.303 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Chinese):
+2023-08-11 22:19:14.845 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+介绍
+这是一个测试文档，旨在验证OpenAI 动力翻译器的效率和准确性。它包含文本和表格内容。
+表1：示例数据
+简介
+上面的表格提供了示例数据的快照，包括三个人的姓名、年龄和职业。这个测试的目标是确保文本和表格信息都能准确地翻译，同时保持格式和结构。
+2023-08-11 22:19:14.850 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-11 22:19:20.042 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 22:19:20.045 | DEBUG    | book.content:set_translation:58 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 22:19:20.047 | DEBUG    | book.content:set_translation:68 - [['姓名', '年龄', '职业'], ['约翰', '25', '工程师'], ['安娜', '30', '医生'], ['布莱恩', '28', '教师']]
+2023-08-11 22:19:20.051 | DEBUG    | book.content:set_translation:72 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-11 22:19:20.063 | INFO     | translator.writer:_save_translated_book_pdf:32 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 22:19:20.067 | INFO     | translator.writer:_save_translated_book_pdf:33 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 22:21:25.282 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 22:21:25.287 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 22:21:25.418 | DEBUG    | translator.pdf_parser:parse_pdf:40 - Text Position: (90.0, 743.28345, 7.895250000000004, 15.950000000000045)
+2023-08-11 22:21:25.421 | DEBUG    | translator.pdf_parser:parse_pdf:41 - Text Style: {'font_name': 'TVOIEN+Calibri-Bold', 'font_size': 15.950000000000045, 'bold': True, 'italic': False}
+2023-08-11 22:21:25.430 | DEBUG    | translator.pdf_parser:parse_pdf:61 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 22:21:25.434 | DEBUG    | translator.pdf_parser:parse_pdf:69 - Table Position: (84.6, 197.03999999999996, 426.1, 64.39999999999998)
+2023-08-11 22:21:25.442 | DEBUG    | translator.pdf_parser:parse_pdf:73 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-11 22:21:25.444 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Chinese):
+2023-08-11 22:21:35.676 | INFO     | translator.pdf_translator:translate_pdf:23 - 文档测试
+介绍
+这是一个测试文档，用于验证OpenAI动力的翻译器的效率和准确性。它包含文本和表格内容。
+表格1：样本数据
+摘要
+上表提供了样本数据的快照，包括三个人的姓名、年龄和职业。本次测试的目标是确保文本和表格信息都能准确翻译，保持格式和结构。
+2023-08-11 22:21:35.684 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-11 22:21:40.289 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 22:21:40.292 | DEBUG    | book.content:set_translation:58 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 22:21:40.295 | DEBUG    | book.content:set_translation:68 - [['姓名', '年龄', '职业'], ['约翰', '25', '工程师'], ['安娜', '30', '医生'], ['布莱恩', '28', '教师']]
+2023-08-11 22:21:40.299 | DEBUG    | book.content:set_translation:72 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-11 22:21:40.310 | INFO     | translator.writer:_save_translated_book_pdf:32 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 22:21:40.313 | INFO     | translator.writer:_save_translated_book_pdf:33 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 22:25:53.611 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 22:25:53.616 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 22:25:53.754 | DEBUG    | translator.pdf_parser:parse_pdf:40 - Text Position: (90.0, 743.28345, 7.895250000000004, 15.950000000000045)
+2023-08-11 22:25:53.758 | DEBUG    | translator.pdf_parser:parse_pdf:41 - Text Style: {'font_name': 'TVOIEN+Calibri-Bold', 'font_size': 15.950000000000045, 'bold': True, 'italic': False}
+2023-08-11 22:25:53.767 | DEBUG    | translator.pdf_parser:parse_pdf:61 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 22:25:53.775 | DEBUG    | translator.pdf_parser:parse_pdf:69 - Table Position: (84.6, 197.03999999999996, 426.1, 64.39999999999998)
+2023-08-11 22:25:53.783 | DEBUG    | translator.pdf_parser:parse_pdf:73 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-11 22:25:53.786 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Chinese):
+2023-08-11 22:26:03.704 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+简介
+这是一个测试文档，用于验证OpenAI驱动的翻译器的效率和准确性。它包含文本和表格内容。
+
+表1：样本数据
+总结
+上表提供了样本数据的快照，包括三个人的姓名、年龄和职业。此次测试的目标是确保文本和表格信息都能准确翻译，并保留其格式和结构。
+2023-08-11 22:26:03.711 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-11 22:26:09.553 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 22:26:09.556 | DEBUG    | book.content:set_translation:58 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 22:26:09.559 | DEBUG    | book.content:set_translation:68 - [['姓名', '年龄', '职业'], ['约翰', '25', '工程师'], ['安娜', '30', '医生'], ['布莱恩', '28', '教师']]
+2023-08-11 22:26:09.564 | DEBUG    | book.content:set_translation:72 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-11 22:26:09.574 | INFO     | translator.writer:_save_translated_book_pdf:32 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 22:26:09.577 | INFO     | translator.writer:_save_translated_book_pdf:33 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 22:28:33.043 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 22:28:33.094 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 22:28:33.267 | DEBUG    | translator.pdf_parser:parse_pdf:40 - Text Position: (70.0626725, 466.48809129029996, 6.173642411299994, 10.410864100000026)
+2023-08-11 22:28:33.270 | DEBUG    | translator.pdf_parser:parse_pdf:41 - Text Style: {'font_name': 'AAAAAB+HelveticaNeue-Bold', 'font_size': 10.410864100000026, 'bold': True, 'italic': False}
+2023-08-11 22:28:33.292 | DEBUG    | translator.pdf_parser:parse_pdf:61 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 22:28:33.302 | DEBUG    | translator.pdf_parser:parse_pdf:69 - Table Position: (61.653895, 356.83565, 471.6922050000001, 230.64064999999994)
+2023-08-11 22:28:33.327 | DEBUG    | translator.pdf_parser:parse_pdf:73 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 22:28:33.401 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to Chinese):
+2023-08-11 22:29:07.461 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+这个数据集包含由ChatGPT提供的两个测试样本，ChatGPT是OpenAI的AI语言模型。
+这些样本包括一个Markdown表格和一篇英文文本段落，可用于测试同时支持文本和表格格式的英至中翻译软件。
+文本测试
+敏捷的棕色狐狸跳过懒惰的狗。这个句子包含了英语字母表中的每个字母。句子是常用于测试字体、键盘和其他文本相关工具的。除了英语，许多其他语言中也有句子。由于各种语言的独特特征，有些句子更难构造。测试表格
+2023-08-11 22:29:07.468 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Chinese):
+
+2023-08-11 22:29:21.660 | INFO     | translator.pdf_translator:translate_pdf:23 - [水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-11 22:29:21.663 | DEBUG    | book.content:set_translation:58 - [水果, 颜色, 价格 (美元)] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-11 22:29:21.667 | DEBUG    | book.content:set_translation:68 - [['水果', '颜色', '价格 (美元)'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
+2023-08-11 22:29:21.675 | DEBUG    | book.content:set_translation:72 -     水果  颜色 价格 (美元)
+0   苹果  红色    1.20
+1   香蕉  黄色    0.50
+2   橙子  橙色    0.80
+3   草莓  红色    2.50
+4   蓝莓  蓝色    3.00
+5  猕猴桃  绿色    1.00
+6   芒果  橙色    1.50
+7   葡萄  紫色    2.00
+2023-08-11 22:29:21.696 | INFO     | translator.writer:_save_translated_book_pdf:32 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 22:29:21.700 | INFO     | translator.writer:_save_translated_book_pdf:33 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 22:35:00.035 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 22:35:00.040 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Japanese
+2023-08-11 22:35:00.219 | DEBUG    | translator.pdf_parser:parse_pdf:40 - Text Position: (70.0626725, 466.48809129029996, 6.173642411299994, 10.410864100000026)
+2023-08-11 22:35:00.224 | DEBUG    | translator.pdf_parser:parse_pdf:41 - Text Style: {'font_name': 'AAAAAB+HelveticaNeue-Bold', 'font_size': 10.410864100000026, 'bold': True, 'italic': False}
+2023-08-11 22:35:00.245 | DEBUG    | translator.pdf_parser:parse_pdf:61 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 22:35:00.258 | DEBUG    | translator.pdf_parser:parse_pdf:69 - Table Position: (61.653895, 356.83565, 471.6922050000001, 230.64064999999994)
+2023-08-11 22:35:00.273 | DEBUG    | translator.pdf_parser:parse_pdf:73 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 22:35:00.344 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to Japanese):
+2023-08-11 22:35:23.390 | INFO     | translator.pdf_translator:translate_pdf:23 - テストデータ
+このデータセットには、OpenAIのAI言語モデルであるChatGPTが提供する2つのテストサンプルが含まれています。
+これらのサンプルには、マークダウンテーブルと英文のパッセージが含まれており、テキストとテーブルの形式の両方をサポートする英語から中国語への翻訳ソフトウェアのテストに使用することができます。
+テキストのテスト
+素早い茶色のキツネがのろまな犬を飛び越えます。このパングラムは、英語のアルファベットのすべての文字を少なくとも1回含んでいます。パングラムは、フォント、キーボード、および他のテキスト関連ツールのテストによく使用されます。英語以外にも、多くの他の言語にもパングラムがあります。一部のパングラムは、言語の固有の特性のために構築がより難しいです。
+テーブルのテスト
+2023-08-11 22:35:23.399 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Japanese):
+
+2023-08-11 22:35:36.479 | INFO     | translator.pdf_translator:translate_pdf:23 - [果物, 色, 価格（USD）] [りんご, 赤, 1.20] [バナナ, 黄色, 0.50] [オレンジ, オレンジ色, 0.80] [いちご, 赤, 2.50] [ブルーベリー, 青, 3.00] [キウイ, 緑, 1.00] [マンゴー, オレンジ色, 1.50] [ぶどう, 紫, 2.00]
+2023-08-11 22:35:36.481 | DEBUG    | book.content:set_translation:58 - [果物, 色, 価格（USD）] [りんご, 赤, 1.20] [バナナ, 黄色, 0.50] [オレンジ, オレンジ色, 0.80] [いちご, 赤, 2.50] [ブルーベリー, 青, 3.00] [キウイ, 緑, 1.00] [マンゴー, オレンジ色, 1.50] [ぶどう, 紫, 2.00]
+2023-08-11 22:35:36.483 | DEBUG    | book.content:set_translation:68 - [['果物', '色', '価格（USD）'], ['りんご', '赤', '1.20'], ['バナナ', '黄色', '0.50'], ['オレンジ', 'オレンジ色', '0.80'], ['いちご', '赤', '2.50'], ['ブルーベリー', '青', '3.00'], ['キウイ', '緑', '1.00'], ['マンゴー', 'オレンジ色', '1.50'], ['ぶどう', '紫', '2.00']]
+2023-08-11 22:35:36.486 | DEBUG    | book.content:set_translation:72 -        果物      色 価格（USD）
+0     りんご      赤    1.20
+1     バナナ     黄色    0.50
+2    オレンジ  オレンジ色    0.80
+3     いちご      赤    2.50
+4  ブルーベリー      青    3.00
+5     キウイ      緑    1.00
+6    マンゴー  オレンジ色    1.50
+7     ぶどう      紫    2.00
+2023-08-11 22:35:36.496 | INFO     | translator.writer:_save_translated_book_pdf:32 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 22:35:36.499 | INFO     | translator.writer:_save_translated_book_pdf:33 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 22:39:38.323 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 22:39:38.327 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 22:39:38.510 | DEBUG    | translator.pdf_parser:parse_pdf:40 - Text Position: (70.0626725, 466.48809129029996, 6.173642411299994, 10.410864100000026)
+2023-08-11 22:39:38.514 | DEBUG    | translator.pdf_parser:parse_pdf:41 - Text Style: {'font_name': 'AAAAAB+HelveticaNeue-Bold', 'font_size': 10.410864100000026, 'bold': True, 'italic': False}
+2023-08-11 22:39:38.538 | DEBUG    | translator.pdf_parser:parse_pdf:61 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2023-08-11 22:39:38.549 | DEBUG    | translator.pdf_parser:parse_pdf:69 - Table Position: (61.653895, 356.83565, 471.6922050000001, 230.64064999999994)
+2023-08-11 22:39:38.561 | DEBUG    | translator.pdf_parser:parse_pdf:73 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2023-08-11 22:39:38.695 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing'
+Translation (to Chinese):
+2023-08-11 22:39:55.837 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试数据
+该数据集包含了ChatGPT提供的两个测试样本，ChatGPT是OpenAI的一种AI语言模型。
+这些样本包含了一个Markdown表格和一个英文文本段落，可以用来测试支持文本和表格格式的英译中翻译软件。
+文本测试
+快速的棕色狐狸跳过懒狗。这个句子包含了英语字母表中的每一个字母。句子经常被用来测试字体、键盘和其他与文本有关的工具。除了英语，其他语言也有句子。有些句子由于语言的特征而更难构造。
+表格测试
+2023-08-11 22:39:55.846 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]'
+Translation (to Chinese):
+
+2023-08-11 22:40:09.045 | INFO     | translator.pdf_translator:translate_pdf:23 - Table: '[水果, 颜色, 价格（美元）] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]'
+2023-08-11 22:40:09.048 | DEBUG    | book.content:set_translation:58 - Table: [水果, 颜色, 价格（美元）] [苹果, 红色, 1.20] [香蕉, 黄色, 0.50] [橙子, 橙色, 0.80] [草莓, 红色, 2.50] [蓝莓, 蓝色, 3.00] [猕猴桃, 绿色, 1.00] [芒果, 橙色, 1.50] [葡萄, 紫色, 2.00]
+2023-08-11 22:40:09.051 | DEBUG    | book.content:set_translation:68 - [['Table: [水果', '颜色', '价格（美元）'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
+2023-08-11 22:40:09.056 | DEBUG    | book.content:set_translation:72 -   Table: [水果  颜色 价格（美元）
+0         苹果  红色   1.20
+1         香蕉  黄色   0.50
+2         橙子  橙色   0.80
+3         草莓  红色   2.50
+4         蓝莓  蓝色   3.00
+5        猕猴桃  绿色   1.00
+6         芒果  橙色   1.50
+7         葡萄  紫色   2.00
+2023-08-11 22:40:09.069 | INFO     | translator.writer:_save_translated_book_pdf:32 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test.pdf
+2023-08-11 22:40:09.073 | INFO     | translator.writer:_save_translated_book_pdf:33 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\c5cc0131c29f7114f857f35f80acee041c1a4374\test_translated.pdf
+2023-08-11 22:44:52.344 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 22:44:52.348 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 22:44:52.469 | DEBUG    | translator.pdf_parser:parse_pdf:40 - Text Position: (90.0, 743.28345, 7.895250000000004, 15.950000000000045)
+2023-08-11 22:44:52.471 | DEBUG    | translator.pdf_parser:parse_pdf:41 - Text Style: {'font_name': 'TVOIEN+Calibri-Bold', 'font_size': 15.950000000000045, 'bold': True, 'italic': False}
+2023-08-11 22:44:52.478 | DEBUG    | translator.pdf_parser:parse_pdf:61 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 22:44:52.485 | DEBUG    | translator.pdf_parser:parse_pdf:69 - Table Position: (84.6, 197.03999999999996, 426.1, 64.39999999999998)
+2023-08-11 22:44:52.494 | DEBUG    | translator.pdf_parser:parse_pdf:73 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-11 22:44:52.500 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Chinese):
+2023-08-11 22:45:02.973 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+介绍
+这是一个测试文档，用于验证OpenAI驱动的翻译器的效率和准确性。它包含文本和表格内容。
+表1:样本数据
+总结
+上面的表格提供了样本数据的快照，其中包括三个人的姓名、年龄和职业。这个测试的目的是确保文本和表格信息都能准确地翻译，并保留格式和结构。
+2023-08-11 22:45:02.980 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-11 22:45:08.224 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 22:45:08.227 | DEBUG    | book.content:set_translation:58 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 22:45:08.228 | DEBUG    | book.content:set_translation:68 - [['姓名', '年龄', '职业'], ['约翰', '25', '工程师'], ['安娜', '30', '医生'], ['布莱恩', '28', '教师']]
+2023-08-11 22:45:08.231 | DEBUG    | book.content:set_translation:72 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-11 22:45:08.241 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 22:45:08.243 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 22:45:08.409 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 22:47:39.880 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 22:47:39.883 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 22:47:40.006 | DEBUG    | translator.pdf_parser:parse_pdf:40 - Text Position: (90.0, 743.28345, 7.895250000000004, 15.950000000000045)
+2023-08-11 22:47:40.008 | DEBUG    | translator.pdf_parser:parse_pdf:41 - Text Style: {'font_name': 'TVOIEN+Calibri-Bold', 'font_size': 15.950000000000045, 'bold': True, 'italic': False}
+2023-08-11 22:47:40.017 | DEBUG    | translator.pdf_parser:parse_pdf:61 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 22:47:40.021 | DEBUG    | translator.pdf_parser:parse_pdf:69 - Table Position: (84.6, 197.03999999999996, 426.1, 64.39999999999998)
+2023-08-11 22:47:40.028 | DEBUG    | translator.pdf_parser:parse_pdf:73 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-11 22:47:40.031 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Chinese):
+2023-08-11 22:47:54.058 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+介绍
+这是一个测试文档，用于验证OpenAI提供的翻译器的效率和准确性。它包含文本和表格内容。
+表1：样本数据
+摘要
+上面的表格提供了样本数据的快照，包括三个人的姓名、年龄和职业。这个测试的目的是确保文本和表格信息都能被准确翻译，并保留格式和结构。
+2023-08-11 22:47:54.066 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-11 22:48:00.640 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 22:48:00.643 | DEBUG    | book.content:set_translation:58 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布莱恩, 28, 教师]
+2023-08-11 22:48:00.646 | DEBUG    | book.content:set_translation:68 - [['姓名', '年龄', '职业'], ['约翰', '25', '工程师'], ['安娜', '30', '医生'], ['布莱恩', '28', '教师']]
+2023-08-11 22:48:00.649 | DEBUG    | book.content:set_translation:72 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布莱恩  28   教师
+2023-08-11 22:48:00.659 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 22:48:00.662 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 22:48:00.897 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 22:49:59.466 | DEBUG    | gui.gui_interface:translate_with_gui:25 - PDF文件路径: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 22:49:59.471 | DEBUG    | gui.gui_interface:translate_with_gui:26 - 目标语言: Chinese
+2023-08-11 22:49:59.605 | DEBUG    | translator.pdf_parser:parse_pdf:40 - Text Position: (90.0, 743.28345, 7.895250000000004, 15.950000000000045)
+2023-08-11 22:49:59.609 | DEBUG    | translator.pdf_parser:parse_pdf:41 - Text Style: {'font_name': 'TVOIEN+Calibri-Bold', 'font_size': 15.950000000000045, 'bold': True, 'italic': False}
+2023-08-11 22:49:59.618 | DEBUG    | translator.pdf_parser:parse_pdf:61 - [raw_text]
+ Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.
+2023-08-11 22:49:59.625 | DEBUG    | translator.pdf_parser:parse_pdf:69 - Table Position: (84.6, 197.03999999999996, 426.1, 64.39999999999998)
+2023-08-11 22:49:59.633 | DEBUG    | translator.pdf_parser:parse_pdf:73 - [table]
+[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]
+2023-08-11 22:49:59.637 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Text: 'Test Document
+Introduction
+This is a test document created to validate the efficiency and accuracy of the OpenAI-powered
+translator.Itconsistsofbothtextandtablecontent.
+Table1:SampleData
+Summary
+The table above provides a snapshot of the sample data, which includes names, ages, and
+professions of three individuals. The objective of this test is to ensure that both textual and
+tabularinformationistranslatedaccurately,preservingtheformatandstructure.'
+Translation (to Chinese):
+2023-08-11 22:50:09.578 | INFO     | translator.pdf_translator:translate_pdf:23 - 测试文档
+介绍
+这是一个测试文档，用于验证OpenAI提供的翻译器的效率和准确性。它包括文本和表格内容。
+
+表1：样本数据
+总结
+上表提供了样本数据的快照，其中包括三个人的姓名、年龄和职业。这个测试的目标是确保对文本和表格信息进行准确的翻译，保留格式和结构。
+2023-08-11 22:50:09.584 | DEBUG    | translator.pdf_translator:translate_pdf:21 - Table: '[Name, Age, Profession] [John, 25, Engineer] [Anna, 30, Doctor] [Brian, 28, Teacher]'
+Translation (to Chinese):
+
+2023-08-11 22:50:15.175 | INFO     | translator.pdf_translator:translate_pdf:23 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布赖恩, 28, 老师]
+2023-08-11 22:50:15.178 | DEBUG    | book.content:set_translation:58 - [姓名, 年龄, 职业] [约翰, 25, 工程师] [安娜, 30, 医生] [布赖恩, 28, 老师]
+2023-08-11 22:50:15.180 | DEBUG    | book.content:set_translation:68 - [['姓名', '年龄', '职业'], ['约翰', '25', '工程师'], ['安娜', '30', '医生'], ['布赖恩', '28', '老师']]
+2023-08-11 22:50:15.183 | DEBUG    | book.content:set_translation:72 -     姓名  年龄   职业
+0   约翰  25  工程师
+1   安娜  30   医生
+2  布赖恩  28   老师
+2023-08-11 22:50:15.192 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2.pdf
+2023-08-11 22:50:15.195 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
+2023-08-11 22:50:15.329 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: C:\Users\lenovo\AppData\Local\Temp\gradio\3c65fcc58c0d28a9ab6caceda0e1d08c23283bde\test2_translated.pdf
