@@ -55,7 +55,7 @@ Please note that this tool cannot fully replace professional translation softwar
 
 ### Environment Setup
 
-1.Clone the repository `git clone git@github.com:DjangoPeng/openai-translator.git`.
+1.Clone the repository `git clone https://github.com/carrotProgrammer/OPENAI_TRANSLATOR.git`.
 
 2.The `OpenAI-Translator` requires Python 3.6 or later. Install the dependencies with `pip install -r requirements.txt`.
 
