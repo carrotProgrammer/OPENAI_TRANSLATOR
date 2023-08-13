@@ -91,7 +91,7 @@ common:
 python ai_translator/main.py --model_type OpenAIModel --gui
 ```
 
-![sample_out](images/sample_image_1.png)
+![sample_out](images/gui.png)
 
 #### Using command-line arguments:
 
