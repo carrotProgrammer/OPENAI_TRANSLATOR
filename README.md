@@ -85,7 +85,7 @@ common:
 
 #### Running Instructions
 
-1.Run with GUI：
+1.Run with GUI(Recommend)：
 
 ```bash
 python ai_translator/main.py --model_type OpenAIModel --gui
