@@ -42,14 +42,17 @@ The OpenAI Translator is still in its early stages of development, and I'm activ
 
 ## Limitations
 
-Due to the complexity of the PDF format, the current version of the OpenAI Translator primarily supports the translation of simple PDF texts and tables. Here are some known restrictions:
+Given the inherent complexity of the PDF format, despite efforts to optimize, this tool still has limitations when processing certain PDF contents:
 
-- Cannot guarantee the accuracy of translations for various languages.
-- The format of the translated document does not match the original.
-- Does not support translation of images within PDFs.
-- Scanned PDF files cannot be translated.
+- Translation Accuracy: Although the OpenAI translator is based on the GPT model and has strong translation capabilities, it cannot guarantee 100% translation accuracy for all languages.
 
-Please note that this tool cannot fully replace professional translation software.
+- Format Consistency: While the translated document tries to closely resemble the original, there are still differences, primarily in font and table styles.
+
+- Image Support: The current version does not support translation of images in PDFs.
+
+- Scanned Document Support: PDFs that have been scanned might not be correctly recognized and translated.
+
+As a user, it should be understood that this is a tool; while it's very useful in most scenarios, it cannot fully replace professional translation software or services.
 
 ## Getting Started
 
