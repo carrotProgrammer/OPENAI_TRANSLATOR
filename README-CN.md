@@ -57,7 +57,7 @@ OpenAI 翻译器目前还处于早期开发阶段，我正在积极地添加更�
 
 ### 环境准备
 
-1.克隆仓库 `git clone https://github.com/carrotProgrammer/OPENAI_TRANSLATOR.git`。
+1.克隆仓库 `git clone -b master https://github.com/carrotProgrammer/OPENAI_TRANSLATOR.git`。
 
 2.OpenAI-翻译器 需要 Python 3.6 或更高版本。使用 `pip install -r requirements.txt` 安装依赖项。
 
