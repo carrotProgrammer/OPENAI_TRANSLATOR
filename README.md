@@ -58,7 +58,7 @@ As a user, it should be understood that this is a tool; while it's very useful i
 
 ### Environment Setup
 
-1.Clone the repository `git clone https://github.com/carrotProgrammer/OPENAI_TRANSLATOR.git`.
+1.Clone the repository `git clone -b master https://github.com/carrotProgrammer/OPENAI_TRANSLATOR.git`.
 
 2.The `OpenAI-Translator` requires Python 3.6 or later. Install the dependencies with `pip install -r requirements.txt`.
 
