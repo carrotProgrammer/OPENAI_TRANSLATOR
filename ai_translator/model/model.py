@@ -10,9 +10,9 @@ class Model:
 
     def translate_prompt(self, content, target_language: str) -> str:
         if content.content_type == ContentType.TEXT:
-            return self.make_text_prompt(content.original, target_language)
+            return self.human_text_prompt(content.original, target_language)
         elif content.content_type == ContentType.TABLE:
-            return self.make_table_prompt(content.get_original_as_str(), target_language)
+            return self.human_table_prompt(content.get_original_as_str(), target_language)
         
     @staticmethod
     def get_system_prompt():
