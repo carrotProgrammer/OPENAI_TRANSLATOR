@@ -1,3 +1,9 @@
+from langchain.prompts.chat import (
+    ChatPromptTemplate,
+    SystemMessagePromptTemplate,
+    HumanMessagePromptTemplate,
+)
+
 class PromptTemplate:
     # System prompt
     system_prompt = """
@@ -28,13 +34,26 @@ class PromptTemplate:
     Now, proceed with the translations, detecting the source language and translating to the specified target language.
 
     """
-
-    # User prompts
+    system_message_prompt = SystemMessagePromptTemplate.from_template(system_prompt)
+    
+    # Human Prompts
     @staticmethod
-    def user_text_prompt(text: str, target_language: str) -> str:
-        return f"Text: '{text}'\nTranslation (to {target_language}):"
+    def human_text_prompt(text: str, target_language: str) -> str:
+        human_template =  f"Text: '{text}'\nTranslation (to {target_language}):"
+        hunman_massage_prompt =HumanMessagePromptTemplate.from_template(human_template)
+        chat_prompt_template = ChatPromptTemplate.from_messages(
+            [PromptTemplate.system_message_prompt, hunman_massage_prompt]
+        )       
+        return chat_prompt_template
 
     @staticmethod
-    def user_table_prompt(table: str, target_language: str) -> str:
-        return f"Table: '{table}'\nTranslation (to {target_language}):\n"
+    def human_table_prompt(table: str, target_language: str) -> str:
+        human_template =  f"Table: '{table}'\nTranslation (to {target_language}):\n"
+        hunman_massage_prompt =HumanMessagePromptTemplate.from_template(human_template)
+        chat_prompt_template = ChatPromptTemplate.from_messages(
+            [PromptTemplate.system_message_prompt, hunman_massage_prompt]
+        )       
+        return chat_prompt_template
+        
+    
 
